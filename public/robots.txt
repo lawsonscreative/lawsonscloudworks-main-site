@@ -1,0 +1,5 @@
+# Prevent indexing during development
+# Remove this file or update it when ready to go live
+
+User-agent: *
+Disallow: /
