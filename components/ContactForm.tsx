@@ -160,7 +160,7 @@ export default function ContactForm() {
       {/* Company Size */}
       <div>
         <label htmlFor="companySize" className="block font-semibold text-neutral-700 mb-2">
-          Company Size
+          Company size
         </label>
         <select
           id="companySize"
@@ -170,11 +170,12 @@ export default function ContactForm() {
           className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
         >
           <option value="">Select size</option>
-          <option value="1-20">1-20 employees</option>
-          <option value="21-50">21-50 employees</option>
-          <option value="51-100">51-100 employees</option>
-          <option value="101-250">101-250 employees</option>
-          <option value="250+">250+ employees</option>
+          <option value="1-19">1-19 people</option>
+          <option value="20-49">20-49 people</option>
+          <option value="50-99">50-99 people</option>
+          <option value="100-249">100-249 people</option>
+          <option value="250+">250+ people</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
         </select>
       </div>
 
@@ -185,11 +186,11 @@ export default function ContactForm() {
         </label>
         <div className="space-y-2">
           {[
-            'Cloud & workspace architecture',
-            'Modern endpoint & identity',
-            'Automation & dev tooling',
-            'Advisory & project rescue',
-            'Not sure / general enquiry',
+            'Cloud & Workspace Health Check',
+            'Modern Endpoint Quickstart',
+            'Automation & Dev Tooling Accelerator',
+            'Advisory / Project Rescue',
+            'Not sure – please advise',
           ].map((service) => (
             <label key={service} className="flex items-center space-x-3 cursor-pointer">
               <input
@@ -260,7 +261,7 @@ export default function ContactForm() {
       </div>
 
       <p className="text-sm text-neutral-600 text-center">
-        We typically reply within one business day. Prefer email?{' '}
+        We usually reply within one UK business day. Prefer email?{' '}
         <a href="mailto:hello@lawsonscloudworks.co.uk" className="text-brand-sky hover:text-brand-navy">
           hello@lawsonscloudworks.co.uk
         </a>

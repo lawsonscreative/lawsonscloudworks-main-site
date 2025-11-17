@@ -7,6 +7,7 @@ interface ServiceCardProps {
   title: string;
   description: string;
   link: string;
+  offerReference?: string;
 }
 
 const icons = {
@@ -33,7 +34,7 @@ const icons = {
   ),
 };
 
-export default function ServiceCard({ icon, title, description, link }: ServiceCardProps) {
+export default function ServiceCard({ icon, title, description, link, offerReference }: ServiceCardProps) {
   return (
     <Link href={link} className="card group h-full flex flex-col">
       <div className="text-brand-sky mb-4 group-hover:text-brand-navy transition-colors">
@@ -45,6 +46,11 @@ export default function ServiceCard({ icon, title, description, link }: ServiceC
       <p className="text-neutral-600 leading-relaxed mb-4 flex-grow">
         {description}
       </p>
+      {offerReference && (
+        <p className="text-sm text-neutral-700 mb-4 pb-4 border-b border-neutral-200">
+          {offerReference}
+        </p>
+      )}
       <div className="text-brand-sky font-semibold flex items-center group-hover:translate-x-2 transition-transform">
         Learn more
         <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

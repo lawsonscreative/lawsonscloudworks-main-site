@@ -6,6 +6,8 @@ export default function OutcomesSection() {
     'Clearer technology roadmap and priorities',
     'Reduced IT running costs and waste',
     'Faster onboarding for new staff members',
+    'Move from fragile VPN-based access to a resilient, documented cloud workspace',
+    'Cut onboarding from days of manual setup to a reproducible process that takes hours',
   ];
 
   return (

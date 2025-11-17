@@ -7,6 +7,7 @@ interface CaseStudyTeaserProps {
   problem: string;
   outcome: string;
   link: string;
+  engagementType?: string;
 }
 
 export default function CaseStudyTeaser({
@@ -16,11 +17,12 @@ export default function CaseStudyTeaser({
   problem,
   outcome,
   link,
+  engagementType,
 }: CaseStudyTeaserProps) {
   return (
     <Link href={link} className="card group h-full flex flex-col">
       <div className="mb-4">
-        <div className="flex items-center space-x-3 text-sm text-neutral-500 mb-3">
+        <div className="flex flex-wrap items-center gap-2 text-sm text-neutral-500 mb-3">
           <span className="bg-brand-light text-brand-navy px-3 py-1 rounded-full font-medium">
             {industry}
           </span>
@@ -29,6 +31,11 @@ export default function CaseStudyTeaser({
         <h3 className="text-2xl font-semibold text-brand-navy group-hover:text-brand-sky transition-colors">
           {title}
         </h3>
+        {engagementType && (
+          <p className="text-sm text-neutral-600 mt-2">
+            <span className="font-semibold">Engagement type:</span> {engagementType}
+          </p>
+        )}
       </div>
 
       <div className="space-y-4 flex-grow">

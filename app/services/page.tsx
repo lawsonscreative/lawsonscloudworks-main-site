@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import ServicePillar from '@/components/ServicePillar';
+import ProductisedOffer from '@/components/ProductisedOffer';
+import AdvisoryOffers from '@/components/AdvisoryOffers';
 
 export const metadata: Metadata = {
   title: 'Services | Cloud, Workspace & Automation Consulting | Lawsons CloudWorks',
@@ -12,118 +13,160 @@ export default function ServicesPage() {
     <div className="pt-20">
       {/* Page Intro */}
       <section className="section-spacing bg-gradient-to-br from-brand-light to-white">
-        <div className="container-custom max-w-4xl text-center">
-          <h1 className="mb-6">Services</h1>
-          <p className="text-xl text-neutral-700 leading-relaxed">
-            We focus on consulting and delivery work that helps small and mid-sized organisations
-            modernise their technology without the overhead of big consultancies. Our engagements
-            are outcome-focused, clearly scoped, and documented in plain English.
-          </p>
+        <div className="container-custom max-w-4xl">
+          <h1 className="mb-6 text-center">Services</h1>
+
+          <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
+            <p>
+              CloudWorks is consulting and project delivery, not commodity IT support.
+            </p>
+
+            <p>
+              We focus on:
+            </p>
+            <ul className="list-disc list-inside space-y-2 ml-4">
+              <li>Cloud & workspace design</li>
+              <li>Modern endpoint & identity</li>
+              <li>Automation & dev tooling</li>
+              <li>Advisory & project rescue</li>
+            </ul>
+
+            <p>
+              We work best with 20–250 person UK organisations with remote/hybrid teams.
+            </p>
+          </div>
+
+          <div className="mt-8 bg-brand-navy/5 border-l-4 border-brand-sky rounded-r-lg p-6">
+            <h3 className="text-xl font-semibold text-brand-navy mb-3">
+              How most clients start:
+            </h3>
+            <p className="text-neutral-700 leading-relaxed">
+              Most clients begin with a Cloud & Workspace Health Check. From there, we either help you
+              execute the plan, or work alongside your existing IT team or MSP.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Service Pillar 1: Cloud & Workspace Architecture */}
-      <ServicePillar
+      {/* Cloud & Workspace Health Check */}
+      <ProductisedOffer
         id="cloud-workspace"
-        title="Cloud & Workspace Architecture"
+        pillarTitle="Cloud & Workspace Architecture"
+        overview="For organisations with a mix of on-prem, VPN and cloud who need a clear path forward for their remote and hybrid teams."
+        offerTitle="Typical Engagement: Cloud & Workspace Health Check"
+        whoItsFor={[
+          'Organisations with a mix of on-prem, VPN and cloud',
+          'Teams where remote developers complain about access, performance or reliability',
+        ]}
+        whatWeDo={[
+          'Review your current cloud/workspace setup (AWS, Azure, M365, VPN, identity)',
+          'Identify bottlenecks, fragility and risk',
+          'Map out target architecture for next 12–24 months',
+          'Provide clear, prioritised recommendations',
+        ]}
+        whatYouGet={[
+          '1–2 diagrams summarising current and target state',
+          'Written, plain-English summary of issues and options',
+          'Prioritised action list (quick wins, medium-term, longer-term)',
+        ]}
+        duration="2–4 weeks"
+        investment="Typically £2,000–£4,000 for a 20–250 person organisation"
         imagePosition="right"
-        problems={[
-          'Legacy on-premises infrastructure and VPN-heavy remote access',
-          'Slow, unreliable remote work experience frustrating your team',
-          'Confusing mix of cloud providers and tools with no clear strategy',
-          'Unpredictable costs and manual scaling requirements',
-        ]}
-        services={[
-          'Cloud strategy and architecture review for AWS and Microsoft Azure',
-          'AWS WorkSpaces design and implementation for remote development teams',
-          'Microsoft 365 and Azure environment planning and optimisation',
-          'Hybrid environment design balancing office and remote requirements',
-          'Cloud cost analysis and optimisation recommendations',
-        ]}
-        outcomes={[
-          'Faster, more reliable access for remote and hybrid teams',
-          'Clear architecture diagrams and decision documentation',
-          'Predictable monthly running costs with recommendations for optimisation',
-          'Reduced dependence on legacy infrastructure',
-        ]}
       />
 
-      {/* Service Pillar 2: Modern Endpoint & Identity */}
-      <ServicePillar
+      {/* Modern Endpoint Quickstart */}
+      <ProductisedOffer
         id="endpoint-identity"
-        title="Modern Endpoint & Identity"
+        pillarTitle="Modern Endpoint & Identity"
+        overview="For organisations building machines manually or inconsistently, with weak security policies and painful onboarding/offboarding."
+        offerTitle="Typical Engagement: Modern Endpoint Quickstart"
+        whoItsFor={[
+          'Organisations building machines manually or inconsistently',
+          'Teams with weak security policies and painful onboarding/offboarding',
+        ]}
+        whatWeDo={[
+          'Assess current device and identity setup (Intune, GPO, manual builds)',
+          'Design baseline policies for devices and identities',
+          'Define golden image / autopilot approach where applicable',
+          'Plan realistic rollout phases',
+        ]}
+        whatYouGet={[
+          'Documented endpoint and identity strategy',
+          'Baseline policies (templated Intune profiles, conditional access, SSO outline)',
+          'Onboarding/offboarding process outline',
+        ]}
+        duration="3–6 weeks"
+        investment="Typically £3,000–£6,000 depending on scope"
+        securityNote={{
+          title: 'Security note:',
+          content:
+            "Security is baked into this work, but we don't run a 24/7 SOC. For MDR, SOC or deep penetration testing, we collaborate with specialist partners rather than pretending to do it all ourselves.",
+        }}
         imagePosition="left"
-        problems={[
-          'Manually built laptops with inconsistent configurations',
-          'Weak or inconsistent security policies across devices',
-          'Painful onboarding and offboarding processes',
-          'No clear view of device compliance or security posture',
-        ]}
-        services={[
-          'Endpoint management strategy using Microsoft Intune or similar platforms',
-          'Identity and access design including SSO and conditional access',
-          'Baseline security policies that protect without frustrating users',
-          'Device compliance monitoring and reporting',
-          'Automated deployment and configuration management',
-        ]}
-        outcomes={[
-          'Faster device rollout for new starters (hours instead of days)',
-          'Stronger security posture without annoying your team',
-          'Clear documentation of "how we do it here"',
-          'Visibility into device compliance and potential risks',
-        ]}
       />
 
-      {/* Service Pillar 3: Automation & Dev Tooling */}
-      <ServicePillar
+      {/* Automation & Dev Tooling Accelerator */}
+      <ProductisedOffer
         id="automation"
-        title="Automation & Dev Tooling"
+        pillarTitle="Automation & Dev Tooling"
+        overview="For teams using GitHub, cloud, SaaS but relying on manual deployments and where developer experience is slowed by infrastructure."
+        offerTitle="Typical Engagement: Automation & Dev Tooling Accelerator"
+        whoItsFor={[
+          'Teams using GitHub, cloud, SaaS but relying on manual deployments',
+          'Organisations where developer experience is slowed by infrastructure',
+        ]}
+        whatWeDo={[
+          'Review current CI/CD pipelines, release processes and automations',
+          'Identify critical automation opportunities (deployment, testing, provisioning)',
+          'Implement or improve 1–3 key pipelines (GitHub Actions, IaC)',
+          'Create simple runbooks and documentation',
+        ]}
+        whatYouGet={[
+          'Improved pipelines with clear ownership and docs',
+          'List of next automation opportunities for future phases',
+          'More predictable release process',
+        ]}
+        duration="2–6 weeks"
+        investment="Typically £2,500–£5,000 depending on complexity"
         imagePosition="right"
-        problems={[
-          'Manual, repetitive tasks eating up valuable time',
-          'Poor GitHub workflow practices or non-existent CI/CD',
-          'Ad hoc scripts scattered across the organisation with no ownership',
-          'Integration gaps between tools (e.g., Notion, Xero, Slack)',
-        ]}
-        services={[
-          'GitHub Actions pipelines and workflow automation',
-          'CI/CD setup for faster, safer deployments',
-          'Custom automation between business systems',
-          'Infrastructure-as-code implementation (Terraform, CloudFormation)',
-          'Developer environment standardisation and documentation',
-        ]}
-        outcomes={[
-          'Fewer manual steps means fewer errors and faster delivery',
-          'Clear ownership and documentation for automation',
-          'Better developer experience and productivity',
-          'Reduced time spent on repetitive tasks',
-        ]}
       />
 
-      {/* Service Pillar 4: Advisory & Project Rescue */}
-      <ServicePillar
+      {/* Advisory & Project Rescue */}
+      <AdvisoryOffers
         id="advisory"
         title="Advisory & Project Rescue"
+        overview="For organisations who need independent expertise, second opinions, or help getting projects back on track."
+        offers={[
+          {
+            title: 'Architecture & Roadmap Review',
+            description: [
+              'Short engagement to review existing plan, vendor proposal or internal architecture',
+              'Deliverables: written second opinion, risks and trade-offs, alternative options',
+            ],
+            duration: '1–2 weeks',
+            investment: '£1,500–£3,000',
+          },
+          {
+            title: 'Project Rescue',
+            description: [
+              'For in-flight projects that are stuck or going sideways',
+              'Focus: realistic plan that\'s acceptable to stakeholders (not assigning blame)',
+            ],
+            duration: 'Varies by situation',
+            investment: 'Depends on scope',
+          },
+          {
+            title: 'Fractional Cloud & Workspace Lead',
+            description: [
+              'Ongoing monthly retainer (1–4 days per month)',
+              'Responsibilities: steer roadmap, review changes, support internal IT/MSP, technical sounding board for leadership',
+              'Cadence: Monthly check-ins + ad-hoc availability',
+            ],
+            duration: 'Monthly retainer',
+            investment: 'From £1,200 per month (depending on days)',
+          },
+        ]}
         imagePosition="left"
-        problems={[
-          '"We\'ve started a project and it\'s going sideways"',
-          '"We think our setup is fragile but aren\'t sure where to start"',
-          '"We\'ve received a vendor proposal and need a second opinion"',
-          'Unclear technology roadmap and competing priorities',
-        ]}
-        services={[
-          'Architecture and infrastructure health checks',
-          'Independent review of vendor proposals and quotes',
-          'Technology roadmapping and prioritisation workshops',
-          'Project rescue and course correction',
-          'Interim CTO or technical leadership support',
-        ]}
-        outcomes={[
-          'Clear, prioritised action plan with rationale',
-          'Independent technical perspective without vendor bias',
-          'Better chance of projects landing successfully',
-          'Documented recommendations you can act on immediately',
-        ]}
       />
 
       {/* FAQ Section */}
@@ -134,56 +177,71 @@ export default function ServicesPage() {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-semibold text-brand-navy mb-3">
-                How do you price your services?
+                Do you replace our MSP or IT team?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                Most engagements are project-based with fixed scopes. We provide clear proposals
-                with options, so you can choose what makes sense for your budget. For ongoing work,
-                we offer monthly retainers with agreed deliverables.
+                No. We typically work alongside existing IT teams or MSPs. We bring specialist expertise in cloud,
+                workspace and automation, but we&apos;re not aiming to be your day-to-day support.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-brand-navy mb-3">
-                Do you provide ongoing support?
+                Can you work alongside our existing IT provider?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                Our focus is on consulting and project delivery, not day-to-day support. However,
-                we can provide ongoing advisory services or periodic health checks if that's what
-                you need.
+                Absolutely. Many clients have us work collaboratively with their MSP or internal IT team. We focus
+                on strategy, architecture and specific projects while they handle day-to-day operations.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-brand-navy mb-3">
-                What size organisations do you work with?
+                Do you provide 24/7 support?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                We work best with organisations between 20 and 250 people who need enterprise-quality
-                thinking but don't have enterprise budgets. Typically these are tech-forward SMEs,
-                professional services firms, or scale-ups.
+                No. We&apos;re a consultancy focused on project-based work and advisory. If you need 24/7 support,
+                we can help you choose and work with a provider who offers that.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-brand-navy mb-3">
-                Do you only work with UK clients?
+                Do you handle SOC/MDR/cybersecurity?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                We're based in the UK and primarily serve UK clients. For cloud and remote work
-                projects, we can work with clients elsewhere, but our focus and expertise is in
-                the UK market.
+                We ensure sensible security baselines in everything we do (identity, endpoints, cloud configurations).
+                For deep SOC, MDR or penetration testing, we work with specialist security partners.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-brand-navy mb-3">
-                What if we need specialists you don't have?
+                Do you work only with AWS and Microsoft?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                CloudWorks is a small consultancy led by an experienced principal consultant. For
-                specialised work, we bring in trusted partners and contractors. Everything is
-                coordinated and quality-controlled by CloudWorks, so you have one point of contact.
+                Those are our core ecosystems and where we have the most depth. We can work with other platforms,
+                but AWS and Microsoft are where we&apos;re strongest.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-brand-navy mb-3">
+                What if we&apos;re smaller than 20 people or larger than 250?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                We&apos;re flexible. The 20-250 range is where we see the best fit, but we&apos;re happy to discuss
+                your situation if you&apos;re outside that band.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-brand-navy mb-3">
+                How do projects start?
+              </h3>
+              <p className="text-neutral-700 leading-relaxed">
+                Most clients begin with a Cloud & Workspace Health Check. This gives both of us a clear view of
+                what&apos;s needed. From there, we can execute the plan or simply hand it off to your team.
               </p>
             </div>
           </div>

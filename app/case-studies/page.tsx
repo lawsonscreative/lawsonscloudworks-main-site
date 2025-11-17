@@ -30,6 +30,7 @@ export default function CaseStudiesPage() {
               problem="Legacy VPN-based development environment causing friction for remote developers. Slow connection speeds, frequent disconnections, and inconsistent build performance were impacting productivity."
               outcome="Migration to AWS WorkSpaces reduced connection issues by 80% and improved developer satisfaction scores. Documented architecture and runbooks enable the internal team to manage the environment independently."
               link="/case-studies/remote-dev-modernisation"
+              engagementType="Cloud & Workspace Health Check + rollout support"
             />
             <CaseStudyTeaser
               title="Cloud Migration & Cost Optimisation"
@@ -38,6 +39,7 @@ export default function CaseStudiesPage() {
               problem="Mixed on-premises and cloud setup with unpredictable costs, manual patching, and no clear disaster recovery plan. IT team spending too much time on maintenance instead of strategic work."
               outcome="Full migration to Microsoft 365 with documented processes reduced monthly costs by 30%. Clear security baseline and automated patching freed up 15 hours per week of IT time."
               link="/case-studies/cloud-migration"
+              engagementType="Cloud & Workspace Health Check + full migration"
             />
           </div>
         </div>

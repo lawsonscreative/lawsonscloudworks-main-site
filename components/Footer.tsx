@@ -27,32 +27,22 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/services#cloud-workspace" className="hover:text-brand-sky transition-colors">
-                  Cloud & Workspace Architecture
+                  Cloud & Workspace Health Check
                 </Link>
               </li>
               <li>
                 <Link href="/services#endpoint-identity" className="hover:text-brand-sky transition-colors">
-                  Modern Endpoint & Identity
+                  Modern Endpoint Quickstart
                 </Link>
               </li>
               <li>
                 <Link href="/services#automation" className="hover:text-brand-sky transition-colors">
-                  Automation & Dev Tooling
+                  Automation & Dev Tooling Accelerator
                 </Link>
               </li>
               <li>
                 <Link href="/services#advisory" className="hover:text-brand-sky transition-colors">
-                  Advisory & Project Rescue
-                </Link>
-              </li>
-              <li>
-                <Link href="/approach" className="hover:text-brand-sky transition-colors">
-                  Our Approach
-                </Link>
-              </li>
-              <li>
-                <Link href="/case-studies" className="hover:text-brand-sky transition-colors">
-                  Case Studies
+                  Fractional Cloud & Workspace Lead
                 </Link>
               </li>
             </ul>
@@ -64,7 +54,17 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/about" className="hover:text-brand-sky transition-colors">
-                  About Us
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/approach" className="hover:text-brand-sky transition-colors">
+                  Approach
+                </Link>
+              </li>
+              <li>
+                <Link href="/case-studies" className="hover:text-brand-sky transition-colors">
+                  Case Studies
                 </Link>
               </li>
               <li>
@@ -79,7 +79,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-brand-sky transition-colors"
                 >
-                  Lawsons Creative (Web Design)
+                  Lawsons Creative
                 </a>
               </li>
             </ul>

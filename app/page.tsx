@@ -22,6 +22,9 @@ export default function Home() {
                   secure their endpoints, and automate the tedious stuff. Real expertise, realistic scopes,
                   plain English.
                 </p>
+                <p className="text-lg text-neutral-600 leading-relaxed">
+                  We&apos;re best suited to teams of roughly 20–250 people, especially those with remote developers or distributed knowledge workers.
+                </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Link href="/contact" className="btn-primary text-center">
                     Book a Discovery Call
@@ -78,24 +81,28 @@ export default function Home() {
                 title="Cloud & Workspace Architecture"
                 description="Design and implement cloud environments that actually work for remote teams. AWS, Microsoft 365, hybrid setups."
                 link="/services#cloud-workspace"
+                offerReference="Typical engagement: Cloud & Workspace Health Check – a short, fixed-scope review with a clear action plan."
               />
               <ServiceCard
                 icon="shield"
                 title="Modern Endpoint & Identity"
                 description="Secure your laptops and user access without creating friction. Intune, SSO, conditional access."
                 link="/services#endpoint-identity"
+                offerReference="Typical engagement: Modern Endpoint Quickstart – establish baselines, policies and onboarding playbooks."
               />
               <ServiceCard
                 icon="automation"
                 title="Automation & Dev Tooling"
                 description="Build GitHub workflows, automate repetitive tasks, and improve developer experience."
                 link="/services#automation"
+                offerReference="Typical engagement: Automation & Dev Tooling Accelerator – improve developer workflows and key automations."
               />
               <ServiceCard
                 icon="advisory"
                 title="Advisory & Project Rescue"
                 description="Second opinions, health checks, and roadmaps when you need independent expertise."
                 link="/services#advisory"
+                offerReference="Typical engagement: Fractional Cloud & Workspace Lead – ongoing advisory support for growing teams."
               />
             </div>
           </div>
@@ -125,6 +132,7 @@ export default function Home() {
                 problem="Legacy VPN-based dev environment causing friction for remote developers."
                 outcome="Migration to AWS WorkSpaces reduced connection issues by 80% and improved developer satisfaction."
                 link="/case-studies/remote-dev-modernisation"
+                engagementType="Cloud & Workspace Health Check + rollout support"
               />
               <CaseStudyTeaser
                 title="Cloud Migration & Cost Optimisation"
@@ -133,6 +141,7 @@ export default function Home() {
                 problem="Mixed on-prem and cloud setup with unpredictable costs and manual patching."
                 outcome="Full cloud migration to Microsoft 365 with documented processes and 30% cost reduction."
                 link="/case-studies/cloud-migration"
+                engagementType="Cloud & Workspace Health Check + full migration"
               />
             </div>
 
@@ -150,7 +159,10 @@ export default function Home() {
             <h2 className="text-white mb-6">
               Let&apos;s Untangle Your Cloud and Workspace
             </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto text-brand-light">
+            <p className="text-xl mb-6 max-w-2xl mx-auto text-brand-light">
+              Most new clients start with a Cloud & Workspace Health Check – a short engagement that gives you a clear view of what&apos;s working, what isn&apos;t, and what to do next.
+            </p>
+            <p className="text-lg mb-8 max-w-2xl mx-auto text-white/90">
               Book a no-obligation discovery call. We&apos;ll listen to your challenges and explore whether we&apos;re the right fit.
             </p>
             <Link

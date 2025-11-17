@@ -21,13 +21,29 @@ export default function CaseStudyPage() {
 
           {/* Header */}
           <div className="mb-12">
-            <div className="flex items-center space-x-4 text-sm text-neutral-500 mb-4">
+            <div className="flex flex-wrap items-center gap-3 text-sm mb-4">
               <span className="bg-brand-light text-brand-navy px-3 py-1 rounded-full font-medium">
                 Software Development
               </span>
-              <span>200-person company</span>
+              <span className="text-neutral-500">200-person company</span>
             </div>
             <h1 className="mb-6">Modernising Remote Development Environment</h1>
+
+            {/* Meta Info */}
+            <div className="bg-neutral-50 border border-neutral-200 rounded-lg p-6 space-y-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <p className="text-sm font-semibold text-neutral-600 mb-1">Service Pillar:</p>
+                  <Link href="/services#cloud-workspace" className="text-brand-navy hover:text-brand-sky font-medium">
+                    Cloud & Workspace Architecture
+                  </Link>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-neutral-600 mb-1">Engagement Type:</p>
+                  <p className="text-neutral-700">Cloud & Workspace Health Check + rollout support</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Content */}

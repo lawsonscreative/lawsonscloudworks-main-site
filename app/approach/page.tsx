@@ -10,28 +10,28 @@ export default function ApproachPage() {
   const engagementSteps = [
     {
       number: 1,
-      title: 'Discovery Call',
-      description: 'We start with a conversation to understand your situation, challenges, and what good looks like for you.',
+      title: 'Discovery & Fit Check',
+      description: 'Brief conversation to understand your situation and see if there\'s a fit. Usually a 30-minute call. No pressure, no sales pitch.',
     },
     {
       number: 2,
       title: 'Short Diagnostic',
-      description: 'A remote or on-site assessment (where appropriate) to understand your current setup and identify priorities.',
+      description: 'Remote or on-site (where appropriate) assessment to understand current state. Typical duration: 1-2 weeks depending on complexity.',
     },
     {
       number: 3,
       title: 'Proposal & Options',
-      description: 'Clear recommendations with rationale, options, and realistic timelines. No mystery meat proposals.',
+      description: 'Clear recommendations with rationale, trade-offs and realistic timelines. We present options, not single "solutions".',
     },
     {
       number: 4,
-      title: 'Delivery & Check-ins',
-      description: 'Hands-on work with regular communication. You\'ll know what\'s happening and why.',
+      title: 'Delivery & Check-Ins',
+      description: 'Hands-on work with regular communication. You\'re never left wondering what\'s happening. Frequency depends on engagement type.',
     },
     {
       number: 5,
-      title: 'Handover & Support',
-      description: 'Documentation, knowledge transfer, and optional ongoing relationship if needed.',
+      title: 'Handover & Next Steps',
+      description: 'Documentation, training, clear handover. Optional ongoing relationship if it makes sense. You own your systems, not us.',
     },
   ];
 
@@ -81,45 +81,49 @@ export default function ApproachPage() {
 
           <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
             <p>
-              Lawsons CloudWorks is a small consultancy led by an experienced principal consultant
-              with over 30 years in IT. For specialised work, we bring in trusted partners and
-              contractors who we've worked with before.
+              CloudWorks is led by principal consultant Andy, with 30+ years in IT and experience running
+              AWS WorkSpaces for 4,000+ developers.
             </p>
 
             <p>
-              Everything is owned and coordinated by CloudWorks. You have one point of contact,
-              clear accountability, and consistent quality.
+              For specialist areas (e.g. deep networking, heavy security, certain app stacks), we bring in
+              trusted partners.
             </p>
 
             <div className="bg-white p-8 rounded-lg shadow-sm mt-8">
-              <h3 className="text-xl font-semibold text-brand-navy mb-4">This approach delivers:</h3>
+              <h3 className="text-xl font-semibold text-brand-navy mb-4">This means:</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span><strong>Lower overhead</strong> than big consultancies</span>
+                  <span>You get one accountable owner who knows your situation</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span><strong>Direct access</strong> to senior expertise (not junior consultants)</span>
+                  <span>You benefit from a wider network when needed</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span><strong>Flexibility</strong> without sacrificing quality</span>
+                  <span>You don&apos;t pay for overhead of a large firm</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span><strong>Realistic pricing</strong> that reflects actual value, not brand tax</span>
+                  <span>You get direct access to senior expertise, not juniors</span>
                 </li>
               </ul>
             </div>
+
+            <p className="pt-4">
+              This approach sits between one-person freelancers (who do everything ad hoc) and large firms
+              like Intelliworx (where you might feel like a ticket number).
+            </p>
           </div>
         </div>
       </section>
@@ -174,6 +178,64 @@ export default function ApproachPage() {
         </div>
       </section>
 
+      {/* Security & Responsibility */}
+      <section className="section-spacing bg-brand-light">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-center mb-8">Security & Responsibility</h2>
+
+          <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
+            <p>
+              We ensure sensible security baselines in everything we do:
+            </p>
+
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-3">
+                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>Identity and access patterns (SSO, MFA, conditional access)</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>Endpoint security policies</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>Cloud configuration security</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>Sensible defaults and hardening</span>
+              </li>
+            </ul>
+
+            <p>
+              For regulatory-heavy or high-risk environments, we collaborate with specialist security partners.
+            </p>
+
+            <div className="bg-white p-6 rounded-lg border-l-4 border-brand-sky mt-6">
+              <p className="font-semibold text-brand-navy mb-2">
+                This is by design:
+              </p>
+              <p>
+                We stay excellent in cloud, workspace and automation rather than becoming a mediocre SOC or MDR provider.
+              </p>
+            </div>
+
+            <p>
+              If you need 24/7 monitoring, threat hunting, or deep penetration testing, we&apos;ll help you find the
+              right specialist partner and work alongside them.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Who We Work Best With */}
       <section className="section-spacing bg-neutral-900 text-white">
         <div className="container-custom max-w-4xl">
@@ -181,7 +243,7 @@ export default function ApproachPage() {
 
           <div className="space-y-6 text-lg leading-relaxed">
             <p className="text-neutral-300">
-              We're not the right fit for everyone. Here's the profile of clients where we do our best work:
+              We work best with:
             </p>
 
             <ul className="space-y-4 mt-8">
@@ -190,8 +252,7 @@ export default function ApproachPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-200">
-                  <strong className="text-white">Willing to invest time and attention.</strong> The best
-                  outcomes happen when you're engaged in the process, not just delegating completely.
+                  Leadership willing to engage with trade-offs and make informed decisions
                 </span>
               </li>
               <li className="flex items-start space-x-3">
@@ -199,8 +260,7 @@ export default function ApproachPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-200">
-                  <strong className="text-white">Open to honest conversations about trade-offs.</strong> Every
-                  technical decision involves compromise. We'll explain the options clearly.
+                  Teams open to documentation and process improvements
                 </span>
               </li>
               <li className="flex items-start space-x-3">
@@ -208,8 +268,7 @@ export default function ApproachPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-200">
-                  <strong className="text-white">Value clarity and documentation.</strong> You want to
-                  understand your systems, not just have them work mysteriously.
+                  Organisations that prefer clarity and honesty over hype
                 </span>
               </li>
               <li className="flex items-start space-x-3">
@@ -217,15 +276,28 @@ export default function ApproachPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-200">
-                  <strong className="text-white">Ready to modernise.</strong> You're looking to improve and
-                  invest, not just patch and firefight.
+                  Companies ready to modernise (not just looking for quick fixes)
+                </span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-neutral-200">
+                  Teams of roughly 20–250 people, especially tech-heavy or remote/hybrid
                 </span>
               </li>
             </ul>
 
             <p className="text-neutral-300 pt-6">
-              If this sounds like you, let's talk.
+              If that sounds like you, let&apos;s talk.
             </p>
+
+            <div className="pt-6 text-center">
+              <Link href="/contact" className="inline-block px-8 py-4 bg-brand-sky text-white font-semibold rounded-lg hover:bg-brand-light hover:text-brand-navy transition-all duration-200 text-lg">
+                Get in touch
+              </Link>
+            </div>
           </div>
         </div>
       </section>

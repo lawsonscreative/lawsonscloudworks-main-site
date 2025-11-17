@@ -20,27 +20,29 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Who We Are */}
+      {/* Part of the Lawsons Group */}
       <section className="section-spacing bg-white">
         <div className="container-custom max-w-4xl">
-          <h2 className="text-center mb-8">Who We Are</h2>
+          <h2 className="text-center mb-8">Part of the Lawsons Group</h2>
 
           <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
             <p>
-              Lawsons CloudWorks is a trading name under <strong>Lawsons Enterprises Ltd</strong>, a
-              UK-based company that also operates Lawsons Creative, a web design service for small
-              businesses.
+              Lawsons CloudWorks is a trading name of <strong>Lawsons Enterprises Ltd</strong> (Company No: 16433965, VAT: GB495884223).
             </p>
 
             <p>
-              While Lawsons Creative focuses on helping SMEs get professional websites quickly and
-              affordably, CloudWorks is the "grown-up infrastructure cousin" – we help organisations
-              with their cloud architecture, modern workplace challenges, and automation needs.
+              Lawsons Enterprises also operates:
             </p>
 
+            <ul className="space-y-2 ml-6">
+              <li className="flex items-start space-x-2">
+                <span className="text-brand-sky mt-1">•</span>
+                <span><strong>Lawsons Creative</strong> – professional websites for small service businesses</span>
+              </li>
+            </ul>
+
             <p>
-              Think of us as the cloud consulting arm of a small, focused business that understands
-              how to deliver enterprise-quality work without enterprise drama or pricing.
+              This means CloudWorks benefits from being part of a small group rather than a one-off side project.
             </p>
           </div>
         </div>
@@ -49,7 +51,7 @@ export default function AboutPage() {
       {/* Principal Consultant */}
       <section className="section-spacing bg-brand-light">
         <div className="container-custom max-w-5xl">
-          <h2 className="text-center mb-12">Meet Andy</h2>
+          <h2 className="text-center mb-12">Principal Consultant</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-1">
@@ -63,28 +65,34 @@ export default function AboutPage() {
 
             <div className="lg:col-span-2 space-y-6 text-lg text-neutral-700 leading-relaxed">
               <p>
-                <strong className="text-brand-navy">Andy Lawson</strong> is the principal consultant
-                behind CloudWorks, with over 30 years' experience in IT infrastructure, systems, and
-                cloud architecture.
+                Andy has 30+ years in IT, with particular depth in:
+              </p>
+
+              <ul className="space-y-2 ml-6">
+                <li className="flex items-start space-x-2">
+                  <span className="text-brand-sky mt-1">•</span>
+                  <span>AWS (including running WorkSpaces for 4,000+ developers)</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-brand-sky mt-1">•</span>
+                  <span>Microsoft stack (M365, Azure, Intune, modern workplace)</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-brand-sky mt-1">•</span>
+                  <span>Cloud and hybrid architectures</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-brand-sky mt-1">•</span>
+                  <span>Developer tooling and automation</span>
+                </li>
+              </ul>
+
+              <p>
+                The CloudWorks approach blends strategic and hands-on work, with a bias toward documentation and knowledge transfer.
               </p>
 
               <p>
-                Most recently, Andy was responsible for running AWS WorkSpaces environments supporting
-                approximately 4,000 developers at scale – the kind of experience that teaches you what
-                actually works in production, not just in theory.
-              </p>
-
-              <p>
-                His background spans Microsoft-focused infrastructure, modern workplace technologies,
-                cloud migrations, and automation. Andy has worked across organisations of all sizes,
-                from small businesses to large enterprises, giving him a practical understanding of
-                what's realistic at different scales.
-              </p>
-
-              <p>
-                Based in Kent, Andy serves clients across the UK. CloudWorks was created to bring
-                enterprise-level cloud and workplace expertise to organisations who need it but don't
-                have enterprise budgets or patience for corporate nonsense.
+                For specialist areas, CloudWorks brings in trusted partners to ensure clients get the best expertise without compromise.
               </p>
 
               <div className="pt-4">
@@ -113,31 +121,37 @@ export default function AboutPage() {
           <div className="space-y-8">
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-brand-navy mb-4">
-                Clarity Over Jargon
+                Clarity over jargon
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
-                We explain technical decisions in plain English. You should understand the trade-offs,
-                not just be impressed by buzzwords.
+                We explain things in plain English and honest trade-offs.
               </p>
             </div>
 
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-brand-navy mb-4">
-                Realistic Scopes
+                Realistic scopes
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
-                No over-promising. We'd rather under-promise and over-deliver than leave you with
-                unfinished projects and vague explanations.
+                No over-promising. We tell you what&apos;s achievable and what&apos;s not.
               </p>
             </div>
 
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-brand-navy mb-4">
-                Documentation & Knowledge Transfer
+                Documentation & handover
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
-                You should own and understand your systems. Our goal is to make you less dependent
-                on consultants (including us), not more.
+                You own your systems. We make sure you understand them.
+              </p>
+            </div>
+
+            <div className="bg-neutral-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-semibold text-brand-navy mb-4">
+                Respect for in-house teams
+              </h3>
+              <p className="text-lg text-neutral-700 leading-relaxed">
+                No &quot;we&apos;re the heroes, your IT is stupid&quot; attitude. We work alongside existing teams, not against them.
               </p>
             </div>
 
@@ -146,18 +160,7 @@ export default function AboutPage() {
                 Independence
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
-                We're not tied to any vendors. Our recommendations are based on what actually fits
-                your situation, not what earns us commission.
-              </p>
-            </div>
-
-            <div className="bg-neutral-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-brand-navy mb-4">
-                Pragmatic Solutions
-              </h3>
-              <p className="text-lg text-neutral-700 leading-relaxed">
-                Enterprise thinking scaled for SMBs. We'll help you adopt the good parts of enterprise
-                practices without the bureaucracy and waste.
+                We help clients become less dependent on us, not more.
               </p>
             </div>
           </div>
