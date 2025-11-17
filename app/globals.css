@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-neutral-800 bg-white antialiased;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-semibold text-brand-navy leading-snug;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-medium text-brand-navy leading-snug;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-medium text-neutral-700 leading-normal;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-brand-sky text-white font-semibold rounded-lg
+           hover:bg-brand-navy transition-all duration-200
+           focus:ring-4 focus:ring-brand-sky focus:ring-opacity-30;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-brand-navy text-brand-navy font-semibold rounded-lg
+           hover:bg-brand-navy hover:text-white transition-all duration-200
+           focus:ring-4 focus:ring-brand-navy focus:ring-opacity-30;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 p-6;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-spacing {
+    @apply py-16 md:py-24;
+  }
+}
