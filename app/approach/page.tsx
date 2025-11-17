@@ -26,7 +26,7 @@ export default function ApproachPage() {
     {
       number: 4,
       title: 'Delivery & Check-ins',
-      description: 'Hands-on work with regular communication. You'll know what's happening and why.',
+      description: 'Hands-on work with regular communication. You\'ll know what\'s happening and why.',
     },
     {
       number: 5,

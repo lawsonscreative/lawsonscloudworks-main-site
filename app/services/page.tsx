@@ -106,9 +106,9 @@ export default function ServicesPage() {
         title="Advisory & Project Rescue"
         imagePosition="left"
         problems={[
-          '"We've started a project and it's going sideways"',
-          '"We think our setup is fragile but aren't sure where to start"',
-          '"We've received a vendor proposal and need a second opinion"',
+          '"We\'ve started a project and it\'s going sideways"',
+          '"We think our setup is fragile but aren\'t sure where to start"',
+          '"We\'ve received a vendor proposal and need a second opinion"',
           'Unclear technology roadmap and competing priorities',
         ]}
         services={[
