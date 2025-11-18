@@ -8,6 +8,7 @@ interface CaseStudyTeaserProps {
   outcome: string;
   link: string;
   engagementType?: string;
+  metric?: string;
 }
 
 export default function CaseStudyTeaser({
@@ -18,6 +19,7 @@ export default function CaseStudyTeaser({
   outcome,
   link,
   engagementType,
+  metric,
 }: CaseStudyTeaserProps) {
   const ariaLabel = `Read ${industry.toLowerCase()} case study: ${title}`;
 
@@ -29,6 +31,11 @@ export default function CaseStudyTeaser({
             {industry}
           </span>
           <span>{size}</span>
+          {metric && (
+            <span className="badge-metric">
+              {metric}
+            </span>
+          )}
         </div>
         <h3 className="text-2xl font-semibold text-brand-ink group-hover:text-brand-teal transition-colors">
           {title}

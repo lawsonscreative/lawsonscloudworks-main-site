@@ -228,8 +228,8 @@ export default function ServicesPage() {
         <div className="container-custom max-w-4xl">
           <h2 className="text-center mb-12">Frequently Asked Questions</h2>
 
-          <div className="space-y-8">
-            <div>
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-card-hover transition-all duration-250">
               <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Are you a full-service MSP or a specialist MSP?
               </h3>
@@ -238,7 +238,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div>
+            <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-card-hover transition-all duration-250">
               <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Are you our MSP?
               </h3>
@@ -250,7 +250,7 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            <div>
+            <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-card-hover transition-all duration-250">
               <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Do you provide 24/7 support?
               </h3>
@@ -259,7 +259,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div>
+            <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-card-hover transition-all duration-250">
               <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Do you handle SOC/MDR/cybersecurity?
               </h3>
@@ -269,7 +269,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div>
+            <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-card-hover transition-all duration-250">
               <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Do you work only with AWS and Microsoft?
               </h3>
@@ -279,7 +279,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div>
+            <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-card-hover transition-all duration-250">
               <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 What if we&apos;re smaller than 20 people or larger than 250?
               </h3>
@@ -289,7 +289,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div>
+            <div className="bg-white p-6 rounded-lg shadow-card hover:shadow-card-hover transition-all duration-250">
               <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 How do managed services start?
               </h3>

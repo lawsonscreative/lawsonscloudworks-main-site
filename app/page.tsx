@@ -62,7 +62,11 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {/* Card 1 - Multi-Thousand User Experience */}
               <div className="bg-white p-8 rounded-lg border border-brand-border hover:shadow-lg transition-all duration-300 text-center">
-                <div className="text-5xl mb-4 text-brand-teal">☁️</div>
+                <div className="w-16 h-16 mx-auto mb-4 text-brand-teal">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-full h-full">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                  </svg>
+                </div>
                 <div className="text-xl font-bold text-brand-ink mb-2">Multi-Thousand User Environments</div>
                 <p className="text-sm text-brand-slate leading-relaxed">
                   Multi-thousand user experience – distilled for 20-250 person teams. We've operated large-scale platforms in regulated sectors and now bring that thinking to mid-sized organisations.
@@ -71,7 +75,11 @@ export default function Home() {
 
               {/* Card 2 - Platform Expertise */}
               <div className="bg-white p-8 rounded-lg border border-brand-border hover:shadow-lg transition-all duration-300 text-center">
-                <div className="text-5xl mb-4 text-brand-teal">⚡</div>
+                <div className="w-16 h-16 mx-auto mb-4 text-brand-teal">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-full h-full">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
                 <div className="text-xl font-bold text-brand-ink mb-2">AWS + M365 + Intune</div>
                 <p className="text-sm text-brand-slate leading-relaxed">
                   AWS + Microsoft 365 + Intune – joined-up, not stitched together. Cloud workspaces that actually work with your identity, endpoints and compliance needs.
@@ -80,7 +88,11 @@ export default function Home() {
 
               {/* Card 3 - Senior Experience */}
               <div className="bg-white p-8 rounded-lg border border-brand-border hover:shadow-lg transition-all duration-300 text-center">
-                <div className="text-5xl mb-4 text-brand-teal">📅</div>
+                <div className="w-16 h-16 mx-auto mb-4 text-brand-teal">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-full h-full">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
                 <div className="text-xl font-bold text-brand-ink mb-2">Senior Experience</div>
                 <p className="text-sm text-brand-slate leading-relaxed">
                   Senior hands on your environment, not juniors learning on it. You get experienced infrastructure expertise applied to day-to-day operations.
@@ -89,7 +101,11 @@ export default function Home() {
 
               {/* Card 4 - Battle-Tested Processes */}
               <div className="bg-white p-8 rounded-lg border border-brand-border hover:shadow-lg transition-all duration-300 text-center">
-                <div className="text-5xl mb-4 text-brand-teal">🛡️</div>
+                <div className="w-16 h-16 mx-auto mb-4 text-brand-teal">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-full h-full">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
                 <div className="text-xl font-bold text-brand-ink mb-2">Battle-Tested Processes</div>
                 <p className="text-sm text-brand-slate leading-relaxed">
                   Battle-tested processes for keeping things running. Baseline, patch, back up, document, repeat. Boring reliability instead of exciting drama.
@@ -176,6 +192,7 @@ Model: Monthly retainer • Best for: Growing teams needing strategic guidance"
                 outcome="AWS-hosted platform reduced connection issues by ~80% and improved developer satisfaction."
                 link="/case-studies/remote-dev-modernisation"
                 engagementType="Cloud & Workspace Health Check"
+                metric="↓80% issues"
               />
               <CaseStudyTeaser
                 title="Cloud Migration & Cost Cut"
@@ -185,6 +202,7 @@ Model: Monthly retainer • Best for: Growing teams needing strategic guidance"
                 outcome="Microsoft 365 migration cut monthly costs by ~30% and freed 15 hours/week of IT time."
                 link="/case-studies/cloud-migration"
                 engagementType="Cloud & Workspace Health Check"
+                metric="↓30% costs"
               />
             </div>
 
