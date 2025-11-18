@@ -10,14 +10,14 @@ export default function CaseStudiesPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="section-spacing bg-gradient-to-br from-brand-light to-white">
-        <div className="container-custom max-w-4xl text-center">
-          <h1 className="mb-6">Case Studies</h1>
-          <p className="text-xl text-neutral-700 leading-relaxed mb-4">
-            These examples are drawn from Andy&apos;s work in senior consulting, contracting and technical lead roles over the last decade and more.
+      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
+        <div className="container-custom max-w-4xl text-center space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white">Case Studies</h1>
+          <p className="text-xl text-white">
+            Real projects from Andy's senior consulting and technical lead roles.
           </p>
-          <p className="text-lg text-neutral-600 leading-relaxed">
-            Some of the projects pre-date Lawsons CloudWorks, so details are anonymised and presented as representative scenarios rather than formal endorsements. They are here to show the kinds of challenges we tackle and the outcomes we aim for – not to promise identical results in every engagement.
+          <p className="text-lg text-white/90">
+            Some pre-date CloudWorks and are anonymised. Representative scenarios, not identical guarantees.
           </p>
         </div>
       </section>

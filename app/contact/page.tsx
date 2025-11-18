@@ -10,11 +10,11 @@ export default function ContactPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="section-spacing bg-gradient-to-br from-brand-light to-white">
-        <div className="container-custom max-w-4xl text-center">
-          <h1 className="mb-6">Get in Touch</h1>
-          <p className="text-xl text-neutral-700 leading-relaxed">
-            Book a discovery call or send us a message. We usually reply within one business day.
+      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
+        <div className="container-custom max-w-4xl text-center space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white">Get in Touch</h1>
+          <p className="text-xl text-white">
+            Book a discovery call or send a message. We reply within one business day.
           </p>
         </div>
       </section>

@@ -10,14 +10,14 @@ export default function AboutPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="section-spacing bg-gradient-to-br from-brand-light to-white">
-        <div className="container-custom max-w-4xl text-center">
-          <h1 className="mb-6">About Lawsons CloudWorks</h1>
-          <p className="text-xl text-neutral-700 leading-relaxed mb-4">
-            Lawsons CloudWorks is a new consultancy brand founded in 2025, built on over three decades of hands-on infrastructure, workspace and cloud experience.
+      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
+        <div className="container-custom max-w-4xl text-center space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white">About Lawsons CloudWorks</h1>
+          <p className="text-xl text-white">
+            A new consultancy brand founded in 2025, built on three decades of hands-on experience.
           </p>
-          <p className="text-lg text-neutral-600 leading-relaxed">
-            The brand is new; the patterns, lessons and scars it draws on are not.
+          <p className="text-lg text-white/90">
+            The brand is new; the patterns, lessons and scars are not.
           </p>
         </div>
       </section>

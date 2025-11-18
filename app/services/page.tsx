@@ -12,20 +12,13 @@ export default function ServicesPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="relative bg-gradient-to-br from-neutral-900 via-brand-navy to-neutral-900 text-white py-20">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }}></div>
-        </div>
-
-        <div className="container-custom max-w-3xl relative z-10 text-center space-y-6">
-          <h1 className="text-5xl font-bold mb-6">Services</h1>
-          <p className="text-xl text-brand-light">
+      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
+        <div className="container-custom max-w-3xl relative z-10 text-center space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white">Services</h1>
+          <p className="text-xl text-white">
             Consulting and project delivery for 20–250 person UK organisations.
           </p>
-          <p className="text-lg text-white/80">
+          <p className="text-lg text-white/90">
             Most clients start with a Health Check. From there, we execute or advise.
           </p>
         </div>

@@ -14,35 +14,27 @@ export default function Home() {
     <>
       {/* Add top padding to account for fixed nav */}
       <div className="pt-20">
-        {/* Hero Section - Dark with Visual Impact */}
-        <section className="relative bg-gradient-to-br from-neutral-900 via-brand-navy to-neutral-900 text-white overflow-hidden">
-          {/* Background pattern overlay */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)',
-              backgroundSize: '40px 40px'
-            }}></div>
-          </div>
-
-          <div className="container-custom relative z-10 py-24 md:py-32">
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white overflow-hidden">
+          <div className="container-custom relative z-10 py-16 md:py-20">
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
                 Cloud, workspaces and automation for teams who need enterprise thinking without enterprise drama
               </h1>
 
-              <p className="text-xl md:text-2xl text-brand-light font-medium">
+              <p className="text-xl md:text-2xl text-white font-medium">
                 We help UK organisations modernise infrastructure, secure endpoints, and automate the tedious stuff.
               </p>
 
-              <p className="text-base md:text-lg text-white/80">
+              <p className="text-base md:text-lg text-white/90">
                 Best suited to teams of 20–250 people with remote developers or distributed workers.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Link href="/contact" className="inline-block px-8 py-4 bg-brand-sky text-white font-semibold rounded-lg hover:bg-brand-light hover:text-brand-navy transition-all duration-200 text-lg shadow-lg">
+                <Link href="/contact" className="inline-block px-8 py-4 bg-brand-sky text-white font-semibold rounded-lg hover:bg-white hover:text-brand-navy transition-all duration-200 text-lg shadow-lg">
                   Book a Discovery Call
                 </Link>
-                <Link href="/services" className="inline-block px-8 py-4 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-200 text-lg border border-white/20">
+                <Link href="/services" className="inline-block px-8 py-4 bg-white/20 text-white font-semibold rounded-lg hover:bg-white hover:text-brand-navy transition-all duration-200 text-lg border border-white/30">
                   Explore Our Services
                 </Link>
               </div>

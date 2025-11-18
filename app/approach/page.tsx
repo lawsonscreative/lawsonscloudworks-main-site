@@ -38,12 +38,11 @@ export default function ApproachPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="section-spacing bg-gradient-to-br from-brand-light to-white">
-        <div className="container-custom max-w-4xl text-center">
-          <h1 className="mb-6">Our Approach</h1>
-          <p className="text-xl text-neutral-700 leading-relaxed">
-            We're not a typical MSP or a big consultancy. Here's how we work with clients and
-            what makes us different.
+      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
+        <div className="container-custom max-w-4xl text-center space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white">Our Approach</h1>
+          <p className="text-xl text-white">
+            Not a typical MSP. Not a big consultancy. Here's how we work.
           </p>
         </div>
       </section>
