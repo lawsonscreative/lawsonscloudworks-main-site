@@ -1,14 +1,33 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import StructuredData from '@/components/StructuredData';
+import { organizationSchema, getCaseStudySchema, getBreadcrumbSchema } from '@/lib/structuredData';
 
 export const metadata: Metadata = {
-  title: 'Cloud Migration & Cost Optimisation | Case Study | Lawsons CloudWorks',
-  description: 'How we helped a professional services firm migrate to Microsoft 365, reducing costs by 30% while improving security and reliability.',
+  title: 'Microsoft 365 Migration Case Study | Cloud Cost Optimisation | Lawsons CloudWorks',
+  description: 'Microsoft 365 migration for 50-person consultancy. Reduced monthly costs by 33%, saved 15 hours/week IT time. UK managed cloud workspace case study.',
 };
 
 export default function CaseStudyPage() {
+  const caseStudySchema = getCaseStudySchema({
+    url: 'https://www.lawsonscloudworks.co.uk/case-studies/cloud-migration',
+    title: 'Cloud Migration & Cost Optimisation: Microsoft 365 Implementation',
+    description: 'Full migration to Microsoft 365 for a 50-person consultancy, reducing monthly costs by roughly a third and freeing up around 15 hours per week of IT time through automation and documented processes.',
+    industry: 'Professional Services',
+    companySize: '50 employees',
+    datePublished: '2025-01-15',
+    keywords: ['Microsoft 365 migration', 'cloud cost optimisation', 'IT automation', 'managed service provider UK', 'security baseline', 'disaster recovery'],
+  });
+
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.lawsonscloudworks.co.uk' },
+    { name: 'Case Studies', url: 'https://www.lawsonscloudworks.co.uk/case-studies' },
+    { name: 'Cloud Migration', url: 'https://www.lawsonscloudworks.co.uk/case-studies/cloud-migration' },
+  ]);
+
   return (
     <div className="pt-20">
+      <StructuredData data={[organizationSchema, caseStudySchema, breadcrumbs]} />
       <article className="section-spacing bg-white">
         <div className="container-custom max-w-4xl">
           {/* Back Link */}

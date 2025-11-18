@@ -222,3 +222,50 @@ export const websiteSchema = {
   },
   inLanguage: 'en-GB',
 };
+
+export function getCaseStudySchema(params: {
+  url: string;
+  title: string;
+  description: string;
+  industry: string;
+  companySize: string;
+  datePublished: string;
+  keywords: string[];
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${params.url}#article`,
+    headline: params.title,
+    description: params.description,
+    url: params.url,
+    datePublished: params.datePublished,
+    dateModified: params.datePublished,
+    author: {
+      '@id': 'https://www.lawsonscloudworks.co.uk/#organization',
+    },
+    publisher: {
+      '@id': 'https://www.lawsonscloudworks.co.uk/#organization',
+    },
+    about: [
+      {
+        '@type': 'Thing',
+        name: params.industry,
+      },
+      {
+        '@type': 'Service',
+        name: 'Managed Cloud Workspace Service',
+        provider: {
+          '@id': 'https://www.lawsonscloudworks.co.uk/#organization',
+        },
+      },
+    ],
+    keywords: params.keywords.join(', '),
+    articleSection: 'Case Study',
+    inLanguage: 'en-GB',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': params.url,
+    },
+  };
+}

@@ -301,6 +301,60 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Related Case Studies */}
+      <section className="section-spacing bg-neutral-50">
+        <div className="container-custom max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="mb-4">See These Services in Action</h2>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+              Real examples of how we've helped UK organisations modernise their <Link href="/case-studies/remote-dev-modernisation" className="text-brand-teal hover:underline">cloud workspaces</Link>, optimise <Link href="/case-studies/cloud-migration" className="text-brand-teal hover:underline">Microsoft 365 environments</Link>, and reduce infrastructure costs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Link href="/case-studies/remote-dev-modernisation" className="card group h-full flex flex-col hover:border-brand-teal transition-all">
+              <div className="mb-4">
+                <span className="inline-block px-3 py-1 bg-brand-teal-soft text-brand-teal text-sm font-semibold rounded">
+                  Cloud Workspace Modernisation
+                </span>
+              </div>
+              <h3 className="text-2xl font-semibold text-brand-ink mb-3 group-hover:text-brand-teal transition-colors">
+                AWS WorkSpaces Migration for Remote Development Team
+              </h3>
+              <p className="text-neutral-600 mb-4 flex-grow">
+                How we helped a 200-person software company move from legacy VPN to AWS-hosted virtual desktops, reducing connection issues by 80% and improving developer satisfaction.
+              </p>
+              <div className="text-brand-teal font-semibold group-hover:underline">
+                Read case study →
+              </div>
+            </Link>
+
+            <Link href="/case-studies/cloud-migration" className="card group h-full flex flex-col hover:border-brand-teal transition-all">
+              <div className="mb-4">
+                <span className="inline-block px-3 py-1 bg-brand-teal-soft text-brand-teal text-sm font-semibold rounded">
+                  Cloud Migration & Cost Optimisation
+                </span>
+              </div>
+              <h3 className="text-2xl font-semibold text-brand-ink mb-3 group-hover:text-brand-teal transition-colors">
+                Microsoft 365 Migration & Security Baseline
+              </h3>
+              <p className="text-neutral-600 mb-4 flex-grow">
+                Full migration to Microsoft 365 for a 50-person consultancy, reducing monthly costs by a third and freeing up 15 hours per week of IT time through automation.
+              </p>
+              <div className="text-brand-teal font-semibold group-hover:underline">
+                Read case study →
+              </div>
+            </Link>
+          </div>
+
+          <div className="text-center mt-8">
+            <Link href="/case-studies" className="text-brand-teal hover:text-brand-ink font-semibold text-lg hover:underline">
+              View all case studies →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-spacing bg-white">
         <div className="container-custom text-center">

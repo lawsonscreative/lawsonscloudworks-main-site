@@ -1,14 +1,33 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import StructuredData from '@/components/StructuredData';
+import { organizationSchema, getCaseStudySchema, getBreadcrumbSchema } from '@/lib/structuredData';
 
 export const metadata: Metadata = {
-  title: 'Modernising Remote Development Environment | Case Study | Lawsons CloudWorks',
-  description: 'How we helped a 200-person software company migrate from legacy VPN to AWS WorkSpaces, improving developer productivity and reducing connection issues.',
+  title: 'AWS WorkSpaces Migration Case Study | Remote Development Environment | Lawsons CloudWorks',
+  description: 'AWS WorkSpaces migration for 200-person software company. Reduced VPN connection issues by 80%, improved developer productivity. UK cloud workspace modernisation.',
 };
 
 export default function CaseStudyPage() {
+  const caseStudySchema = getCaseStudySchema({
+    url: 'https://www.lawsonscloudworks.co.uk/case-studies/remote-dev-modernisation',
+    title: 'Modernising Remote Development Environment: AWS WorkSpaces Migration',
+    description: 'How we helped a 200-person software company migrate from legacy VPN to AWS-hosted virtual desktops, reducing connection issues by around 80% and improving developer satisfaction.',
+    industry: 'Software Development',
+    companySize: '200 employees',
+    datePublished: '2025-01-15',
+    keywords: ['AWS WorkSpaces', 'cloud migration', 'remote development', 'VPN replacement', 'developer productivity', 'cloud workspace', 'managed service provider UK'],
+  });
+
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.lawsonscloudworks.co.uk' },
+    { name: 'Case Studies', url: 'https://www.lawsonscloudworks.co.uk/case-studies' },
+    { name: 'Remote Dev Modernisation', url: 'https://www.lawsonscloudworks.co.uk/case-studies/remote-dev-modernisation' },
+  ]);
+
   return (
     <div className="pt-20">
+      <StructuredData data={[organizationSchema, caseStudySchema, breadcrumbs]} />
       <article className="section-spacing bg-white">
         <div className="container-custom max-w-4xl">
           {/* Back Link */}
