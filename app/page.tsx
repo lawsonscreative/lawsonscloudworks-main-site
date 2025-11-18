@@ -15,26 +15,26 @@ export default function Home() {
       {/* Add top padding to account for fixed nav */}
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white overflow-hidden">
+        <section className="relative bg-page-bg overflow-hidden">
           <div className="container-custom relative z-10 py-16 md:py-20">
             <div className="max-w-4xl mx-auto text-center space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-brand-ink">
                 Managed cloud workspaces and endpoints without the enterprise drama
               </h1>
 
-              <p className="text-xl md:text-2xl text-white font-medium">
+              <p className="text-xl md:text-2xl text-brand-slate font-medium">
                 Specialist MSP for small and mid-sized UK organisations with remote and hybrid teams. Real expertise, realistic scopes, plain English.
               </p>
 
-              <p className="text-base md:text-lg text-white/90">
+              <p className="text-base md:text-lg text-neutral-600">
                 Best suited to teams of 20–250 people who need ongoing management of Microsoft 365, AWS workspaces, Intune endpoints and dev tooling.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Link href="/contact" className="inline-block px-8 py-4 bg-brand-sky text-white font-semibold rounded-lg hover:bg-white hover:text-brand-navy transition-all duration-200 text-lg shadow-lg">
+                <Link href="/contact" className="inline-block px-8 py-4 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-dark transition-all duration-200 text-lg shadow-lg">
                   Book a Discovery Call
                 </Link>
-                <Link href="/services" className="inline-block px-8 py-4 bg-white/20 text-white font-semibold rounded-lg hover:bg-white hover:text-brand-navy transition-all duration-200 text-lg border border-white/30">
+                <Link href="/services" className="inline-block px-8 py-4 border-2 border-brand-teal text-brand-teal font-semibold rounded-lg hover:bg-brand-teal hover:text-white transition-all duration-200 text-lg">
                   Explore Our Services
                 </Link>
               </div>
@@ -51,37 +51,37 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {/* Capability 1 - Multi-thousand User Experience */}
-              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
-                <div className="text-5xl mb-4">☁️</div>
-                <div className="text-xl font-bold text-brand-navy mb-2">Multi-Thousand User Environments</div>
-                <p className="text-sm text-neutral-600 leading-relaxed">
+              <div className="bg-white p-8 rounded-lg border border-brand-border hover:shadow-lg transition-all duration-300 text-center">
+                <div className="text-5xl mb-4 text-brand-teal">☁️</div>
+                <div className="text-xl font-bold text-brand-ink mb-2">Multi-Thousand User Environments</div>
+                <p className="text-sm text-brand-slate leading-relaxed">
                   Experience operating cloud workspaces and remote access platforms for large UK organisations in regulated sectors
                 </p>
               </div>
 
               {/* Capability 2 - Platform Expertise */}
-              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
-                <div className="text-5xl mb-4">⚡</div>
-                <div className="text-xl font-bold text-brand-navy mb-2">AWS + M365 + Intune</div>
-                <p className="text-sm text-neutral-600 leading-relaxed">
+              <div className="bg-white p-8 rounded-lg border border-brand-border hover:shadow-lg transition-all duration-300 text-center">
+                <div className="text-5xl mb-4 text-brand-teal">⚡</div>
+                <div className="text-xl font-bold text-brand-ink mb-2">AWS + M365 + Intune</div>
+                <p className="text-sm text-brand-slate leading-relaxed">
                   Deep expertise across AWS, Azure, Microsoft 365, Intune, AVD and hybrid infrastructure estates
                 </p>
               </div>
 
               {/* Capability 3 - Years */}
-              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
-                <div className="text-5xl mb-4">📅</div>
-                <div className="text-xl font-bold text-brand-navy mb-2">30+ Years</div>
-                <p className="text-sm text-neutral-600 leading-relaxed">
+              <div className="bg-white p-8 rounded-lg border border-brand-border hover:shadow-lg transition-all duration-300 text-center">
+                <div className="text-5xl mb-4 text-brand-teal">📅</div>
+                <div className="text-xl font-bold text-brand-ink mb-2">30+ Years</div>
+                <p className="text-sm text-brand-slate leading-relaxed">
                   IT infrastructure design, implementation and day-to-day operations
                 </p>
               </div>
 
               {/* Capability 4 - Battle-Tested Processes */}
-              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
-                <div className="text-5xl mb-4">🛡️</div>
-                <div className="text-xl font-bold text-brand-navy mb-2">Battle-Tested Processes</div>
-                <p className="text-sm text-neutral-600 leading-relaxed">
+              <div className="bg-white p-8 rounded-lg border border-brand-border hover:shadow-lg transition-all duration-300 text-center">
+                <div className="text-5xl mb-4 text-brand-teal">🛡️</div>
+                <div className="text-xl font-bold text-brand-ink mb-2">Battle-Tested Processes</div>
+                <p className="text-sm text-brand-slate leading-relaxed">
                   Endpoint baselines, patching, backup/DR and change management for critical environments
                 </p>
               </div>
@@ -179,17 +179,17 @@ export default function Home() {
         </section>
 
         {/* Final CTA */}
-        <section className="section-spacing bg-gradient-to-br from-brand-navy to-brand-sky text-white">
+        <section className="section-spacing bg-gradient-to-br from-brand-ink to-brand-teal text-white">
           <div className="container-custom text-center">
             <h2 className="text-white mb-6">
               Let&apos;s Untangle Your Cloud and Workspace
             </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto text-brand-light">
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-brand-teal-soft">
               Most clients start with an on-ramp project, then transition to monthly managed services. Book a discovery call to explore whether we&apos;re the right fit.
             </p>
             <Link
               href="/contact"
-              className="inline-block px-8 py-4 bg-white text-brand-navy font-semibold rounded-lg hover:bg-brand-light transition-all duration-200 text-lg shadow-lg"
+              className="inline-block px-8 py-4 bg-white text-brand-ink font-semibold rounded-lg hover:bg-brand-teal-soft transition-all duration-200 text-lg shadow-lg"
             >
               Book a Discovery Call
             </Link>

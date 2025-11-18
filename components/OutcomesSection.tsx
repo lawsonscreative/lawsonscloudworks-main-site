@@ -11,7 +11,7 @@ export default function OutcomesSection() {
   ];
 
   return (
-    <section className="section-spacing bg-brand-light">
+    <section className="section-spacing bg-brand-teal-soft">
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="mb-4">What We Help You Achieve</h2>
@@ -24,10 +24,10 @@ export default function OutcomesSection() {
           {outcomes.map((outcome, index) => (
             <div
               key={index}
-              className="flex items-center space-x-3 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-brand-sky/10"
+              className="flex items-center space-x-3 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-brand-teal/10"
             >
               <svg
-                className="w-8 h-8 text-brand-sky flex-shrink-0"
+                className="w-8 h-8 text-brand-teal flex-shrink-0"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >

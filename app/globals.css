@@ -4,23 +4,23 @@
 
 @layer base {
   body {
-    @apply text-neutral-800 bg-white antialiased;
+    @apply text-neutral-900 bg-page-bg antialiased;
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-brand-ink leading-tight;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl font-semibold text-brand-navy leading-snug;
+    @apply text-3xl md:text-4xl font-semibold text-brand-ink leading-snug;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl font-medium text-brand-navy leading-snug;
+    @apply text-2xl md:text-3xl font-semibold text-brand-ink leading-snug;
   }
 
   h4 {
-    @apply text-xl md:text-2xl font-medium text-neutral-700 leading-normal;
+    @apply text-xl md:text-2xl font-semibold text-brand-slate leading-normal;
   }
 
   p {
@@ -34,19 +34,19 @@
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-brand-sky text-white font-semibold rounded-lg
-           hover:bg-brand-navy transition-all duration-200
-           focus:ring-4 focus:ring-brand-sky focus:ring-opacity-30;
+    @apply px-6 py-3 bg-brand-teal text-white font-semibold rounded-lg
+           hover:bg-brand-teal-dark transition-all duration-200
+           focus:ring-4 focus:ring-brand-teal focus:ring-opacity-30;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 border-2 border-brand-navy text-brand-navy font-semibold rounded-lg
-           hover:bg-brand-navy hover:text-white transition-all duration-200
-           focus:ring-4 focus:ring-brand-navy focus:ring-opacity-30;
+    @apply px-6 py-3 border-2 border-brand-teal text-brand-teal font-semibold rounded-lg
+           hover:bg-brand-teal hover:text-white transition-all duration-200
+           focus:ring-4 focus:ring-brand-teal focus:ring-opacity-30;
   }
 
   .card {
-    @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 p-6;
+    @apply bg-white rounded-lg border border-brand-border hover:shadow-lg transition-shadow duration-200 p-6;
   }
 
   .container-custom {

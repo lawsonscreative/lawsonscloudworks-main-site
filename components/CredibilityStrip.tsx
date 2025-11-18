@@ -5,8 +5,8 @@ export default function CredibilityStrip() {
       label: 'Years in IT',
     },
     {
-      number: '4,000+',
-      label: 'Developer workspaces managed',
+      number: 'Multi-Thousand',
+      label: 'User environments operated',
     },
     {
       number: 'AWS & Microsoft',
@@ -19,15 +19,15 @@ export default function CredibilityStrip() {
   ];
 
   return (
-    <section className="py-12 bg-white border-y border-neutral-200">
+    <section className="py-12 bg-white border-y border-brand-border">
       <div className="container-custom">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {credentials.map((item, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-brand-navy mb-2">
+              <div className="text-3xl md:text-4xl font-bold text-brand-ink mb-2">
                 {item.number}
               </div>
-              <div className="text-sm md:text-base text-neutral-600">
+              <div className="text-sm md:text-base text-brand-slate">
                 {item.label}
               </div>
             </div>

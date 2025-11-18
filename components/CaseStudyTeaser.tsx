@@ -23,12 +23,12 @@ export default function CaseStudyTeaser({
     <Link href={link} className="card group h-full flex flex-col">
       <div className="mb-4">
         <div className="flex flex-wrap items-center gap-2 text-sm text-neutral-500 mb-3">
-          <span className="bg-brand-light text-brand-navy px-3 py-1 rounded-full font-medium">
+          <span className="bg-brand-teal-soft text-brand-ink px-3 py-1 rounded-full font-medium">
             {industry}
           </span>
           <span>{size}</span>
         </div>
-        <h3 className="text-2xl font-semibold text-brand-navy group-hover:text-brand-sky transition-colors">
+        <h3 className="text-2xl font-semibold text-brand-ink group-hover:text-brand-teal transition-colors">
           {title}
         </h3>
         {engagementType && (
@@ -50,7 +50,7 @@ export default function CaseStudyTeaser({
         </div>
       </div>
 
-      <div className="mt-6 text-brand-sky font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+      <div className="mt-6 text-brand-teal font-semibold flex items-center group-hover:translate-x-2 transition-transform">
         Read case study
         <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

@@ -108,7 +108,7 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
+          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
         />
       </div>
 
@@ -124,7 +124,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
+          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
         />
       </div>
 
@@ -140,7 +140,7 @@ export default function ContactForm() {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
+            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
           />
         </div>
 
@@ -154,7 +154,7 @@ export default function ContactForm() {
             name="role"
             value={formData.role}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
+            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
           />
         </div>
       </div>
@@ -170,7 +170,7 @@ export default function ContactForm() {
             name="companySize"
             value={formData.companySize}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
+            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
           >
             <option value="">Select size</option>
             <option value="1-19">1-19 people</option>
@@ -191,7 +191,7 @@ export default function ContactForm() {
             name="currentMSP"
             value={formData.currentMSP}
             onChange={handleChange}
-            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
+            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
           >
             <option value="">Select option</option>
             <option value="yes-happy">Yes, and happy with them</option>
@@ -223,7 +223,7 @@ export default function ContactForm() {
                 type="checkbox"
                 checked={formData.services.includes(service)}
                 onChange={() => handleCheckboxChange(service)}
-                className="w-5 h-5 text-brand-sky border-neutral-300 rounded focus:ring-brand-sky"
+                className="w-5 h-5 text-brand-teal border-neutral-300 rounded focus:ring-brand-teal"
               />
               <span className="text-neutral-700">{service}</span>
             </label>
@@ -241,7 +241,7 @@ export default function ContactForm() {
           name="urgency"
           value={formData.urgency}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
+          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
         >
           <option value="">Select urgency</option>
           <option value="urgent">Urgent (days)</option>
@@ -263,7 +263,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           rows={6}
-          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors resize-vertical"
+          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors resize-vertical"
           placeholder="Tell us about your project or challenges..."
         />
       </div>
@@ -289,13 +289,13 @@ export default function ContactForm() {
       <div className="space-y-2">
         <p className="text-sm text-neutral-600 text-center">
           We usually reply within one UK business day. Prefer email?{' '}
-          <a href="mailto:hello@lawsonscloudworks.co.uk" className="text-brand-sky hover:text-brand-navy">
+          <a href="mailto:hello@lawsonscloudworks.co.uk" className="text-brand-teal hover:text-brand-ink">
             hello@lawsonscloudworks.co.uk
           </a>
         </p>
         <p className="text-xs text-neutral-500 text-center">
           We'll only use your details to respond to your enquiry. For more, see our{' '}
-          <a href="/privacy" className="text-brand-sky hover:text-brand-navy underline">
+          <a href="/privacy" className="text-brand-teal hover:text-brand-ink underline">
             Privacy Policy
           </a>
           .

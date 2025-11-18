@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
+      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
         <div className="container-custom max-w-4xl text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">About Lawsons CloudWorks</h1>
           <p className="text-xl text-white">
@@ -38,7 +38,7 @@ export default function AboutPage() {
 
             <ul className="space-y-2 ml-6">
               <li className="flex items-start space-x-2">
-                <span className="text-brand-sky mt-1">•</span>
+                <span className="text-brand-teal mt-1">•</span>
                 <span><strong>Lawsons Creative</strong> – professional websites for small service businesses</span>
               </li>
             </ul>
@@ -51,13 +51,13 @@ export default function AboutPage() {
       </section>
 
       {/* Principal Consultant */}
-      <section className="section-spacing bg-brand-light">
+      <section className="section-spacing bg-brand-teal-soft">
         <div className="container-custom max-w-5xl">
           <h2 className="text-center mb-12">Principal Consultant</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-1">
-              <div className="bg-gradient-to-br from-brand-navy to-brand-sky rounded-lg aspect-square flex items-center justify-center text-white">
+              <div className="bg-gradient-to-br from-brand-ink to-brand-teal rounded-lg aspect-square flex items-center justify-center text-white">
                 <div className="text-center p-8">
                   <div className="text-7xl mb-2">👤</div>
                   <p className="text-lg font-semibold">Andy Lawson</p>
@@ -73,19 +73,19 @@ export default function AboutPage() {
 
               <ul className="space-y-2 ml-6">
                 <li className="flex items-start space-x-2">
-                  <span className="text-brand-sky mt-1">•</span>
+                  <span className="text-brand-teal mt-1">•</span>
                   <span>Cloud workspace platforms (AWS, Microsoft 365, Azure Virtual Desktop)</span>
                 </li>
                 <li className="flex items-start space-x-2">
-                  <span className="text-brand-sky mt-1">•</span>
+                  <span className="text-brand-teal mt-1">•</span>
                   <span>Modern endpoint management (Intune, Autopilot, device compliance)</span>
                 </li>
                 <li className="flex items-start space-x-2">
-                  <span className="text-brand-sky mt-1">•</span>
+                  <span className="text-brand-teal mt-1">•</span>
                   <span>Identity and access management (Entra ID, Conditional Access, SSO)</span>
                 </li>
                 <li className="flex items-start space-x-2">
-                  <span className="text-brand-sky mt-1">•</span>
+                  <span className="text-brand-teal mt-1">•</span>
                   <span>Developer tooling and automation (GitHub Actions, CI/CD, IaC)</span>
                 </li>
               </ul>
@@ -96,19 +96,19 @@ export default function AboutPage() {
 
               <ul className="space-y-2 ml-6 text-base">
                 <li className="flex items-start space-x-2">
-                  <span className="text-brand-sky mt-1">•</span>
+                  <span className="text-brand-teal mt-1">•</span>
                   <span>Large UK insurers and financial services organisations</span>
                 </li>
                 <li className="flex items-start space-x-2">
-                  <span className="text-brand-sky mt-1">•</span>
+                  <span className="text-brand-teal mt-1">•</span>
                   <span>NHS organisations and healthcare providers</span>
                 </li>
                 <li className="flex items-start space-x-2">
-                  <span className="text-brand-sky mt-1">•</span>
+                  <span className="text-brand-teal mt-1">•</span>
                   <span>Critical national infrastructure and transport hubs</span>
                 </li>
                 <li className="flex items-start space-x-2">
-                  <span className="text-brand-sky mt-1">•</span>
+                  <span className="text-brand-teal mt-1">•</span>
                   <span>Multi-thousand user environments requiring high availability and security</span>
                 </li>
               </ul>
@@ -126,7 +126,7 @@ export default function AboutPage() {
                   href="https://www.linkedin.com/in/andrewlawson/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-brand-sky hover:text-brand-navy font-semibold transition-colors"
+                  className="inline-flex items-center text-brand-teal hover:text-brand-ink font-semibold transition-colors"
                 >
                   Connect on LinkedIn
                   <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
@@ -148,11 +148,11 @@ export default function AboutPage() {
             {/* 2020s - Present */}
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-navy">2020s</p>
+                <p className="text-lg font-semibold text-brand-ink">2020s</p>
               </div>
-              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
+              <div className="flex-shrink-0 w-px bg-brand-teal"></div>
               <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-navy mb-2">Cloud-Native Platforms</h3>
+                <h3 className="text-xl font-semibold text-brand-ink mb-2">Cloud-Native Platforms</h3>
                 <p className="text-neutral-700 leading-relaxed">
                   Led design and operations of AWS-hosted developer platforms for multi-thousand user environments in large UK insurers and financial services organisations. Focus on automation, capacity planning and developer experience.
                 </p>
@@ -162,11 +162,11 @@ export default function AboutPage() {
             {/* 2010s */}
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-navy">2010s</p>
+                <p className="text-lg font-semibold text-brand-ink">2010s</p>
               </div>
-              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
+              <div className="flex-shrink-0 w-px bg-brand-teal"></div>
               <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-navy mb-2">Cloud Migration & Modern Workspaces</h3>
+                <h3 className="text-xl font-semibold text-brand-ink mb-2">Cloud Migration & Modern Workspaces</h3>
                 <p className="text-neutral-700 leading-relaxed">
                   Microsoft 365 migrations, VDI implementations and hybrid infrastructure for NHS organisations, healthcare providers and professional services firms. Significant focus on remote access enablement during COVID-19 pandemic for multi-thousand user NHS estates.
                 </p>
@@ -176,11 +176,11 @@ export default function AboutPage() {
             {/* 2000s */}
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-navy">2000s</p>
+                <p className="text-lg font-semibold text-brand-ink">2000s</p>
               </div>
-              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
+              <div className="flex-shrink-0 w-px bg-brand-teal"></div>
               <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-navy mb-2">Enterprise IT & Critical Infrastructure</h3>
+                <h3 className="text-xl font-semibold text-brand-ink mb-2">Enterprise IT & Critical Infrastructure</h3>
                 <p className="text-neutral-700 leading-relaxed">
                   Infrastructure projects for critical national infrastructure, transport hubs and large enterprises. Built expertise in high-availability systems, disaster recovery and complex enterprise environments during the transition from physical to virtualised infrastructure.
                 </p>
@@ -190,11 +190,11 @@ export default function AboutPage() {
             {/* 1990s */}
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-navy">1990s</p>
+                <p className="text-lg font-semibold text-brand-ink">1990s</p>
               </div>
-              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
+              <div className="flex-shrink-0 w-px bg-brand-teal"></div>
               <div className="flex-grow">
-                <h3 className="text-xl font-semibold text-brand-navy mb-2">Foundations</h3>
+                <h3 className="text-xl font-semibold text-brand-ink mb-2">Foundations</h3>
                 <p className="text-neutral-700 leading-relaxed">
                   Started in hands-on technical roles building networks, servers and desktop estates. Built foundational expertise during the evolution from mainframes through client-server to modern distributed computing.
                 </p>
@@ -211,7 +211,7 @@ export default function AboutPage() {
 
           <div className="space-y-8">
             <div className="bg-neutral-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-brand-navy mb-4">
+              <h3 className="text-2xl font-semibold text-brand-ink mb-4">
                 Clarity over jargon
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
@@ -220,7 +220,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-neutral-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-brand-navy mb-4">
+              <h3 className="text-2xl font-semibold text-brand-ink mb-4">
                 Realistic scopes
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
@@ -229,7 +229,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-neutral-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-brand-navy mb-4">
+              <h3 className="text-2xl font-semibold text-brand-ink mb-4">
                 Documentation & knowledge transfer
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
@@ -238,7 +238,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-neutral-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-brand-navy mb-4">
+              <h3 className="text-2xl font-semibold text-brand-ink mb-4">
                 Respect for in-house teams
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
@@ -247,7 +247,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-neutral-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-brand-navy mb-4">
+              <h3 className="text-2xl font-semibold text-brand-ink mb-4">
                 Continuous improvement, not lock-in
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
@@ -265,7 +265,7 @@ export default function AboutPage() {
             <p className="mb-2">
               <strong>Lawsons CloudWorks</strong> is a trading name of
             </p>
-            <p className="text-lg font-semibold text-brand-navy mb-2">
+            <p className="text-lg font-semibold text-brand-ink mb-2">
               Lawsons Enterprises Ltd
             </p>
             <p className="text-sm">

@@ -10,10 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          navy: "#2E3B8E",     // Primary deep blue from logo
-          sky: "#1EA7E0",      // Secondary bright blue from logo
-          slate: "#5B7BAA",    // Mid-tone blue
-          light: "#E8F1F8",    // Light blue tint
+          ink: "#1F2933",      // Deep blue-grey for headings, primary text
+          slate: "#4B5563",    // Secondary text, subheadings
+          teal: "#0F766E",     // Primary accent (ONLY accent color)
+          'teal-dark': "#115E59",  // Teal hover/darker state
+          'teal-soft': "#CCF0EC",  // Teal tint for badges/chips
+          border: "#D7DCE5",   // Soft blue-grey for borders
+        },
+        page: {
+          bg: "#F5F5F7",       // Page background (warm light grey)
         },
         neutral: {
           50: "#F9FAFB",

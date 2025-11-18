@@ -63,11 +63,11 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 className={`
-                  px-4 py-2 rounded-md text-base transition-all duration-200
+                  px-4 py-2 text-base transition-all duration-200
                   ${
                     isActive(link.href)
-                      ? 'text-brand-navy font-semibold border-b-2 border-brand-sky'
-                      : 'text-neutral-600 font-normal hover:text-brand-navy hover:bg-brand-light'
+                      ? 'text-brand-teal font-semibold border-b-2 border-brand-teal'
+                      : 'text-brand-slate font-normal hover:text-neutral-900'
                   }
                 `}
               >
@@ -78,7 +78,7 @@ export default function Navigation() {
             {/* CTA Button */}
             <Link
               href="/contact"
-              className="ml-4 btn-primary"
+              className="ml-4 px-6 py-2 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-dark transition-all duration-200"
             >
               Book a Discovery Call
             </Link>
@@ -86,7 +86,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-neutral-600 hover:text-brand-navy transition-colors"
+            className="md:hidden p-2 text-brand-slate hover:text-neutral-900 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -125,7 +125,7 @@ export default function Navigation() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-neutral-200">
+        <div className="md:hidden bg-white border-t border-brand-border">
           <div className="container-custom py-4 space-y-2">
             {navLinks.map((link) => (
               <Link
@@ -136,8 +136,8 @@ export default function Navigation() {
                   block px-4 py-3 rounded-md text-base transition-all duration-200
                   ${
                     isActive(link.href)
-                      ? 'text-brand-navy font-semibold bg-brand-light border-l-4 border-brand-sky'
-                      : 'text-neutral-600 font-normal hover:text-brand-navy hover:bg-neutral-100'
+                      ? 'text-brand-teal font-semibold bg-brand-teal-soft border-l-4 border-brand-teal'
+                      : 'text-brand-slate font-normal hover:text-neutral-900 hover:bg-neutral-100'
                   }
                 `}
               >
@@ -149,7 +149,7 @@ export default function Navigation() {
             <Link
               href="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block btn-primary text-center mt-4"
+              className="block px-6 py-2 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-dark transition-all duration-200 text-center mt-4"
             >
               Book a Discovery Call
             </Link>

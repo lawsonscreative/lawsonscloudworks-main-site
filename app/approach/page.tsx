@@ -43,7 +43,7 @@ export default function ApproachPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
+      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
         <div className="container-custom max-w-4xl text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">Our Approach</h1>
           <p className="text-xl text-white">
@@ -65,11 +65,11 @@ export default function ApproachPage() {
           <div className="space-y-8">
             {engagementSteps.map((step) => (
               <div key={step.number} className="flex items-start space-x-6 bg-neutral-50 p-6 rounded-lg">
-                <div className="flex-shrink-0 w-12 h-12 bg-brand-sky text-white rounded-full flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 bg-brand-teal text-white rounded-full flex items-center justify-center text-xl font-bold">
                   {step.number}
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold text-brand-navy mb-2">{step.title}</h3>
+                  <h3 className="text-2xl font-semibold text-brand-ink mb-2">{step.title}</h3>
                   <p className="text-neutral-700 leading-relaxed">{step.description}</p>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function ApproachPage() {
       </section>
 
       {/* Specialist MSP, Senior-Led Support */}
-      <section className="section-spacing bg-brand-light">
+      <section className="section-spacing bg-brand-teal-soft">
         <div className="container-custom max-w-4xl">
           <h2 className="text-center mb-8">Specialist MSP, Senior-Led Support</h2>
 
@@ -97,28 +97,28 @@ export default function ApproachPage() {
             </p>
 
             <div className="bg-white p-8 rounded-lg shadow-sm mt-8">
-              <h3 className="text-xl font-semibold text-brand-navy mb-4">This means:</h3>
+              <h3 className="text-xl font-semibold text-brand-ink mb-4">This means:</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>You get senior-led support, not a helpdesk</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>One accountable owner who knows your environment</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>No enterprise MSP overhead or multi-tier support</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span>Access to wider network when needed for specialist areas</span>
@@ -146,33 +146,33 @@ export default function ApproachPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <div className="bg-neutral-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-brand-navy mb-3">What We Deliver</h3>
+                <h3 className="text-xl font-semibold text-brand-ink mb-3">What We Deliver</h3>
                 <ul className="space-y-2 text-base">
                   <li className="flex items-start space-x-2">
-                    <span className="text-brand-sky">•</span>
+                    <span className="text-brand-teal">•</span>
                     <span>Architecture diagrams</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-brand-sky">•</span>
+                    <span className="text-brand-teal">•</span>
                     <span>Written summaries in plain English</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-brand-sky">•</span>
+                    <span className="text-brand-teal">•</span>
                     <span>Clear next steps and recommendations</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-brand-sky">•</span>
+                    <span className="text-brand-teal">•</span>
                     <span>Runbooks where appropriate</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-brand-sky">•</span>
+                    <span className="text-brand-teal">•</span>
                     <span>Knowledge transfer sessions</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-brand-light p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-brand-navy mb-3">What This Means</h3>
+              <div className="bg-brand-teal-soft p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-brand-ink mb-3">What This Means</h3>
                 <p className="text-base">
                   You understand your own systems and can operate them confidently. For managed service clients, we maintain and improve your environment while ensuring you&apos;re never locked in by lack of knowledge.
                 </p>
@@ -183,7 +183,7 @@ export default function ApproachPage() {
       </section>
 
       {/* Security & Responsibility */}
-      <section className="section-spacing bg-brand-light">
+      <section className="section-spacing bg-brand-teal-soft">
         <div className="container-custom max-w-4xl">
           <h2 className="text-center mb-8">Security & Responsibility</h2>
 
@@ -194,25 +194,25 @@ export default function ApproachPage() {
 
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Identity and access patterns (SSO, MFA, conditional access)</span>
               </li>
               <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Endpoint security policies</span>
               </li>
               <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Cloud configuration security</span>
               </li>
               <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Sensible defaults and hardening</span>
@@ -223,8 +223,8 @@ export default function ApproachPage() {
               For regulatory-heavy or high-risk environments, we collaborate with specialist security partners.
             </p>
 
-            <div className="bg-white p-6 rounded-lg border-l-4 border-brand-sky mt-6">
-              <p className="font-semibold text-brand-navy mb-2">
+            <div className="bg-white p-6 rounded-lg border-l-4 border-brand-teal mt-6">
+              <p className="font-semibold text-brand-ink mb-2">
                 This is by design:
               </p>
               <p>
@@ -252,7 +252,7 @@ export default function ApproachPage() {
 
             <ul className="space-y-4 mt-8">
               <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-200">
@@ -260,7 +260,7 @@ export default function ApproachPage() {
                 </span>
               </li>
               <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-200">
@@ -268,7 +268,7 @@ export default function ApproachPage() {
                 </span>
               </li>
               <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-200">
@@ -276,7 +276,7 @@ export default function ApproachPage() {
                 </span>
               </li>
               <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-200">
@@ -284,7 +284,7 @@ export default function ApproachPage() {
                 </span>
               </li>
               <li className="flex items-start space-x-3">
-                <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-200">
@@ -298,7 +298,7 @@ export default function ApproachPage() {
             </p>
 
             <div className="pt-6 text-center">
-              <Link href="/contact" className="inline-block px-8 py-4 bg-brand-sky text-white font-semibold rounded-lg hover:bg-brand-light hover:text-brand-navy transition-all duration-200 text-lg">
+              <Link href="/contact" className="inline-block px-8 py-4 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-soft hover:text-brand-ink transition-all duration-200 text-lg">
                 Book a Discovery Call
               </Link>
             </div>

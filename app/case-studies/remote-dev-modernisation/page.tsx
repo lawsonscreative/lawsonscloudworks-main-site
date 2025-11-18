@@ -12,7 +12,7 @@ export default function CaseStudyPage() {
       <article className="section-spacing bg-white">
         <div className="container-custom max-w-4xl">
           {/* Back Link */}
-          <Link href="/case-studies" className="text-brand-sky hover:text-brand-navy mb-8 inline-flex items-center">
+          <Link href="/case-studies" className="text-brand-teal hover:text-brand-ink mb-8 inline-flex items-center">
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
@@ -22,7 +22,7 @@ export default function CaseStudyPage() {
           {/* Header */}
           <div className="mb-12">
             <div className="flex flex-wrap items-center gap-3 text-sm mb-4">
-              <span className="bg-brand-light text-brand-navy px-3 py-1 rounded-full font-medium">
+              <span className="bg-brand-teal-soft text-brand-ink px-3 py-1 rounded-full font-medium">
                 Software Development
               </span>
               <span className="text-neutral-500">200-person company</span>
@@ -34,7 +34,7 @@ export default function CaseStudyPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm font-semibold text-neutral-600 mb-1">Service Pillar:</p>
-                  <Link href="/services#cloud-workspace" className="text-brand-navy hover:text-brand-sky font-medium">
+                  <Link href="/services#cloud-workspace" className="text-brand-ink hover:text-brand-teal font-medium">
                     Cloud & Workspace Architecture
                   </Link>
                 </div>
@@ -135,8 +135,8 @@ export default function CaseStudyPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-16 p-8 bg-brand-light rounded-lg text-center">
-            <h3 className="text-2xl font-semibold text-brand-navy mb-4">
+          <div className="mt-16 p-8 bg-brand-teal-soft rounded-lg text-center">
+            <h3 className="text-2xl font-semibold text-brand-ink mb-4">
               Facing Similar Challenges?
             </h3>
             <p className="text-neutral-700 mb-6">

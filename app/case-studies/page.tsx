@@ -10,7 +10,7 @@ export default function CaseStudiesPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
+      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
         <div className="container-custom max-w-4xl text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">Case Studies</h1>
           <p className="text-xl text-white">
@@ -49,11 +49,11 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Selected Examples */}
-      <section className="section-spacing bg-brand-light">
+      <section className="section-spacing bg-brand-teal-soft">
         <div className="container-custom max-w-4xl text-center">
           <div className="bg-white p-12 rounded-lg shadow-sm">
             <svg
-              className="w-16 h-16 text-brand-sky mx-auto mb-4"
+              className="w-16 h-16 text-brand-teal mx-auto mb-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

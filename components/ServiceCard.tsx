@@ -38,12 +38,12 @@ export default function ServiceCard({ icon, title, description, link, offerRefer
   return (
     <Link
       href={link}
-      className="group h-full flex flex-col bg-white border-2 border-neutral-200 rounded-xl p-8 hover:border-brand-sky hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+      className="group h-full flex flex-col bg-white border-2 border-neutral-200 rounded-xl p-8 hover:border-brand-teal hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
     >
-      <div className="text-brand-sky mb-6 group-hover:scale-110 transition-transform duration-300">
+      <div className="text-brand-teal mb-6 group-hover:scale-110 transition-transform duration-300">
         {icons[icon]}
       </div>
-      <h3 className="text-2xl font-bold mb-4 text-brand-navy group-hover:text-brand-sky transition-colors">
+      <h3 className="text-2xl font-bold mb-4 text-brand-ink group-hover:text-brand-teal transition-colors">
         {title}
       </h3>
       <p className="text-base text-neutral-600 leading-relaxed mb-4 flex-grow">
@@ -54,7 +54,7 @@ export default function ServiceCard({ icon, title, description, link, offerRefer
           {offerReference}
         </p>
       )}
-      <div className="text-brand-sky font-semibold flex items-center group-hover:translate-x-2 transition-transform">
+      <div className="text-brand-teal font-semibold flex items-center group-hover:translate-x-2 transition-transform">
         Learn more
         <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

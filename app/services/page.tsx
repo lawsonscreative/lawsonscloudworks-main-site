@@ -12,7 +12,7 @@ export default function ServicesPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
+      <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
         <div className="container-custom max-w-3xl relative z-10 text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">Managed Services & On-Ramp Projects</h1>
           <p className="text-xl text-white">
@@ -152,13 +152,13 @@ export default function ServicesPage() {
       />
 
       {/* FAQ Section */}
-      <section className="section-spacing bg-brand-light">
+      <section className="section-spacing bg-brand-teal-soft">
         <div className="container-custom max-w-4xl">
           <h2 className="text-center mb-12">Frequently Asked Questions</h2>
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-3">
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Are you a full-service MSP or a specialist MSP?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
@@ -167,7 +167,7 @@ export default function ServicesPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-3">
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Can you replace our existing MSP?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
@@ -176,7 +176,7 @@ export default function ServicesPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-3">
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Do you provide 24/7 support?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
@@ -185,7 +185,7 @@ export default function ServicesPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-3">
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Do you handle SOC/MDR/cybersecurity?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
@@ -195,7 +195,7 @@ export default function ServicesPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-3">
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 Do you work only with AWS and Microsoft?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
@@ -205,7 +205,7 @@ export default function ServicesPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-3">
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 What if we&apos;re smaller than 20 people or larger than 250?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
@@ -215,7 +215,7 @@ export default function ServicesPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-3">
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">
                 How do managed services start?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
