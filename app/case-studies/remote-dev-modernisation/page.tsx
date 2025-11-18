@@ -143,7 +143,7 @@ export default function CaseStudyPage() {
               We can help you modernise your development environment or cloud infrastructure.
             </p>
             <Link href="/contact" className="btn-primary inline-block">
-              Get in Touch
+              Book a Discovery Call
             </Link>
           </div>
         </div>

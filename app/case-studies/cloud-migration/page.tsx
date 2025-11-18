@@ -146,7 +146,7 @@ export default function CaseStudyPage() {
               We can help you migrate to the cloud and optimise your IT costs.
             </p>
             <Link href="/contact" className="btn-primary inline-block">
-              Get in Touch
+              Book a Discovery Call
             </Link>
           </div>
         </div>

@@ -1,8 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import ServiceCard from '@/components/ServiceCard';
 import OutcomesSection from '@/components/OutcomesSection';
 import CredibilityStrip from '@/components/CredibilityStrip';
 import CaseStudyTeaser from '@/components/CaseStudyTeaser';
+
+export const metadata: Metadata = {
+  title: 'Lawsons CloudWorks | Cloud, Workspace & Automation Consulting for UK Teams',
+  description: 'Boutique cloud and workspace consultancy helping 20-250 person UK organisations modernise infrastructure without enterprise drama. AWS, Microsoft 365, modern endpoints, automation.',
+};
 
 export default function Home() {
   return (

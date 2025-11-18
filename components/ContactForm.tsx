@@ -181,9 +181,12 @@ export default function ContactForm() {
 
       {/* Services */}
       <div>
-        <label className="block font-semibold text-neutral-700 mb-3">
+        <label className="block font-semibold text-neutral-700 mb-2">
           What do you need help with?
         </label>
+        <p className="text-sm text-neutral-600 mb-3">
+          Choose the closest option; we'll discuss details on the call.
+        </p>
         <div className="space-y-2">
           {[
             'Cloud & Workspace Health Check',
@@ -260,12 +263,21 @@ export default function ContactForm() {
         </button>
       </div>
 
-      <p className="text-sm text-neutral-600 text-center">
-        We usually reply within one UK business day. Prefer email?{' '}
-        <a href="mailto:hello@lawsonscloudworks.co.uk" className="text-brand-sky hover:text-brand-navy">
-          hello@lawsonscloudworks.co.uk
-        </a>
-      </p>
+      <div className="space-y-2">
+        <p className="text-sm text-neutral-600 text-center">
+          We usually reply within one UK business day. Prefer email?{' '}
+          <a href="mailto:hello@lawsonscloudworks.co.uk" className="text-brand-sky hover:text-brand-navy">
+            hello@lawsonscloudworks.co.uk
+          </a>
+        </p>
+        <p className="text-xs text-neutral-500 text-center">
+          We'll only use your details to respond to your enquiry. For more, see our{' '}
+          <a href="/privacy" className="text-brand-sky hover:text-brand-navy underline">
+            Privacy Policy
+          </a>
+          .
+        </p>
+      </div>
     </form>
   );
 }
