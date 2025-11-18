@@ -88,13 +88,14 @@ export default function AdvisoryOffers({
   );
 
   const imageSection = (
-    <div className="rounded-lg overflow-hidden h-full min-h-[400px] relative">
+    <div className="rounded-lg overflow-hidden relative w-full aspect-[4/3]">
       <Image
         src={imageSrc}
         alt={title}
         fill
         className="object-cover"
         sizes="(max-width: 1024px) 100vw, 50vw"
+        priority
       />
     </div>
   );
