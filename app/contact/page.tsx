@@ -80,7 +80,17 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <div className="bg-neutral-50 p-8 rounded-lg">
                 <h3 className="text-2xl font-semibold text-brand-ink mb-6">Send Us a Message</h3>
-                <Suspense fallback={<div className="text-center py-8">Loading form...</div>}>
+                <Suspense fallback={
+                  <div className="text-center py-8">
+                    <p className="text-neutral-600 mb-4">Loading form...</p>
+                    <p className="text-sm text-neutral-500">
+                      If the form doesn&apos;t appear within a few seconds, please email us directly at{' '}
+                      <a href="mailto:hello@lawsonscloudworks.co.uk" className="text-brand-teal hover:text-brand-ink underline">
+                        hello@lawsonscloudworks.co.uk
+                      </a>
+                    </p>
+                  </div>
+                }>
                   <ContactForm />
                 </Suspense>
               </div>
@@ -96,30 +106,30 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 1
               </div>
-              <h3 className="text-xl font-semibold text-brand-ink mb-3">We'll Review</h3>
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">Step 1: We&apos;ll Review</h3>
               <p className="text-neutral-600">
                 We'll read your message and review your requirements carefully.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 2
               </div>
-              <h3 className="text-xl font-semibold text-brand-ink mb-3">Quick Response</h3>
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">Step 2: Quick Response</h3>
               <p className="text-neutral-600">
                 You'll hear back from us within one business day to arrange a call.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 3
               </div>
-              <h3 className="text-xl font-semibold text-brand-ink mb-3">Discovery Call</h3>
+              <h3 className="text-xl font-semibold text-brand-ink mb-3">Step 3: Discovery Call</h3>
               <p className="text-neutral-600">
                 We'll have a no-obligation conversation to explore if we're the right fit.
               </p>

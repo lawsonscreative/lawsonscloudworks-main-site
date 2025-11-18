@@ -14,6 +14,7 @@ interface AdvisoryOffersProps {
   offers: SubOffer[];
   imagePosition?: 'left' | 'right';
   ctaLabel?: string;
+  ctaHref?: string;
 }
 
 export default function AdvisoryOffers({
@@ -23,6 +24,7 @@ export default function AdvisoryOffers({
   offers,
   imagePosition = 'left',
   ctaLabel = 'Discuss this with us',
+  ctaHref = '/contact',
 }: AdvisoryOffersProps) {
   const contentSection = (
     <div className="space-y-8">
@@ -74,7 +76,7 @@ export default function AdvisoryOffers({
         </div>
 
         <div className="pt-6">
-          <Link href="/contact" className="btn-primary inline-block">
+          <Link href={ctaHref} className="btn-primary inline-block">
             {ctaLabel}
           </Link>
         </div>

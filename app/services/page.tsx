@@ -56,6 +56,7 @@ export default function ServicesPage() {
         investment="Priced by environment size and complexity. Typically from £2,500/month for 20–50 users"
         imagePosition="right"
         ctaLabel="Book a workspace health check"
+        ctaHref="/contact?service=managed-cloud-workspace&cta=workspace-health-check"
       />
 
       {/* Managed Endpoint & Identity Service */}
@@ -95,6 +96,7 @@ export default function ServicesPage() {
         }}
         imagePosition="left"
         ctaLabel="Book an endpoint quickstart call"
+        ctaHref="/contact?service=managed-endpoint-identity&cta=endpoint-quickstart"
       />
 
       {/* Automation & Dev Tooling */}
@@ -128,6 +130,7 @@ export default function ServicesPage() {
         investment="Managed: from £1,000/month. Projects: £2,500–£5,000 depending on complexity"
         imagePosition="right"
         ctaLabel="Discuss automation options"
+        ctaHref="/contact?service=automation-dev-tooling&cta=automation-discussion"
       />
 
       {/* Advisory & Project Rescue */}
@@ -165,6 +168,7 @@ export default function ServicesPage() {
         investment="From £2,000/month depending on time commitment"
         imagePosition="left"
         ctaLabel="Discuss advisory needs"
+        ctaHref="/contact?service=advisory-project-rescue&cta=advisory-discussion"
       />
 
       {/* On-Ramp Projects */}
@@ -208,6 +212,7 @@ export default function ServicesPage() {
         ]}
         imagePosition="left"
         ctaLabel="Book a discovery call"
+        ctaHref="/contact?service=on-ramp-projects&cta=discovery-call"
       />
 
       {/* FAQ Section */}
@@ -295,7 +300,7 @@ export default function ServicesPage() {
           <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
             Book a discovery call and we'll explore whether we're the right fit for your needs.
           </p>
-          <Link href="/contact" className="btn-primary inline-block text-lg">
+          <Link href="/contact?cta=services-page-bottom" className="btn-primary inline-block text-lg">
             Book a 30-Minute Discovery Call
           </Link>
         </div>

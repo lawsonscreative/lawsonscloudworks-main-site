@@ -74,7 +74,7 @@ export default function ApproachPage() {
           <div className="space-y-8">
             {engagementSteps.map((step) => (
               <div key={step.number} className="flex items-start space-x-6 bg-neutral-50 p-6 rounded-lg">
-                <div className="flex-shrink-0 w-12 h-12 bg-brand-teal text-white rounded-full flex items-center justify-center text-xl font-bold">
+                <div className="flex-shrink-0 w-12 h-12 bg-brand-teal text-white rounded-full flex items-center justify-center text-xl font-bold" aria-hidden="true">
                   {step.number}
                 </div>
                 <div className="space-y-2">

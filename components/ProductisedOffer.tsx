@@ -17,6 +17,7 @@ interface ProductisedOfferProps {
   };
   imagePosition?: 'left' | 'right';
   ctaLabel?: string;
+  ctaHref?: string;
 }
 
 export default function ProductisedOffer({
@@ -33,6 +34,7 @@ export default function ProductisedOffer({
   securityNote,
   imagePosition = 'right',
   ctaLabel = 'Discuss this with us',
+  ctaHref = '/contact',
 }: ProductisedOfferProps) {
   const contentSection = (
     <div className="space-y-8">
@@ -57,7 +59,7 @@ export default function ProductisedOffer({
             ))}
           </ul>
           <div className="mt-4 pt-4 border-t border-brand-teal/20">
-            <Link href="/contact" className="btn-secondary text-sm">
+            <Link href={ctaHref} className="btn-secondary text-sm">
               {ctaLabel}
             </Link>
           </div>
@@ -117,7 +119,7 @@ export default function ProductisedOffer({
         </div>
 
         <div className="pt-2">
-          <Link href="/contact" className="btn-primary inline-block">
+          <Link href={ctaHref} className="btn-primary inline-block">
             {ctaLabel}
           </Link>
         </div>
