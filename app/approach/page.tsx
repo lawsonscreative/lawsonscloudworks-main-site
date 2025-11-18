@@ -323,7 +323,7 @@ export default function ApproachPage() {
 
             <div className="pt-6 text-center">
               <Link href="/contact" className="inline-block px-8 py-4 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-soft hover:text-brand-ink transition-all duration-200 text-lg">
-                Book a Discovery Call
+                Book a 30-Minute Discovery Call
               </Link>
             </div>
           </div>
@@ -338,7 +338,7 @@ export default function ApproachPage() {
             Book a discovery call and we'll explore whether we're the right fit.
           </p>
           <Link href="/contact" className="btn-primary inline-block text-lg">
-            Book a Discovery Call
+            Book a 30-Minute Discovery Call
           </Link>
         </div>
       </section>

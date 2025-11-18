@@ -80,7 +80,7 @@ export default function Navigation() {
               href="/contact"
               className="ml-4 px-6 py-2 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-dark transition-all duration-200"
             >
-              Book a Discovery Call
+              Book a 30-Minute Discovery Call
             </Link>
           </div>
 
@@ -151,7 +151,7 @@ export default function Navigation() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-6 py-2 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-dark transition-all duration-200 text-center mt-4"
             >
-              Book a Discovery Call
+              Book a 30-Minute Discovery Call
             </Link>
           </div>
         </div>

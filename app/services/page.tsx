@@ -241,7 +241,7 @@ export default function ServicesPage() {
             Book a discovery call and we'll explore whether we're the right fit for your needs.
           </p>
           <Link href="/contact" className="btn-primary inline-block text-lg">
-            Book a Discovery Call
+            Book a 30-Minute Discovery Call
           </Link>
         </div>
       </section>

@@ -246,7 +246,7 @@ export default function CaseStudyPage() {
               We can help you modernise your development environment or cloud infrastructure.
             </p>
             <Link href="/contact" className="btn-primary inline-block">
-              Book a Discovery Call
+              Book a 30-Minute Discovery Call
             </Link>
           </div>
         </div>

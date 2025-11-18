@@ -178,7 +178,7 @@ export default function AboutPage() {
 
             <div className="lg:col-span-2 space-y-6 text-lg text-neutral-700 leading-relaxed">
               <p>
-                Andy founded CloudWorks in 2025 after 30+ years in IT infrastructure across large UK organisations including financial services, NHS, and critical national infrastructure. His focus areas include cloud workspaces (AWS, Microsoft 365, AVD), modern endpoint management (Intune, Autopilot), identity governance and dev tooling automation.
+                Andy founded CloudWorks in 2025 after decades working across large UK organisations including financial services, NHS, and critical national infrastructure. His focus areas include cloud workspaces (AWS, Microsoft 365, AVD), modern endpoint management (Intune, Autopilot), identity governance and dev tooling automation.
               </p>
 
               <p>
@@ -232,7 +232,7 @@ export default function AboutPage() {
             we're the right fit.
           </p>
           <Link href="/contact" className="btn-primary inline-block text-lg">
-            Book a Discovery Call
+            Book a 30-Minute Discovery Call
           </Link>
         </div>
       </section>

@@ -17,7 +17,7 @@ export default function CaseStudiesPage() {
             Real projects and managed service engagements from our senior infrastructure team.
           </p>
           <p className="text-lg text-white/90">
-            These engagements pre-date the CloudWorks brand and have been anonymised. Every environment is different – we'll be clear about what's realistic for yours.
+            These anonymised case studies are representative of recent work. Every environment is different – we'll be clear about what's realistic for yours.
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function CaseStudiesPage() {
             Get in touch to discuss your cloud, workspace, or automation challenges.
           </p>
           <a href="/contact" className="btn-primary inline-block text-lg">
-            Book a Discovery Call
+            Book a 30-Minute Discovery Call
           </a>
         </div>
       </section>

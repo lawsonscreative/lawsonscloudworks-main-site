@@ -249,7 +249,7 @@ export default function CaseStudyPage() {
               We can help you migrate to the cloud and optimise your IT costs.
             </p>
             <Link href="/contact" className="btn-primary inline-block">
-              Book a Discovery Call
+              Book a 30-Minute Discovery Call
             </Link>
           </div>
         </div>

@@ -282,7 +282,7 @@ export default function ContactForm() {
           disabled={status === 'submitting'}
           className="w-full btn-primary text-lg disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {status === 'submitting' ? 'Sending...' : 'Send Message'}
+          {status === 'submitting' ? 'Sending...' : 'Request a Discovery Call'}
         </button>
       </div>
 
