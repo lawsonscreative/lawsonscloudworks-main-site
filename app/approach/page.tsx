@@ -12,31 +12,37 @@ export default function ApproachPage() {
       number: 1,
       title: 'Discovery & Fit Check',
       description: 'Brief conversation to understand your situation and see if there\'s a fit. Usually a 30-minute call. No pressure, no sales pitch.',
+      youGet: 'A straight answer on whether we\'re the right fit – and if we\'re not, we\'ll say so.',
     },
     {
       number: 2,
       title: 'On-Ramp Project',
       description: 'Health check, migration or implementation to baseline your environment. Typical duration: 2-6 weeks depending on scope.',
+      youGet: 'A clear view of risks, bottlenecks and a realistic plan, not a hand-wavy "we\'ll sort it".',
     },
     {
       number: 3,
       title: 'Transition to Managed Services',
       description: 'Move to monthly managed service for ongoing operations. Clear SLAs, regular reporting, and direct access to senior team.',
+      youGet: 'Documented handover and clear ownership boundaries so nothing falls through cracks.',
     },
     {
       number: 4,
       title: 'Monthly Operations',
       description: 'Day-to-day management of cloud workspaces, endpoints and automation. Monthly change windows, proactive monitoring, and regular communication.',
+      youGet: 'Predictable change windows and one place to send workspace issues.',
     },
     {
       number: 5,
       title: 'Quarterly Reviews',
       description: 'Quarterly roadmap reviews and continuous improvement planning. We look ahead, not just react to issues.',
+      youGet: 'Regular check-ins to review what\'s working, what isn\'t, and where to invest next.',
     },
     {
       number: 6,
       title: 'Continuous Improvement',
       description: 'Ongoing improvements to security, resilience and cost-effectiveness. Your environment gets better every month, not just maintained.',
+      youGet: 'Proactive recommendations based on what we\'re seeing across your environment.',
     },
   ];
 
@@ -47,6 +53,9 @@ export default function ApproachPage() {
         <div className="container-custom max-w-4xl text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">Our Approach</h1>
           <p className="text-xl text-white">
+            If you've been burned by previous MSPs or struggled with over-promising vendors, here's how working with CloudWorks feels different.
+          </p>
+          <p className="text-lg text-white/90">
             Specialist MSP with senior-led support. Here&apos;s how we work.
           </p>
         </div>
@@ -68,9 +77,12 @@ export default function ApproachPage() {
                 <div className="flex-shrink-0 w-12 h-12 bg-brand-teal text-white rounded-full flex items-center justify-center text-xl font-bold">
                   {step.number}
                 </div>
-                <div>
+                <div className="space-y-2">
                   <h3 className="text-2xl font-semibold text-brand-ink mb-2">{step.title}</h3>
                   <p className="text-neutral-700 leading-relaxed">{step.description}</p>
+                  <p className="text-sm text-brand-teal font-medium pt-2">
+                    You get: <span className="text-neutral-700 font-normal">{step.youGet}</span>
+                  </p>
                 </div>
               </div>
             ))}
@@ -78,50 +90,56 @@ export default function ApproachPage() {
         </div>
       </section>
 
-      {/* Specialist MSP, Senior-Led Support */}
+      {/* Senior-Led MSP, Sensible Scale */}
       <section className="section-spacing bg-brand-teal-soft">
         <div className="container-custom max-w-4xl">
-          <h2 className="text-center mb-8">Specialist MSP, Senior-Led Support</h2>
+          <h2 className="text-center mb-8">Senior-Led MSP, Sensible Scale</h2>
 
           <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
             <p>
-              Lawsons CloudWorks is led by principal consultant Andy Lawson, bringing over 30 years of infrastructure, cloud and workspace experience from large UK organisations in regulated sectors.
+              CloudWorks is intentionally small – you'll work with senior-level people who've designed and operated infrastructure for large, complex UK organisations.
             </p>
 
             <p>
-              Experience includes designing and operating cloud workspace platforms for multi-thousand user environments in large UK insurers, NHS organisations and critical infrastructure. CloudWorks brings that enterprise-level expertise to small and mid-sized organisations without the enterprise overhead.
+              We've designed and operated AWS-hosted virtual desktop platforms for large, regulated UK organisations, including multi-thousand developer environments. We've led modern workplace initiatives to enable secure remote access for multi-thousand user estates during COVID-19 lockdowns and beyond.
             </p>
 
             <p>
-              For specialist areas outside our core expertise (e.g. deep networking, SOC/MDR, application development), we work with trusted partners rather than stretching beyond our strengths.
+              That experience now powers a managed service built for 20-250 person UK organisations who need enterprise thinking without enterprise overhead.
             </p>
 
             <div className="bg-white p-8 rounded-lg shadow-sm mt-8">
-              <h3 className="text-xl font-semibold text-brand-ink mb-4">This means:</h3>
+              <h3 className="text-xl font-semibold text-brand-ink mb-4">What this means for you:</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>You get senior-led support, not a helpdesk</span>
+                  <span>A named senior contact who understands the work (not first-line script readers)</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>One accountable owner who knows your environment</span>
+                  <span>Documented runbooks, change control that isn't overbearing</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>No enterprise MSP overhead or multi-tier support</span>
+                  <span>Clear ownership and sensible escalation paths</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>Access to wider network when needed for specialist areas</span>
+                  <span>Vendor management and roadmap steering when needed</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-brand-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>Ability to hand over or scale down cleanly if your needs change (we're not trying to trap you)</span>
                 </li>
               </ul>
             </div>
@@ -129,6 +147,12 @@ export default function ApproachPage() {
             <p className="pt-4">
               This approach sits between commodity MSPs (where you get a ticketing system and tier 1 support) and enterprise-grade providers (where you pay for overhead you don&apos;t need).
             </p>
+
+            <div className="bg-neutral-50 p-6 rounded-lg border-l-4 border-brand-teal mt-6">
+              <p className="text-sm">
+                CloudWorks is led by a principal consultant with 30+ years designing and operating infrastructure across large UK organisations. <Link href="/about" className="text-brand-teal hover:text-brand-ink underline">See About page for longer story.</Link>
+              </p>
+            </div>
           </div>
         </div>
       </section>

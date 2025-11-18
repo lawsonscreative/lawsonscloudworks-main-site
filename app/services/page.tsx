@@ -16,10 +16,10 @@ export default function ServicesPage() {
         <div className="container-custom max-w-3xl relative z-10 text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">Managed Services & On-Ramp Projects</h1>
           <p className="text-xl text-white">
-            Specialist MSP for 20–250 person UK organisations with remote and hybrid teams.
+            Managed services and projects for 20–250 person UK organisations.
           </p>
           <p className="text-lg text-white/90">
-            Most clients start with an on-ramp project, then transition to monthly managed services.
+            Most clients start with an on-ramp project (often a Health Check), then continue with monthly managed services or advisory. We're not trying to be everything to everyone – we focus on cloud workspaces, modern endpoints and automation, done well.
           </p>
         </div>
       </section>
@@ -162,17 +162,20 @@ export default function ServicesPage() {
                 Are you a full-service MSP or a specialist MSP?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                Specialist MSP. We focus on cloud workspaces, modern endpoints and automation. We don&apos;t do everything - we do these areas well. For general helpdesk or 24/7 support, we can work alongside your existing IT provider.
+                We're a <strong>specialist MSP.</strong> We focus on cloud workspaces, modern endpoints and automation. We don't run helpdesks or SOCs – instead we work alongside your existing providers. Think of us as owning the platforms your team actually works on, while others handle day-to-day tickets.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-brand-ink mb-3">
-                Can you replace our existing MSP?
+                Are you our MSP?
               </h3>
-              <p className="text-neutral-700 leading-relaxed">
-                Possibly, if your needs align with our specialist services. Most clients use us alongside their existing MSP - we handle cloud workspaces and endpoints, they handle general IT support. We&apos;re flexible.
-              </p>
+              <div className="text-neutral-700 leading-relaxed space-y-3">
+                <p>We offer two engagement models:</p>
+                <p><strong>1. As your specialist MSP for cloud workspaces and endpoints</strong> – we own and manage these platforms day-to-day, often working alongside a more generalist provider who handles other IT needs.</p>
+                <p><strong>2. As a project and advisory layer on top of your existing MSP or internal team</strong> – we design, improve, or rescue specific platforms, then hand over.</p>
+                <p><strong>What we don't do:</strong> We don't run a 24/7 first-line helpdesk for password resets and basic support tickets. Our managed services focus on platform-level infrastructure – keeping your cloud workspaces, endpoints and automation running reliably.</p>
+              </div>
             </div>
 
             <div>
