@@ -13,8 +13,11 @@ export default function CaseStudiesPage() {
       <section className="section-spacing bg-gradient-to-br from-brand-light to-white">
         <div className="container-custom max-w-4xl text-center">
           <h1 className="mb-6">Case Studies</h1>
-          <p className="text-xl text-neutral-700 leading-relaxed">
-            Real projects, real outcomes. Details are anonymised where necessary to protect client confidentiality.
+          <p className="text-xl text-neutral-700 leading-relaxed mb-4">
+            These examples are drawn from Andy&apos;s work in senior consulting, contracting and technical lead roles over the last decade and more.
+          </p>
+          <p className="text-lg text-neutral-600 leading-relaxed">
+            Some of the projects pre-date Lawsons CloudWorks, so details are anonymised and presented as representative scenarios rather than formal endorsements. They are here to show the kinds of challenges we tackle and the outcomes we aim for – not to promise identical results in every engagement.
           </p>
         </div>
       </section>
@@ -28,7 +31,7 @@ export default function CaseStudiesPage() {
               industry="Software Development"
               size="200-person company"
               problem="Legacy VPN-based development environment causing friction for remote developers. Slow connection speeds, frequent disconnections, and inconsistent build performance were impacting productivity."
-              outcome="Migration to AWS WorkSpaces reduced connection issues by 80% and improved developer satisfaction scores. Documented architecture and runbooks enable the internal team to manage the environment independently."
+              outcome="Moving to an AWS-hosted virtual desktop platform reduced connection issues by around 80% in that engagement and improved developer satisfaction scores. Documented architecture and runbooks enable the internal team to manage the environment independently."
               link="/case-studies/remote-dev-modernisation"
               engagementType="Cloud & Workspace Health Check + rollout support"
             />
@@ -37,7 +40,7 @@ export default function CaseStudiesPage() {
               industry="Professional Services"
               size="50-person consultancy"
               problem="Mixed on-premises and cloud setup with unpredictable costs, manual patching, and no clear disaster recovery plan. IT team spending too much time on maintenance instead of strategic work."
-              outcome="Full migration to Microsoft 365 with documented processes reduced monthly costs by 30%. Clear security baseline and automated patching freed up 15 hours per week of IT time."
+              outcome="A full migration to Microsoft 365 with documented processes reduced monthly costs by roughly a third. Clear security baselines and automated patching freed up around 15 hours per week of IT time for more valuable work."
               link="/case-studies/cloud-migration"
               engagementType="Cloud & Workspace Health Check + full migration"
             />

@@ -13,9 +13,11 @@ export default function AboutPage() {
       <section className="section-spacing bg-gradient-to-br from-brand-light to-white">
         <div className="container-custom max-w-4xl text-center">
           <h1 className="mb-6">About Lawsons CloudWorks</h1>
-          <p className="text-xl text-neutral-700 leading-relaxed">
-            We're a small cloud and workspace consultancy helping UK businesses modernise their
-            infrastructure without the overhead of big firms.
+          <p className="text-xl text-neutral-700 leading-relaxed mb-4">
+            Lawsons CloudWorks is a new consultancy brand founded in 2025, built on over three decades of hands-on infrastructure, workspace and cloud experience.
+          </p>
+          <p className="text-lg text-neutral-600 leading-relaxed">
+            The brand is new; the patterns, lessons and scars it draws on are not.
           </p>
         </div>
       </section>
@@ -71,19 +73,46 @@ export default function AboutPage() {
               <ul className="space-y-2 ml-6">
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>AWS (including running WorkSpaces for 4,000+ developers)</span>
+                  <span>AWS, including designing and operating an AWS-hosted developer platform for 3,000+ developers at Direct Line Group (a major UK insurer)</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>Microsoft stack (M365, Azure, Intune, modern workplace)</span>
+                  <span>The Microsoft stack (Microsoft 365, Azure, Intune, AVD, MECM, modern workplace tooling)</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>Cloud and hybrid architectures</span>
+                  <span>Cloud and hybrid architectures for distributed teams</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>Developer tooling and automation</span>
+                  <span>Developer tooling, automation and modern endpoint management</span>
+                </li>
+              </ul>
+
+              <p>
+                This experience comes from a mix of long-term consulting, contracting and senior in-house Technical Lead roles, including positions at:
+              </p>
+
+              <ul className="space-y-2 ml-6 text-base">
+                <li className="flex items-start space-x-2">
+                  <span className="text-brand-sky mt-1">•</span>
+                  <span>Direct Line Group / Aviva (Technical Lead, 2020-Present)</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-brand-sky mt-1">•</span>
+                  <span>Great Ormond Street Hospital (Senior Consultant, 2018-2019)</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-brand-sky mt-1">•</span>
+                  <span>ThinTech Ltd (Senior Consultant, 2016-2018)</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-brand-sky mt-1">•</span>
+                  <span>ReVoBlue IT Services (Senior IT Consultant, 2015-2021)</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-brand-sky mt-1">•</span>
+                  <span>Plus earlier roles at NHS, Stansted Airport, and various consultancies</span>
                 </li>
               </ul>
 

@@ -81,8 +81,15 @@ export default function ApproachPage() {
 
           <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
             <p>
-              CloudWorks is led by principal consultant Andy, with 30+ years in IT and experience running
-              AWS WorkSpaces for 4,000+ developers.
+              Lawsons CloudWorks is led by principal consultant Andy Lawson, bringing over 30 years of infrastructure, cloud and workspace experience.
+            </p>
+
+            <p>
+              Andy has designed and operated AWS-hosted virtual desktop platforms for 3,000+ developers at Direct Line Group (a major UK insurer), led modern workplace initiatives including remote access for 14,000+ users during COVID-19 lockdowns, and helped teams move from fragile on-prem setups to stable cloud-first environments.
+            </p>
+
+            <p>
+              That experience comes from contracting, consulting and senior in-house Technical Lead roles. CloudWorks is the consultancy wrapper for applying those lessons to your organisation.
             </p>
 
             <p>

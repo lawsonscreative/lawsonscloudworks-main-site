@@ -44,7 +44,13 @@ export default function Home() {
                       <svg className="w-6 h-6 mr-2 flex-shrink-0 text-brand-light" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      Running AWS WorkSpaces at scale for 4,000+ developers
+                      Designed and operated an AWS-hosted developer platform for 3,000+ developers at a major UK insurer
+                    </li>
+                    <li className="flex items-start">
+                      <svg className="w-6 h-6 mr-2 flex-shrink-0 text-brand-light" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      Rolled out remote access solutions for 14,000+ users during COVID-19 lockdowns
                     </li>
                     <li className="flex items-start">
                       <svg className="w-6 h-6 mr-2 flex-shrink-0 text-brand-light" fill="currentColor" viewBox="0 0 20 20">
@@ -56,9 +62,12 @@ export default function Home() {
                       <svg className="w-6 h-6 mr-2 flex-shrink-0 text-brand-light" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      Deep expertise in AWS and Microsoft ecosystems
+                      Deep expertise in AWS and Microsoft ecosystems, including hybrid enterprise environments
                     </li>
                   </ul>
+                  <p className="text-sm text-white/80 mt-4 pt-4 border-t border-white/20">
+                    CloudWorks is a new consultancy brand founded in 2025, built on Andy&apos;s three decades of hands-on infrastructure, workspace and cloud experience.
+                  </p>
                 </div>
               </div>
             </div>
@@ -120,7 +129,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="mb-4">Recent Work</h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                Real projects, real outcomes. Details anonymised where necessary.
+                Real projects and outcomes from Andy&apos;s work in senior consulting, contracting and technical lead roles. Some examples pre-date Lawsons CloudWorks and are anonymised as representative scenarios.
               </p>
             </div>
 
@@ -130,7 +139,7 @@ export default function Home() {
                 industry="Software Development"
                 size="200-person company"
                 problem="Legacy VPN-based dev environment causing friction for remote developers."
-                outcome="Migration to AWS WorkSpaces reduced connection issues by 80% and improved developer satisfaction."
+                outcome="Moving to an AWS-hosted virtual desktop platform reduced connection issues by around 80% in that engagement and improved developer satisfaction scores."
                 link="/case-studies/remote-dev-modernisation"
                 engagementType="Cloud & Workspace Health Check + rollout support"
               />
@@ -139,7 +148,7 @@ export default function Home() {
                 industry="Professional Services"
                 size="50-person consultancy"
                 problem="Mixed on-prem and cloud setup with unpredictable costs and manual patching."
-                outcome="Full cloud migration to Microsoft 365 with documented processes and 30% cost reduction."
+                outcome="A full migration to Microsoft 365 with documented processes reduced monthly costs by roughly a third. Clear security baselines and automated patching freed up around 15 hours per week of IT time for more valuable work."
                 link="/case-studies/cloud-migration"
                 engagementType="Cloud & Workspace Health Check + full migration"
               />
