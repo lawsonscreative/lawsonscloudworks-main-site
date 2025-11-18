@@ -65,6 +65,7 @@ export default function ServicesPage() {
         imagePosition="right"
         ctaLabel="Book a workspace health check"
         ctaHref="/contact?service=managed-cloud-workspace&cta=workspace-health-check"
+        imageSrc="/images/image1.jpg"
       />
 
       {/* Managed Endpoint & Identity Service */}
@@ -105,6 +106,7 @@ export default function ServicesPage() {
         imagePosition="left"
         ctaLabel="Book an endpoint quickstart call"
         ctaHref="/contact?service=managed-endpoint-identity&cta=endpoint-quickstart"
+        imageSrc="/images/image2.jpg"
       />
 
       {/* Automation & Dev Tooling */}
@@ -139,6 +141,7 @@ export default function ServicesPage() {
         imagePosition="right"
         ctaLabel="Discuss automation options"
         ctaHref="/contact?service=automation-dev-tooling&cta=automation-discussion"
+        imageSrc="/images/image3.jpg"
       />
 
       {/* Advisory & Project Rescue */}
@@ -177,6 +180,7 @@ export default function ServicesPage() {
         imagePosition="left"
         ctaLabel="Discuss advisory needs"
         ctaHref="/contact?service=advisory-project-rescue&cta=advisory-discussion"
+        imageSrc="/images/image4.jpg"
       />
 
       {/* On-Ramp Projects */}
@@ -221,6 +225,7 @@ export default function ServicesPage() {
         imagePosition="left"
         ctaLabel="Book a discovery call"
         ctaHref="/contact?service=on-ramp-projects&cta=discovery-call"
+        imageSrc="/images/image4.jpg"
       />
 
       {/* FAQ Section */}
