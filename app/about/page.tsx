@@ -58,9 +58,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-1">
               <div className="bg-gradient-to-br from-brand-navy to-brand-sky rounded-lg aspect-square flex items-center justify-center text-white">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">👤</div>
-                  <p className="text-sm opacity-75">Professional photo placeholder</p>
+                <div className="text-center p-8">
+                  <div className="text-7xl mb-2">👤</div>
+                  <p className="text-lg font-semibold">Andy Lawson</p>
+                  <p className="text-sm opacity-90 mt-1">Principal Consultant</p>
                 </div>
               </div>
             </div>
@@ -225,7 +226,7 @@ export default function AboutPage() {
             we're the right fit.
           </p>
           <Link href="/contact" className="btn-primary inline-block text-lg">
-            Get in Touch
+            Book a Discovery Call
           </Link>
         </div>
       </section>

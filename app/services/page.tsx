@@ -256,7 +256,7 @@ export default function ServicesPage() {
             Book a discovery call and we'll explore whether we're the right fit for your needs.
           </p>
           <Link href="/contact" className="btn-primary inline-block text-lg">
-            Get in Touch
+            Book a Discovery Call
           </Link>
         </div>
       </section>

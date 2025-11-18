@@ -178,7 +178,7 @@ export default function Home() {
               href="/contact"
               className="inline-block px-8 py-4 bg-white text-brand-navy font-semibold rounded-lg hover:bg-brand-light transition-all duration-200 text-lg"
             >
-              Get in Touch
+              Book a Discovery Call
             </Link>
           </div>
         </section>

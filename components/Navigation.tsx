@@ -80,7 +80,7 @@ export default function Navigation() {
               href="/contact"
               className="ml-4 btn-primary"
             >
-              Get in Touch
+              Book a Discovery Call
             </Link>
           </div>
 
@@ -151,7 +151,7 @@ export default function Navigation() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="block btn-primary text-center mt-4"
             >
-              Get in Touch
+              Book a Discovery Call
             </Link>
           </div>
         </div>
