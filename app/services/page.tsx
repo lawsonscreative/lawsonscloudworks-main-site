@@ -177,51 +177,42 @@ export default function ServicesPage() {
         ]}
         duration="Monthly retainer (typically 2-4 days per month)"
         investment="From £2,000/month depending on time commitment"
-        imagePosition="left"
+        imagePosition="right"
         ctaLabel="Discuss advisory needs"
         ctaHref="/contact?service=advisory-project-rescue&cta=advisory-discussion"
         imageSrc="/images/image4.jpg"
       />
 
       {/* On-Ramp Projects */}
-      <AdvisoryOffers
+      <ProductisedOffer
         id="on-ramp-projects"
-        title="On-Ramp Projects"
+        pillarTitle="On-Ramp Projects"
         overview="Health checks, migrations and implementations designed to transition into ongoing managed services. Start with a project, continue with monthly management."
-        offers={[
-          {
-            title: 'Cloud & Workspace Health Check',
-            description: [
-              'Review current cloud/workspace setup (AWS, Azure, M365, VPN, identity)',
-              'Identify bottlenecks, fragility and risk. Map target architecture',
-              'Deliverables: diagrams, plain-English summary, prioritised action list',
-              'Typical on-ramp to Managed Cloud Workspace Service',
-            ],
-            duration: '2–4 weeks',
-            investment: '£2,000–£4,000',
-          },
-          {
-            title: 'Modern Endpoint Quickstart',
-            description: [
-              'Assess device and identity setup. Design baseline policies for Intune/Autopilot',
-              'Define onboarding/offboarding processes and rollout phases',
-              'Deliverables: documented strategy, baseline policies, process outline',
-              'Typical on-ramp to Managed Endpoint & Identity Service',
-            ],
-            duration: '3–6 weeks',
-            investment: '£3,000–£6,000',
-          },
-          {
-            title: 'Cloud Migration or Implementation',
-            description: [
-              'Execute specific migration or implementation (M365, AWS Workspaces, Intune rollout)',
-              'Fixed scope with clear deliverables and timeline',
-              'Can transition to managed service for ongoing operations',
-            ],
-            duration: 'Varies by scope',
-            investment: 'Depends on scope',
-          },
+        atAGlance={[
+          'Fixed-scope projects to assess, improve or migrate your infrastructure',
+          'Clear deliverables and timelines',
+          'Designed to transition into ongoing managed services',
+          'From £2,000 for health checks',
         ]}
+        offerTitle="Project-Based Engagements"
+        whoItsFor={[
+          'Organisations wanting to assess their current infrastructure before committing to managed services',
+          'Teams needing a specific migration or implementation completed',
+          'Companies looking for a clear starting point with a new infrastructure partner',
+        ]}
+        whatWeDo={[
+          'Cloud & Workspace Health Check: Review current setup, identify risks and map target architecture (£2,000–£4,000, 2–4 weeks)',
+          'Modern Endpoint Quickstart: Assess devices and identity, design baseline policies (£3,000–£6,000, 3–6 weeks)',
+          'Cloud Migration or Implementation: Execute specific migrations (M365, AWS Workspaces, Intune rollout) with fixed scope',
+        ]}
+        whatYouGet={[
+          'Architecture diagrams and plain-English summaries',
+          'Prioritised action lists and documented strategies',
+          'Clear next steps and recommendations',
+          'Smooth transition path to ongoing managed services if needed',
+        ]}
+        duration="Varies by project type"
+        investment="From £2,000 for health checks, up to £6,000+ for implementations"
         imagePosition="left"
         ctaLabel="Book a discovery call"
         ctaHref="/contact?service=on-ramp-projects&cta=discovery-call"
