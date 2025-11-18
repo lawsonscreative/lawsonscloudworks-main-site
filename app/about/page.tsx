@@ -143,6 +143,89 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Experience Timeline */}
+      <section className="section-spacing bg-white">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-center mb-12">Experience Timeline</h2>
+
+          <div className="space-y-8">
+            {/* 2020-Present */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0 w-32 text-right">
+                <p className="text-lg font-semibold text-brand-navy">2020 – Present</p>
+              </div>
+              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
+              <div className="flex-grow pb-8">
+                <h3 className="text-xl font-semibold text-brand-navy mb-2">Direct Line Group / Aviva</h3>
+                <p className="text-neutral-600 mb-2 font-medium">Technical Lead</p>
+                <p className="text-neutral-700 leading-relaxed">
+                  Designed and operated an AWS-hosted developer platform serving 3,000+ developers. Led architecture decisions, infrastructure automation, and capacity planning for a major UK financial services organisation.
+                </p>
+              </div>
+            </div>
+
+            {/* 2018-2019 */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0 w-32 text-right">
+                <p className="text-lg font-semibold text-brand-navy">2018 – 2019</p>
+              </div>
+              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
+              <div className="flex-grow pb-8">
+                <h3 className="text-xl font-semibold text-brand-navy mb-2">Great Ormond Street Hospital</h3>
+                <p className="text-neutral-600 mb-2 font-medium">Senior Consultant</p>
+                <p className="text-neutral-700 leading-relaxed">
+                  Delivered critical infrastructure projects including remote access rollout during COVID-19 lockdowns, supporting 14,000+ users transitioning to remote work.
+                </p>
+              </div>
+            </div>
+
+            {/* 2016-2018 */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0 w-32 text-right">
+                <p className="text-lg font-semibold text-brand-navy">2016 – 2018</p>
+              </div>
+              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
+              <div className="flex-grow pb-8">
+                <h3 className="text-xl font-semibold text-brand-navy mb-2">ThinTech Ltd</h3>
+                <p className="text-neutral-600 mb-2 font-medium">Senior Consultant</p>
+                <p className="text-neutral-700 leading-relaxed">
+                  Specialised in workspace transformation and virtual desktop infrastructure (VDI) projects for enterprise clients across the UK.
+                </p>
+              </div>
+            </div>
+
+            {/* 2015-2021 */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0 w-32 text-right">
+                <p className="text-lg font-semibold text-brand-navy">2015 – 2021</p>
+              </div>
+              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
+              <div className="flex-grow pb-8">
+                <h3 className="text-xl font-semibold text-brand-navy mb-2">ReVoBlue IT Services</h3>
+                <p className="text-neutral-600 mb-2 font-medium">Senior IT Consultant</p>
+                <p className="text-neutral-700 leading-relaxed">
+                  Concurrent consulting role delivering Microsoft cloud and endpoint management projects for SME and mid-market clients.
+                </p>
+              </div>
+            </div>
+
+            {/* Earlier roles */}
+            <div className="flex gap-6">
+              <div className="flex-shrink-0 w-32 text-right">
+                <p className="text-lg font-semibold text-brand-navy">1990s – 2015</p>
+              </div>
+              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
+              <div className="flex-grow">
+                <h3 className="text-xl font-semibold text-brand-navy mb-2">Earlier Roles</h3>
+                <p className="text-neutral-700 leading-relaxed">
+                  Various technical and consulting positions including NHS trusts, Stansted Airport, and IT consultancies. Built foundational expertise in infrastructure, networking, and systems management during the evolution from on-premises to cloud computing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Values */}
       <section className="section-spacing bg-white">
         <div className="container-custom max-w-4xl">

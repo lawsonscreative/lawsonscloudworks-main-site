@@ -42,36 +42,28 @@ export default function Home() {
               </div>
               <div className="hidden lg:block">
                 <div className="bg-gradient-to-br from-brand-sky to-brand-navy rounded-lg p-8 text-white shadow-xl">
-                  <p className="text-lg font-semibold mb-4">
+                  <p className="text-lg font-semibold mb-6">
                     Built on real-world experience:
                   </p>
-                  <ul className="space-y-3 text-base">
-                    <li className="flex items-start">
-                      <svg className="w-6 h-6 mr-2 flex-shrink-0 text-brand-light" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      Designed and operated an AWS-hosted developer platform for 3,000+ developers at a major UK insurer
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-6 h-6 mr-2 flex-shrink-0 text-brand-light" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      Rolled out remote access solutions for 14,000+ users during COVID-19 lockdowns
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-6 h-6 mr-2 flex-shrink-0 text-brand-light" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      30+ years in IT infrastructure and systems
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="w-6 h-6 mr-2 flex-shrink-0 text-brand-light" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      Deep expertise in AWS and Microsoft ecosystems, including hybrid enterprise environments
-                    </li>
-                  </ul>
-                  <p className="text-sm text-white/80 mt-4 pt-4 border-t border-white/20">
+                  <div className="grid grid-cols-2 gap-6 mb-6">
+                    <div className="text-center">
+                      <p className="text-4xl font-bold text-brand-light mb-2">3,000+</p>
+                      <p className="text-sm">developers supported on AWS-hosted platform at Direct Line Group</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-4xl font-bold text-brand-light mb-2">14,000+</p>
+                      <p className="text-sm">users enabled for remote access during COVID-19 lockdowns</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-4xl font-bold text-brand-light mb-2">30+</p>
+                      <p className="text-sm">years in IT infrastructure and systems</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-4xl font-bold text-brand-light mb-2">100%</p>
+                      <p className="text-sm">AWS and Microsoft ecosystem expertise</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-white/80 pt-4 border-t border-white/20">
                     CloudWorks is a new consultancy brand founded in 2025, built on Andy&apos;s three decades of hands-on infrastructure, workspace and cloud experience.
                   </p>
                 </div>
