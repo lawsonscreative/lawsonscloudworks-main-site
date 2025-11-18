@@ -144,61 +144,20 @@ export default function AboutPage() {
         <div className="container-custom max-w-4xl">
           <h2 className="text-center mb-12">Three Decades of Infrastructure Experience</h2>
 
-          <div className="space-y-8">
-            {/* 2020s - Present */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-ink">2020s</p>
-              </div>
-              <div className="flex-shrink-0 w-px bg-brand-teal"></div>
-              <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-ink mb-2">Cloud-Native Platforms</h3>
-                <p className="text-neutral-700 leading-relaxed">
-                  Led design and operations of AWS-hosted developer platforms for multi-thousand user environments in large UK insurers and financial services organisations. Focus on automation, capacity planning and developer experience.
-                </p>
-              </div>
-            </div>
-
-            {/* 2010s */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-ink">2010s</p>
-              </div>
-              <div className="flex-shrink-0 w-px bg-brand-teal"></div>
-              <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-ink mb-2">Cloud Migration & Modern Workspaces</h3>
-                <p className="text-neutral-700 leading-relaxed">
-                  Microsoft 365 migrations, VDI implementations and hybrid infrastructure for NHS organisations, healthcare providers and professional services firms. Significant focus on remote access enablement during COVID-19 pandemic for multi-thousand user NHS estates.
-                </p>
-              </div>
-            </div>
-
-            {/* 2000s */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-ink">2000s</p>
-              </div>
-              <div className="flex-shrink-0 w-px bg-brand-teal"></div>
-              <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-ink mb-2">Enterprise IT & Critical Infrastructure</h3>
-                <p className="text-neutral-700 leading-relaxed">
-                  Infrastructure projects for critical national infrastructure, transport hubs and large enterprises. Built expertise in high-availability systems, disaster recovery and complex enterprise environments during the transition from physical to virtualised infrastructure.
-                </p>
-              </div>
-            </div>
-
-            {/* 1990s */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-ink">1990s</p>
-              </div>
-              <div className="flex-shrink-0 w-px bg-brand-teal"></div>
-              <div className="flex-grow">
-                <h3 className="text-xl font-semibold text-brand-ink mb-2">Foundations</h3>
-                <p className="text-neutral-700 leading-relaxed">
-                  Started in hands-on technical roles building networks, servers and desktop estates. Built foundational expertise during the evolution from mainframes through client-server to modern distributed computing.
-                </p>
-              </div>
+          <div className="bg-neutral-50 p-8 rounded-lg">
+            <div className="space-y-4 text-neutral-700">
+              <p className="leading-relaxed">
+                <strong className="text-brand-ink">2020s:</strong> Led cloud-native platforms (AWS WorkSpaces, AVD) for multi-thousand user environments in regulated sectors. Focus on automation and developer experience.
+              </p>
+              <p className="leading-relaxed">
+                <strong className="text-brand-ink">2010s:</strong> Microsoft 365 migrations, VDI implementations and hybrid infrastructure for NHS, healthcare and professional services. Remote access enablement during COVID-19 for large NHS estates.
+              </p>
+              <p className="leading-relaxed">
+                <strong className="text-brand-ink">2000s:</strong> Critical infrastructure projects for transport hubs and large enterprises. High-availability systems during physical-to-virtual transition.
+              </p>
+              <p className="leading-relaxed">
+                <strong className="text-brand-ink">1990s:</strong> Hands-on technical roles building networks, servers and desktop estates. Foundations in client-server and distributed computing.
+              </p>
             </div>
           </div>
         </div>
