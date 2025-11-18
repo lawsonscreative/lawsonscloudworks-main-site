@@ -93,6 +93,24 @@ export default function ContactPage() {
                 }>
                   <ContactForm />
                 </Suspense>
+                <noscript>
+                  <div className="bg-brand-teal-soft border-2 border-brand-teal rounded-lg p-6 text-center">
+                    <h4 className="text-xl font-semibold text-brand-ink mb-3">JavaScript Required</h4>
+                    <p className="text-neutral-700 mb-4">
+                      Our contact form requires JavaScript to function. Please enable JavaScript in your browser, or contact us directly:
+                    </p>
+                    <div className="space-y-2">
+                      <p className="font-semibold text-brand-ink">
+                        <a href="mailto:hello@lawsonscloudworks.co.uk" className="text-brand-teal hover:text-brand-ink underline">
+                          hello@lawsonscloudworks.co.uk
+                        </a>
+                      </p>
+                      <p className="text-sm text-neutral-600">
+                        We typically respond within one business day.
+                      </p>
+                    </div>
+                  </div>
+                </noscript>
               </div>
             </div>
           </div>

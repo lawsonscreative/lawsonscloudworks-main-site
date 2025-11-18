@@ -80,7 +80,7 @@ export default function CaseStudiesPage() {
           <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
             Get in touch to discuss your cloud, workspace, or automation challenges.
           </p>
-          <a href="/contact" className="btn-primary inline-block text-lg">
+          <a href="/contact?cta=case-studies-page" className="btn-primary inline-block text-lg">
             Book a 30-Minute Discovery Call
           </a>
         </div>

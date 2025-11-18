@@ -29,15 +29,18 @@ export default function ContactForm() {
   const [errorMessage, setErrorMessage] = useState('');
   const [errors, setErrors] = useState<FormErrors>({});
 
-  // Handle service query parameter
+  // Handle service and CTA query parameters
   useEffect(() => {
     const service = searchParams.get('service');
+    const cta = searchParams.get('cta');
+
     if (service) {
       const serviceMap: { [key: string]: string } = {
-        'cloud-workspace': 'Managed Cloud Workspace Service',
-        'endpoint-identity': 'Managed Endpoint & Identity Service',
-        'automation': 'Automation & Dev Tooling (managed or project)',
-        'on-ramp': 'On-Ramp Project (Health Check, Migration)',
+        'managed-cloud-workspace': 'Managed Cloud Workspace Service',
+        'managed-endpoint-identity': 'Managed Endpoint & Identity Service',
+        'automation-dev-tooling': 'Automation & Dev Tooling (managed or project)',
+        'advisory-project-rescue': 'Advisory & Project Rescue',
+        'on-ramp-projects': 'On-Ramp Project (Health Check, Migration)',
       };
 
       const mappedService = serviceMap[service];
@@ -47,6 +50,15 @@ export default function ContactForm() {
           services: [mappedService]
         }));
       }
+    }
+
+    // Store CTA source in a hidden field for analytics (can be added to form data if needed)
+    if (cta) {
+      // This allows tracking which specific CTA brought the user to the contact form
+      setFormData(prev => ({
+        ...prev,
+        message: prev.message || `Enquiry via: ${cta.replace(/-/g, ' ')}\n\n`
+      }));
     }
   }, [searchParams]);
 

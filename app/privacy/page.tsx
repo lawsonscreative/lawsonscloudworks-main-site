@@ -68,13 +68,6 @@ export default function PrivacyPage() {
               <strong>Email:</strong> hello@lawsonscloudworks.co.uk
             </p>
 
-            <div className="bg-neutral-50 p-6 rounded-lg mt-8">
-              <p className="text-sm text-neutral-600 mb-0">
-                <strong>Note:</strong> This is a basic privacy policy suitable for a consultancy website.
-                For production use, you should have this reviewed by a legal professional to ensure it
-                meets all UK GDPR requirements.
-              </p>
-            </div>
           </div>
         </div>
       </section>
