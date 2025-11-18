@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import ServiceCard from '@/components/ServiceCard';
 import OutcomesSection from '@/components/OutcomesSection';
-import CredibilityStrip from '@/components/CredibilityStrip';
 import CaseStudyTeaser from '@/components/CaseStudyTeaser';
 
 export const metadata: Metadata = {
@@ -15,101 +14,131 @@ export default function Home() {
     <>
       {/* Add top padding to account for fixed nav */}
       <div className="pt-20">
-        {/* Hero Section */}
-        <section className="section-spacing bg-gradient-to-br from-brand-light to-white">
-          <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
-                <h1 className="leading-tight">
-                  Cloud, workspaces and automation for teams who need enterprise thinking without enterprise drama
-                </h1>
-                <p className="text-xl text-neutral-700 leading-relaxed">
-                  We help small and mid-sized UK organisations modernise their cloud infrastructure,
-                  secure their endpoints, and automate the tedious stuff. Real expertise, realistic scopes,
-                  plain English.
-                </p>
-                <p className="text-lg text-neutral-600 leading-relaxed">
-                  We&apos;re best suited to teams of roughly 20–250 people, especially those with remote developers or distributed knowledge workers.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Link href="/contact" className="btn-primary text-center">
-                    Book a Discovery Call
-                  </Link>
-                  <Link href="/services" className="btn-secondary text-center">
-                    Explore Our Services
-                  </Link>
-                </div>
-              </div>
-              <div className="hidden lg:block">
-                <div className="bg-gradient-to-br from-brand-sky to-brand-navy rounded-lg p-8 text-white shadow-xl">
-                  <p className="text-lg font-semibold mb-6">
-                    Built on real-world experience:
-                  </p>
-                  <div className="grid grid-cols-2 gap-6 mb-6">
-                    <div className="text-center">
-                      <p className="text-4xl font-bold text-brand-light mb-2">3,000+</p>
-                      <p className="text-sm">developers supported on AWS-hosted platform at Direct Line Group</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-4xl font-bold text-brand-light mb-2">14,000+</p>
-                      <p className="text-sm">users enabled for remote access during COVID-19 lockdowns</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-4xl font-bold text-brand-light mb-2">30+</p>
-                      <p className="text-sm">years in IT infrastructure and systems</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-4xl font-bold text-brand-light mb-2">100%</p>
-                      <p className="text-sm">AWS and Microsoft ecosystem expertise</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-white/80 pt-4 border-t border-white/20">
-                    CloudWorks is a new consultancy brand founded in 2025, built on Andy&apos;s three decades of hands-on infrastructure, workspace and cloud experience.
-                  </p>
-                </div>
+        {/* Hero Section - Dark with Visual Impact */}
+        <section className="relative bg-gradient-to-br from-neutral-900 via-brand-navy to-neutral-900 text-white overflow-hidden">
+          {/* Background pattern overlay */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0" style={{
+              backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)',
+              backgroundSize: '40px 40px'
+            }}></div>
+          </div>
+
+          <div className="container-custom relative z-10 py-24 md:py-32">
+            <div className="max-w-4xl mx-auto text-center space-y-8">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                Cloud, workspaces and automation for teams who need enterprise thinking without enterprise drama
+              </h1>
+
+              <p className="text-xl md:text-2xl text-brand-light font-medium">
+                We help UK organisations modernise infrastructure, secure endpoints, and automate the tedious stuff.
+              </p>
+
+              <p className="text-base md:text-lg text-white/80">
+                Best suited to teams of 20–250 people with remote developers or distributed workers.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <Link href="/contact" className="inline-block px-8 py-4 bg-brand-sky text-white font-semibold rounded-lg hover:bg-brand-light hover:text-brand-navy transition-all duration-200 text-lg shadow-lg">
+                  Book a Discovery Call
+                </Link>
+                <Link href="/services" className="inline-block px-8 py-4 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-200 text-lg border border-white/20">
+                  Explore Our Services
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Service Pillars */}
+        {/* Stats Section - Visual Cards with Icons */}
         <section className="section-spacing bg-white">
           <div className="container-custom">
             <div className="text-center mb-12">
+              <h2 className="mb-4">Built on Real-World Experience</h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              {/* Stat 1 - Developers */}
+              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
+                <div className="text-5xl mb-4">☁️</div>
+                <div className="text-4xl font-bold text-brand-navy mb-2">3,000+</div>
+                <p className="text-sm text-neutral-600 leading-relaxed">
+                  developers supported on AWS platform at Direct Line Group
+                </p>
+              </div>
+
+              {/* Stat 2 - Users */}
+              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
+                <div className="text-5xl mb-4">👥</div>
+                <div className="text-4xl font-bold text-brand-navy mb-2">14,000+</div>
+                <p className="text-sm text-neutral-600 leading-relaxed">
+                  users enabled for remote work during COVID lockdowns
+                </p>
+              </div>
+
+              {/* Stat 3 - Years */}
+              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
+                <div className="text-5xl mb-4">📅</div>
+                <div className="text-4xl font-bold text-brand-navy mb-2">30+</div>
+                <p className="text-sm text-neutral-600 leading-relaxed">
+                  years in IT infrastructure and systems
+                </p>
+              </div>
+
+              {/* Stat 4 - Platforms */}
+              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
+                <div className="text-5xl mb-4">⚡</div>
+                <div className="text-4xl font-bold text-brand-navy mb-2">AWS + M365</div>
+                <p className="text-sm text-neutral-600 leading-relaxed">
+                  Deep expertise in both cloud ecosystems
+                </p>
+              </div>
+            </div>
+
+            <p className="text-sm text-neutral-500 text-center mt-12 max-w-3xl mx-auto">
+              CloudWorks is a new consultancy brand founded in 2025, built on Andy&apos;s three decades of hands-on infrastructure, workspace and cloud experience.
+            </p>
+          </div>
+        </section>
+
+        {/* Service Pillars */}
+        <section className="section-spacing bg-neutral-50">
+          <div className="container-custom">
+            <div className="text-center mb-12">
               <h2 className="mb-4">How We Help</h2>
-              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                We focus on four core areas where small consultancies can deliver real value without the overhead of big firms.
+              <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+                Four core services. Clear outcomes. No enterprise overhead.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               <ServiceCard
                 icon="cloud"
-                title="Cloud & Workspace Architecture"
-                description="Design and implement cloud environments that actually work for remote teams. AWS, Microsoft 365, hybrid setups."
+                title="Cloud & Workspace"
+                description="Migrate to modern cloud workspaces that work for distributed teams."
                 link="/services#cloud-workspace"
-                offerReference="Typical engagement: Cloud & Workspace Health Check – a short, fixed-scope review with a clear action plan."
+                offerReference="Cloud & Workspace Health Check"
               />
               <ServiceCard
                 icon="shield"
                 title="Modern Endpoint & Identity"
-                description="Secure your laptops and user access without creating friction. Intune, SSO, conditional access."
+                description="Secure laptops and user access without creating friction."
                 link="/services#endpoint-identity"
-                offerReference="Typical engagement: Modern Endpoint Quickstart – establish baselines, policies and onboarding playbooks."
+                offerReference="Modern Endpoint Quickstart"
               />
               <ServiceCard
                 icon="automation"
                 title="Automation & Dev Tooling"
-                description="Build GitHub workflows, automate repetitive tasks, and improve developer experience."
+                description="Build GitHub workflows and automate repetitive tasks."
                 link="/services#automation"
-                offerReference="Typical engagement: Automation & Dev Tooling Accelerator – improve developer workflows and key automations."
+                offerReference="Automation & Dev Tooling Accelerator"
               />
               <ServiceCard
                 icon="advisory"
-                title="Advisory & Project Rescue"
-                description="Second opinions, health checks, and roadmaps when you need independent expertise."
+                title="Advisory & Rescue"
+                description="Second opinions, health checks, and fractional leadership."
                 link="/services#advisory"
-                offerReference="Typical engagement: Fractional Cloud & Workspace Lead – ongoing advisory support for growing teams."
+                offerReference="Fractional Cloud & Workspace Lead"
               />
             </div>
           </div>
@@ -118,37 +147,34 @@ export default function Home() {
         {/* Outcomes Section */}
         <OutcomesSection />
 
-        {/* Credibility Strip */}
-        <CredibilityStrip />
-
         {/* Case Studies Teaser */}
         <section className="section-spacing bg-white">
           <div className="container-custom">
             <div className="text-center mb-12">
               <h2 className="mb-4">Recent Work</h2>
-              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                Real projects and outcomes from Andy&apos;s work in senior consulting, contracting and technical lead roles. Some examples pre-date Lawsons CloudWorks and are anonymised as representative scenarios.
+              <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+                Real projects from Andy&apos;s senior consulting and technical lead roles.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               <CaseStudyTeaser
-                title="Modernising Remote Development Environment"
+                title="AWS Developer Platform"
                 industry="Software Development"
                 size="200-person company"
-                problem="Legacy VPN-based dev environment causing friction for remote developers."
-                outcome="Moving to an AWS-hosted virtual desktop platform reduced connection issues by around 80% in that engagement and improved developer satisfaction scores."
+                problem="Legacy VPN causing friction for remote developers."
+                outcome="AWS-hosted platform reduced connection issues by ~80% and improved developer satisfaction."
                 link="/case-studies/remote-dev-modernisation"
-                engagementType="Cloud & Workspace Health Check + rollout support"
+                engagementType="Cloud & Workspace Health Check"
               />
               <CaseStudyTeaser
-                title="Cloud Migration & Cost Optimisation"
+                title="Cloud Migration & Cost Cut"
                 industry="Professional Services"
                 size="50-person consultancy"
-                problem="Mixed on-prem and cloud setup with unpredictable costs and manual patching."
-                outcome="A full migration to Microsoft 365 with documented processes reduced monthly costs by roughly a third. Clear security baselines and automated patching freed up around 15 hours per week of IT time for more valuable work."
+                problem="Mixed on-prem setup with unpredictable costs."
+                outcome="Microsoft 365 migration cut monthly costs by ~30% and freed 15 hours/week of IT time."
                 link="/case-studies/cloud-migration"
-                engagementType="Cloud & Workspace Health Check + full migration"
+                engagementType="Cloud & Workspace Health Check"
               />
             </div>
 
@@ -166,15 +192,12 @@ export default function Home() {
             <h2 className="text-white mb-6">
               Let&apos;s Untangle Your Cloud and Workspace
             </h2>
-            <p className="text-xl mb-6 max-w-2xl mx-auto text-brand-light">
-              Most new clients start with a Cloud & Workspace Health Check – a short engagement that gives you a clear view of what&apos;s working, what isn&apos;t, and what to do next.
-            </p>
-            <p className="text-lg mb-8 max-w-2xl mx-auto text-white/90">
-              Book a no-obligation discovery call. We&apos;ll listen to your challenges and explore whether we&apos;re the right fit.
+            <p className="text-xl mb-8 max-w-2xl mx-auto text-brand-light">
+              Most clients start with a Health Check. Book a discovery call to explore whether we&apos;re the right fit.
             </p>
             <Link
               href="/contact"
-              className="inline-block px-8 py-4 bg-white text-brand-navy font-semibold rounded-lg hover:bg-brand-light transition-all duration-200 text-lg"
+              className="inline-block px-8 py-4 bg-white text-brand-navy font-semibold rounded-lg hover:bg-brand-light transition-all duration-200 text-lg shadow-lg"
             >
               Book a Discovery Call
             </Link>

@@ -1,13 +1,13 @@
 export default function OutcomesSection() {
   const outcomes = [
-    'Smoother remote work experience for your team',
-    'Fewer support fires and IT emergencies',
-    'Better security posture without user friction',
-    'Clearer technology roadmap and priorities',
-    'Reduced IT running costs and waste',
-    'Faster onboarding for new staff members',
-    'Move from fragile VPN-based access to a resilient, documented cloud workspace',
-    'Cut onboarding from days of manual setup to a reproducible process that takes hours',
+    'Smoother remote work for your team',
+    'Fewer IT fires and emergencies',
+    'Better security without friction',
+    'Clear technology roadmap',
+    'Reduced IT running costs',
+    'Faster staff onboarding',
+    'Resilient cloud workspace',
+    'Automated provisioning',
   ];
 
   return (
@@ -15,19 +15,19 @@ export default function OutcomesSection() {
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="mb-4">What We Help You Achieve</h2>
-          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-            Our work is measured by business outcomes, not technical deliverables.
+          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            Business outcomes, not technical deliverables.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {outcomes.map((outcome, index) => (
             <div
               key={index}
-              className="flex items-start space-x-3 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="flex items-center space-x-3 bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-brand-sky/10"
             >
               <svg
-                className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5"
+                className="w-8 h-8 text-brand-sky flex-shrink-0"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -37,7 +37,7 @@ export default function OutcomesSection() {
                   clipRule="evenodd"
                 />
               </svg>
-              <p className="text-neutral-700 leading-relaxed">{outcome}</p>
+              <p className="text-neutral-700 font-medium">{outcome}</p>
             </div>
           ))}
         </div>

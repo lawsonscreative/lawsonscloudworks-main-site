@@ -12,39 +12,22 @@ export default function ServicesPage() {
   return (
     <div className="pt-20">
       {/* Page Intro */}
-      <section className="section-spacing bg-gradient-to-br from-brand-light to-white">
-        <div className="container-custom max-w-4xl">
-          <h1 className="mb-6 text-center">Services</h1>
+      <section className="relative bg-gradient-to-br from-neutral-900 via-brand-navy to-neutral-900 text-white py-20">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)',
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
 
-          <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
-            <p>
-              CloudWorks is consulting and project delivery, not commodity IT support.
-            </p>
-
-            <p>
-              We focus on:
-            </p>
-            <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Cloud & workspace design</li>
-              <li>Modern endpoint & identity</li>
-              <li>Automation & dev tooling</li>
-              <li>Advisory & project rescue</li>
-            </ul>
-
-            <p>
-              We work best with 20–250 person UK organisations with remote/hybrid teams.
-            </p>
-          </div>
-
-          <div className="mt-8 bg-brand-navy/5 border-l-4 border-brand-sky rounded-r-lg p-6">
-            <h3 className="text-xl font-semibold text-brand-navy mb-3">
-              How most clients start:
-            </h3>
-            <p className="text-neutral-700 leading-relaxed">
-              Most clients begin with a Cloud & Workspace Health Check. From there, we either help you
-              execute the plan, or work alongside your existing IT team or MSP.
-            </p>
-          </div>
+        <div className="container-custom max-w-3xl relative z-10 text-center space-y-6">
+          <h1 className="text-5xl font-bold mb-6">Services</h1>
+          <p className="text-xl text-brand-light">
+            Consulting and project delivery for 20–250 person UK organisations.
+          </p>
+          <p className="text-lg text-white/80">
+            Most clients start with a Health Check. From there, we execute or advise.
+          </p>
         </div>
       </section>
 
