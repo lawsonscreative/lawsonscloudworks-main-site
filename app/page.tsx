@@ -5,8 +5,8 @@ import OutcomesSection from '@/components/OutcomesSection';
 import CaseStudyTeaser from '@/components/CaseStudyTeaser';
 
 export const metadata: Metadata = {
-  title: 'Lawsons CloudWorks | Cloud, Workspace & Automation Consulting for UK Teams',
-  description: 'Boutique cloud and workspace consultancy helping 20-250 person UK organisations modernise infrastructure without enterprise drama. AWS, Microsoft 365, modern endpoints, automation.',
+  title: 'Lawsons CloudWorks | Managed Cloud Workspaces & Endpoints for UK Teams',
+  description: 'Specialist MSP for small and mid-sized UK organisations with remote and hybrid teams. Managed cloud workspaces, modern endpoints, automation. AWS, Microsoft 365, Intune expertise.',
 };
 
 export default function Home() {
@@ -19,15 +19,15 @@ export default function Home() {
           <div className="container-custom relative z-10 py-16 md:py-20">
             <div className="max-w-4xl mx-auto text-center space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-                Cloud, workspaces and automation for teams who need enterprise thinking without enterprise drama
+                Managed cloud workspaces and endpoints without the enterprise drama
               </h1>
 
               <p className="text-xl md:text-2xl text-white font-medium">
-                We help UK organisations modernise infrastructure, secure endpoints, and automate the tedious stuff.
+                Specialist MSP for small and mid-sized UK organisations with remote and hybrid teams. Real expertise, realistic scopes, plain English.
               </p>
 
               <p className="text-base md:text-lg text-white/90">
-                Best suited to teams of 20–250 people with remote developers or distributed workers.
+                Best suited to teams of 20–250 people who need ongoing management of Microsoft 365, AWS workspaces, Intune endpoints and dev tooling.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -50,45 +50,45 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              {/* Stat 1 - Developers */}
+              {/* Capability 1 - Multi-thousand User Experience */}
               <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
                 <div className="text-5xl mb-4">☁️</div>
-                <div className="text-4xl font-bold text-brand-navy mb-2">3,000+</div>
+                <div className="text-xl font-bold text-brand-navy mb-2">Multi-Thousand User Environments</div>
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  developers supported on AWS platform at Direct Line Group
+                  Experience operating cloud workspaces and remote access platforms for large UK organisations in regulated sectors
                 </p>
               </div>
 
-              {/* Stat 2 - Users */}
-              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
-                <div className="text-5xl mb-4">👥</div>
-                <div className="text-4xl font-bold text-brand-navy mb-2">14,000+</div>
-                <p className="text-sm text-neutral-600 leading-relaxed">
-                  users enabled for remote work during COVID lockdowns
-                </p>
-              </div>
-
-              {/* Stat 3 - Years */}
-              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
-                <div className="text-5xl mb-4">📅</div>
-                <div className="text-4xl font-bold text-brand-navy mb-2">30+</div>
-                <p className="text-sm text-neutral-600 leading-relaxed">
-                  years in IT infrastructure and systems
-                </p>
-              </div>
-
-              {/* Stat 4 - Platforms */}
+              {/* Capability 2 - Platform Expertise */}
               <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
                 <div className="text-5xl mb-4">⚡</div>
-                <div className="text-4xl font-bold text-brand-navy mb-2">AWS + M365</div>
+                <div className="text-xl font-bold text-brand-navy mb-2">AWS + M365 + Intune</div>
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  Deep expertise in both cloud ecosystems
+                  Deep expertise across AWS, Azure, Microsoft 365, Intune, AVD and hybrid infrastructure estates
+                </p>
+              </div>
+
+              {/* Capability 3 - Years */}
+              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
+                <div className="text-5xl mb-4">📅</div>
+                <div className="text-xl font-bold text-brand-navy mb-2">30+ Years</div>
+                <p className="text-sm text-neutral-600 leading-relaxed">
+                  IT infrastructure design, implementation and day-to-day operations
+                </p>
+              </div>
+
+              {/* Capability 4 - Battle-Tested Processes */}
+              <div className="bg-gradient-to-br from-brand-light to-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center border border-brand-sky/20">
+                <div className="text-5xl mb-4">🛡️</div>
+                <div className="text-xl font-bold text-brand-navy mb-2">Battle-Tested Processes</div>
+                <p className="text-sm text-neutral-600 leading-relaxed">
+                  Endpoint baselines, patching, backup/DR and change management for critical environments
                 </p>
               </div>
             </div>
 
             <p className="text-sm text-neutral-500 text-center mt-12 max-w-3xl mx-auto">
-              CloudWorks is a new consultancy brand founded in 2025, built on Andy&apos;s three decades of hands-on infrastructure, workspace and cloud experience.
+              CloudWorks is a specialist MSP brand founded in 2025, built on three decades of hands-on infrastructure, workspace and cloud experience.
             </p>
           </div>
         </section>
@@ -97,40 +97,40 @@ export default function Home() {
         <section className="section-spacing bg-neutral-50">
           <div className="container-custom">
             <div className="text-center mb-12">
-              <h2 className="mb-4">How We Help</h2>
+              <h2 className="mb-4">Managed Services & On-Ramp Projects</h2>
               <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-                Four core services. Clear outcomes. No enterprise overhead.
+                Monthly managed services backed by senior expertise. Start with a project, continue with ongoing management.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               <ServiceCard
                 icon="cloud"
-                title="Cloud & Workspace"
-                description="Migrate to modern cloud workspaces that work for distributed teams."
-                link="/services#cloud-workspace"
-                offerReference="Cloud & Workspace Health Check"
+                title="Managed Cloud Workspace Service"
+                description="Ongoing management of Microsoft 365, AWS Workspaces, AVD and hybrid environments. SLA-backed support for day-to-day operations."
+                link="/services#managed-cloud-workspace"
+                offerReference="Monthly Managed Service"
               />
               <ServiceCard
                 icon="shield"
-                title="Modern Endpoint & Identity"
-                description="Secure laptops and user access without creating friction."
-                link="/services#endpoint-identity"
-                offerReference="Modern Endpoint Quickstart"
+                title="Managed Endpoint & Identity Service"
+                description="Continuous management of Intune, Autopilot, Conditional Access and device compliance. Keep endpoints secure and users productive."
+                link="/services#managed-endpoint-identity"
+                offerReference="Monthly Managed Service"
               />
               <ServiceCard
                 icon="automation"
                 title="Automation & Dev Tooling"
-                description="Build GitHub workflows and automate repetitive tasks."
-                link="/services#automation"
-                offerReference="Automation & Dev Tooling Accelerator"
+                description="GitHub Actions, CI/CD pipelines and workflow automation. Available as managed service or fixed-scope project."
+                link="/services#automation-dev-tooling"
+                offerReference="Managed or Project-Based"
               />
               <ServiceCard
                 icon="advisory"
-                title="Advisory & Rescue"
-                description="Second opinions, health checks, and fractional leadership."
-                link="/services#advisory"
-                offerReference="Fractional Cloud & Workspace Lead"
+                title="On-Ramp Projects"
+                description="Health checks, migrations and implementations designed to transition into ongoing managed services."
+                link="/services#on-ramp-projects"
+                offerReference="2-6 Week Projects"
               />
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="mb-4">Recent Work</h2>
               <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-                Real projects from Andy&apos;s senior consulting and technical lead roles.
+                Real projects and managed service engagements from our senior infrastructure team.
               </p>
             </div>
 
@@ -185,7 +185,7 @@ export default function Home() {
               Let&apos;s Untangle Your Cloud and Workspace
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto text-brand-light">
-              Most clients start with a Health Check. Book a discovery call to explore whether we&apos;re the right fit.
+              Most clients start with an on-ramp project, then transition to monthly managed services. Book a discovery call to explore whether we&apos;re the right fit.
             </p>
             <Link
               href="/contact"

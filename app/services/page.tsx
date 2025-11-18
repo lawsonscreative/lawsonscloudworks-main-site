@@ -4,8 +4,8 @@ import ProductisedOffer from '@/components/ProductisedOffer';
 import AdvisoryOffers from '@/components/AdvisoryOffers';
 
 export const metadata: Metadata = {
-  title: 'Services | Cloud, Workspace & Automation Consulting | Lawsons CloudWorks',
-  description: 'Cloud architecture, modern endpoint management, automation, and advisory services for UK businesses. AWS, Microsoft 365, Intune, and GitHub workflows expertise.',
+  title: 'Managed Services & On-Ramp Projects | Lawsons CloudWorks',
+  description: 'Managed cloud workspace, endpoint and automation services for UK organisations. Monthly retainers backed by senior expertise. AWS, Microsoft 365, Intune, and GitHub workflows.',
 };
 
 export default function ServicesPage() {
@@ -14,65 +14,67 @@ export default function ServicesPage() {
       {/* Page Intro */}
       <section className="relative bg-gradient-to-br from-neutral-900 to-brand-navy text-white py-16">
         <div className="container-custom max-w-3xl relative z-10 text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white">Managed Services & On-Ramp Projects</h1>
           <p className="text-xl text-white">
-            Consulting and project delivery for 20–250 person UK organisations.
+            Specialist MSP for 20–250 person UK organisations with remote and hybrid teams.
           </p>
           <p className="text-lg text-white/90">
-            Most clients start with a Health Check. From there, we execute or advise.
+            Most clients start with an on-ramp project, then transition to monthly managed services.
           </p>
         </div>
       </section>
 
-      {/* Cloud & Workspace Health Check */}
+      {/* Managed Cloud Workspace Service */}
       <ProductisedOffer
-        id="cloud-workspace"
-        pillarTitle="Cloud & Workspace Architecture"
-        overview="For organisations with a mix of on-prem, VPN and cloud who need a clear path forward for their remote and hybrid teams."
-        offerTitle="Typical Engagement: Cloud & Workspace Health Check"
+        id="managed-cloud-workspace"
+        pillarTitle="Managed Cloud Workspace Service"
+        overview="Ongoing management of Microsoft 365, AWS Workspaces, AVD and hybrid environments. SLA-backed support for day-to-day operations, change management and continuous improvement."
+        offerTitle="Monthly Managed Service"
         whoItsFor={[
-          'Organisations with a mix of on-prem, VPN and cloud',
-          'Teams where remote developers complain about access, performance or reliability',
+          'Organisations with 20–250 users needing consistent, proactive management of cloud workspaces',
+          'Teams using Microsoft 365, AWS Workspaces, AVD or hybrid infrastructure who want senior-led support without enterprise MSP overhead',
         ]}
         whatWeDo={[
-          'Review your current cloud/workspace setup (AWS, Azure, M365, VPN, identity)',
-          'Identify bottlenecks, fragility and risk',
-          'Map out target architecture for next 12–24 months',
-          'Provide clear, prioritised recommendations',
+          'Day-to-day management of cloud workspace environments (M365, AWS, Azure, hybrid)',
+          'Monthly change windows for updates, patches and improvements',
+          'Proactive monitoring of configuration drift and security posture',
+          'Quarterly roadmap reviews and continuous improvement planning',
         ]}
         whatYouGet={[
-          '1–2 diagrams summarising current and target state',
-          'Written, plain-English summary of issues and options',
-          'Prioritised action list (quick wins, medium-term, longer-term)',
+          'SLA-backed support during UK business hours (9am–6pm)',
+          'Monthly reporting on environment health, changes and upcoming recommendations',
+          'Direct access to senior infrastructure team (not a helpdesk)',
+          'Continuous improvement to keep environments secure, resilient and cost-effective',
         ]}
-        duration="2–4 weeks"
-        investment="Typically £2,000–£4,000 for a 20–250 person organisation"
+        duration="Monthly retainer"
+        investment="Priced by environment size and complexity. Typically from £2,500/month for 20–50 users"
         imagePosition="right"
       />
 
-      {/* Modern Endpoint Quickstart */}
+      {/* Managed Endpoint & Identity Service */}
       <ProductisedOffer
-        id="endpoint-identity"
-        pillarTitle="Modern Endpoint & Identity"
-        overview="For organisations building machines manually or inconsistently, with weak security policies and painful onboarding/offboarding."
-        offerTitle="Typical Engagement: Modern Endpoint Quickstart"
+        id="managed-endpoint-identity"
+        pillarTitle="Managed Endpoint & Identity Service"
+        overview="Continuous management of Intune, Autopilot, Conditional Access and device compliance. Keep endpoints secure, users productive, and onboarding/offboarding smooth."
+        offerTitle="Monthly Managed Service"
         whoItsFor={[
-          'Organisations building machines manually or inconsistently',
-          'Teams with weak security policies and painful onboarding/offboarding',
+          'Organisations managing Windows or macOS devices via Intune, Autopilot or similar',
+          'Teams who need consistent endpoint security baselines without manual overhead',
         ]}
         whatWeDo={[
-          'Assess current device and identity setup (Intune, GPO, manual builds)',
-          'Design baseline policies for devices and identities',
-          'Define golden image / autopilot approach where applicable',
-          'Plan realistic rollout phases',
+          'Ongoing management of Intune policies, Autopilot profiles and device compliance',
+          'Monthly patching cycles and security baseline updates',
+          'Conditional Access policy management and identity governance',
+          'Device provisioning support for new starters and leavers',
         ]}
         whatYouGet={[
-          'Documented endpoint and identity strategy',
-          'Baseline policies (templated Intune profiles, conditional access, SSO outline)',
-          'Onboarding/offboarding process outline',
+          'SLA-backed support for endpoint and identity issues during UK business hours',
+          'Monthly compliance reporting and security posture reviews',
+          'Proactive policy updates to address emerging threats',
+          'Faster, smoother onboarding/offboarding processes',
         ]}
-        duration="3–6 weeks"
-        investment="Typically £3,000–£6,000 depending on scope"
+        duration="Monthly retainer"
+        investment="Priced by device count. Typically from £1,500/month for 20–50 devices"
         securityNote={{
           title: 'Security note:',
           content:
@@ -81,65 +83,69 @@ export default function ServicesPage() {
         imagePosition="left"
       />
 
-      {/* Automation & Dev Tooling Accelerator */}
+      {/* Automation & Dev Tooling */}
       <ProductisedOffer
-        id="automation"
+        id="automation-dev-tooling"
         pillarTitle="Automation & Dev Tooling"
-        overview="For teams using GitHub, cloud, SaaS but relying on manual deployments and where developer experience is slowed by infrastructure."
-        offerTitle="Typical Engagement: Automation & Dev Tooling Accelerator"
+        overview="GitHub Actions, CI/CD pipelines and workflow automation. Available as ongoing managed service or fixed-scope project depending on your needs."
+        offerTitle="Managed Service or Project-Based"
         whoItsFor={[
-          'Teams using GitHub, cloud, SaaS but relying on manual deployments',
-          'Organisations where developer experience is slowed by infrastructure',
+          'Teams using GitHub, cloud and SaaS who want reliable, maintained automation',
+          'Organisations where developer experience is slowed by fragile or manual infrastructure',
         ]}
         whatWeDo={[
-          'Review current CI/CD pipelines, release processes and automations',
-          'Identify critical automation opportunities (deployment, testing, provisioning)',
-          'Implement or improve 1–3 key pipelines (GitHub Actions, IaC)',
-          'Create simple runbooks and documentation',
+          'Build and maintain CI/CD pipelines (GitHub Actions, IaC)',
+          'Ongoing management of deployment workflows and release processes',
+          'Proactive improvements to automation and developer tooling',
+          'Documentation and runbooks for handoff (if project-based)',
         ]}
         whatYouGet={[
-          'Improved pipelines with clear ownership and docs',
-          'List of next automation opportunities for future phases',
-          'More predictable release process',
+          'Reliable, documented pipelines with clear ownership',
+          'Monthly improvements to automation (managed service) or completed implementation (project)',
+          'More predictable release process and faster developer workflows',
         ]}
-        duration="2–6 weeks"
-        investment="Typically £2,500–£5,000 depending on complexity"
+        duration="Monthly retainer or 2–6 week project"
+        investment="Managed: from £1,000/month. Projects: £2,500–£5,000 depending on complexity"
         imagePosition="right"
       />
 
-      {/* Advisory & Project Rescue */}
+      {/* On-Ramp Projects */}
       <AdvisoryOffers
-        id="advisory"
-        title="Advisory & Project Rescue"
-        overview="For organisations who need independent expertise, second opinions, or help getting projects back on track."
+        id="on-ramp-projects"
+        title="On-Ramp Projects"
+        overview="Health checks, migrations and implementations designed to transition into ongoing managed services. Start with a project, continue with monthly management."
         offers={[
           {
-            title: 'Architecture & Roadmap Review',
+            title: 'Cloud & Workspace Health Check',
             description: [
-              'Short engagement to review existing plan, vendor proposal or internal architecture',
-              'Deliverables: written second opinion, risks and trade-offs, alternative options',
+              'Review current cloud/workspace setup (AWS, Azure, M365, VPN, identity)',
+              'Identify bottlenecks, fragility and risk. Map target architecture',
+              'Deliverables: diagrams, plain-English summary, prioritised action list',
+              'Typical on-ramp to Managed Cloud Workspace Service',
             ],
-            duration: '1–2 weeks',
-            investment: '£1,500–£3,000',
+            duration: '2–4 weeks',
+            investment: '£2,000–£4,000',
           },
           {
-            title: 'Project Rescue',
+            title: 'Modern Endpoint Quickstart',
             description: [
-              'For in-flight projects that are stuck or going sideways',
-              'Focus: realistic plan that\'s acceptable to stakeholders (not assigning blame)',
+              'Assess device and identity setup. Design baseline policies for Intune/Autopilot',
+              'Define onboarding/offboarding processes and rollout phases',
+              'Deliverables: documented strategy, baseline policies, process outline',
+              'Typical on-ramp to Managed Endpoint & Identity Service',
             ],
-            duration: 'Varies by situation',
+            duration: '3–6 weeks',
+            investment: '£3,000–£6,000',
+          },
+          {
+            title: 'Cloud Migration or Implementation',
+            description: [
+              'Execute specific migration or implementation (M365, AWS Workspaces, Intune rollout)',
+              'Fixed scope with clear deliverables and timeline',
+              'Can transition to managed service for ongoing operations',
+            ],
+            duration: 'Varies by scope',
             investment: 'Depends on scope',
-          },
-          {
-            title: 'Fractional Cloud & Workspace Lead',
-            description: [
-              'Ongoing monthly retainer (1–4 days per month)',
-              'Responsibilities: steer roadmap, review changes, support internal IT/MSP, technical sounding board for leadership',
-              'Cadence: Monthly check-ins + ad-hoc availability',
-            ],
-            duration: 'Monthly retainer',
-            investment: 'From £1,200 per month (depending on days)',
           },
         ]}
         imagePosition="left"
@@ -153,21 +159,19 @@ export default function ServicesPage() {
           <div className="space-y-8">
             <div>
               <h3 className="text-xl font-semibold text-brand-navy mb-3">
-                Do you replace our MSP or IT team?
+                Are you a full-service MSP or a specialist MSP?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                No. We typically work alongside existing IT teams or MSPs. We bring specialist expertise in cloud,
-                workspace and automation, but we&apos;re not aiming to be your day-to-day support.
+                Specialist MSP. We focus on cloud workspaces, modern endpoints and automation. We don&apos;t do everything - we do these areas well. For general helpdesk or 24/7 support, we can work alongside your existing IT provider.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-brand-navy mb-3">
-                Can you work alongside our existing IT provider?
+                Can you replace our existing MSP?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                Absolutely. Many clients have us work collaboratively with their MSP or internal IT team. We focus
-                on strategy, architecture and specific projects while they handle day-to-day operations.
+                Possibly, if your needs align with our specialist services. Most clients use us alongside their existing MSP - we handle cloud workspaces and endpoints, they handle general IT support. We&apos;re flexible.
               </p>
             </div>
 
@@ -176,8 +180,7 @@ export default function ServicesPage() {
                 Do you provide 24/7 support?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                No. We&apos;re a consultancy focused on project-based work and advisory. If you need 24/7 support,
-                we can help you choose and work with a provider who offers that.
+                No. Our SLAs cover UK business hours (9am–6pm). For 24/7 requirements, we can work alongside a provider who offers that, or help you design resilient systems that reduce out-of-hours emergencies.
               </p>
             </div>
 
@@ -213,11 +216,10 @@ export default function ServicesPage() {
 
             <div>
               <h3 className="text-xl font-semibold text-brand-navy mb-3">
-                How do projects start?
+                How do managed services start?
               </h3>
               <p className="text-neutral-700 leading-relaxed">
-                Most clients begin with a Cloud & Workspace Health Check. This gives both of us a clear view of
-                what&apos;s needed. From there, we can execute the plan or simply hand it off to your team.
+                Most clients start with an on-ramp project (Health Check, Quickstart or Migration). This gives both of us a clear view of the environment. From there, we transition to monthly managed services for ongoing operations.
               </p>
             </div>
           </div>

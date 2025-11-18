@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Us | Lawsons CloudWorks | Cloud Consulting Kent UK',
-  description: 'Meet the team behind Lawsons CloudWorks. Enterprise cloud expertise for UK businesses, part of Lawsons Enterprises Ltd.',
+  title: 'About Us | Lawsons CloudWorks | Specialist MSP Kent UK',
+  description: 'Specialist MSP for cloud workspaces and modern endpoints. 30+ years infrastructure experience, part of Lawsons Enterprises Ltd.',
 };
 
 export default function AboutPage() {
@@ -14,10 +14,10 @@ export default function AboutPage() {
         <div className="container-custom max-w-4xl text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">About Lawsons CloudWorks</h1>
           <p className="text-xl text-white">
-            A new consultancy brand founded in 2025, built on three decades of hands-on experience.
+            A specialist MSP brand founded in 2025, built on three decades of hands-on infrastructure experience.
           </p>
           <p className="text-lg text-white/90">
-            The brand is new; the patterns, lessons and scars are not.
+            The brand is new; the lessons and experience are not.
           </p>
         </div>
       </section>
@@ -68,61 +68,57 @@ export default function AboutPage() {
 
             <div className="lg:col-span-2 space-y-6 text-lg text-neutral-700 leading-relaxed">
               <p>
-                Andy has 30+ years in IT, with particular depth in:
+                Andy has 30+ years in IT infrastructure, with particular depth in:
               </p>
 
               <ul className="space-y-2 ml-6">
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>AWS, including designing and operating an AWS-hosted developer platform for 3,000+ developers at Direct Line Group (a major UK insurer)</span>
+                  <span>Cloud workspace platforms (AWS, Microsoft 365, Azure Virtual Desktop)</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>The Microsoft stack (Microsoft 365, Azure, Intune, AVD, MECM, modern workplace tooling)</span>
+                  <span>Modern endpoint management (Intune, Autopilot, device compliance)</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>Cloud and hybrid architectures for distributed teams</span>
+                  <span>Identity and access management (Entra ID, Conditional Access, SSO)</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>Developer tooling, automation and modern endpoint management</span>
+                  <span>Developer tooling and automation (GitHub Actions, CI/CD, IaC)</span>
                 </li>
               </ul>
 
               <p>
-                This experience comes from a mix of long-term consulting, contracting and senior in-house Technical Lead roles, including positions at:
+                This experience comes from three decades across regulated sectors:
               </p>
 
               <ul className="space-y-2 ml-6 text-base">
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>Direct Line Group / Aviva (Technical Lead, 2020-Present)</span>
+                  <span>Large UK insurers and financial services organisations</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>Great Ormond Street Hospital (Senior Consultant, 2018-2019)</span>
+                  <span>NHS organisations and healthcare providers</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>ThinTech Ltd (Senior Consultant, 2016-2018)</span>
+                  <span>Critical national infrastructure and transport hubs</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-brand-sky mt-1">•</span>
-                  <span>ReVoBlue IT Services (Senior IT Consultant, 2015-2021)</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <span className="text-brand-sky mt-1">•</span>
-                  <span>Plus earlier roles at NHS, Stansted Airport, and various consultancies</span>
+                  <span>Multi-thousand user environments requiring high availability and security</span>
                 </li>
               </ul>
 
               <p>
-                The CloudWorks approach blends strategic and hands-on work, with a bias toward documentation and knowledge transfer.
+                The CloudWorks approach blends strategic planning with hands-on operations, emphasising documentation, knowledge transfer and continuous improvement.
               </p>
 
               <p>
-                For specialist areas, CloudWorks brings in trusted partners to ensure clients get the best expertise without compromise.
+                For specialist areas outside our core expertise, we work with trusted partners to ensure clients get the best outcome without compromise.
               </p>
 
               <div className="pt-4">
@@ -146,79 +142,61 @@ export default function AboutPage() {
       {/* Experience Timeline */}
       <section className="section-spacing bg-white">
         <div className="container-custom max-w-4xl">
-          <h2 className="text-center mb-12">Experience Timeline</h2>
+          <h2 className="text-center mb-12">Three Decades of Infrastructure Experience</h2>
 
           <div className="space-y-8">
-            {/* 2020-Present */}
+            {/* 2020s - Present */}
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-navy">2020 – Present</p>
+                <p className="text-lg font-semibold text-brand-navy">2020s</p>
               </div>
               <div className="flex-shrink-0 w-px bg-brand-sky"></div>
               <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-navy mb-2">Direct Line Group / Aviva</h3>
-                <p className="text-neutral-600 mb-2 font-medium">Technical Lead</p>
+                <h3 className="text-xl font-semibold text-brand-navy mb-2">Cloud-Native Platforms</h3>
                 <p className="text-neutral-700 leading-relaxed">
-                  Designed and operated an AWS-hosted developer platform serving 3,000+ developers. Led architecture decisions, infrastructure automation, and capacity planning for a major UK financial services organisation.
+                  Led design and operations of AWS-hosted developer platforms for multi-thousand user environments in large UK insurers and financial services organisations. Focus on automation, capacity planning and developer experience.
                 </p>
               </div>
             </div>
 
-            {/* 2018-2019 */}
+            {/* 2010s */}
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-navy">2018 – 2019</p>
+                <p className="text-lg font-semibold text-brand-navy">2010s</p>
               </div>
               <div className="flex-shrink-0 w-px bg-brand-sky"></div>
               <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-navy mb-2">Great Ormond Street Hospital</h3>
-                <p className="text-neutral-600 mb-2 font-medium">Senior Consultant</p>
+                <h3 className="text-xl font-semibold text-brand-navy mb-2">Cloud Migration & Modern Workspaces</h3>
                 <p className="text-neutral-700 leading-relaxed">
-                  Delivered critical infrastructure projects including remote access rollout during COVID-19 lockdowns, supporting 14,000+ users transitioning to remote work.
+                  Microsoft 365 migrations, VDI implementations and hybrid infrastructure for NHS organisations, healthcare providers and professional services firms. Significant focus on remote access enablement during COVID-19 pandemic for multi-thousand user NHS estates.
                 </p>
               </div>
             </div>
 
-            {/* 2016-2018 */}
+            {/* 2000s */}
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-navy">2016 – 2018</p>
+                <p className="text-lg font-semibold text-brand-navy">2000s</p>
               </div>
               <div className="flex-shrink-0 w-px bg-brand-sky"></div>
               <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-navy mb-2">ThinTech Ltd</h3>
-                <p className="text-neutral-600 mb-2 font-medium">Senior Consultant</p>
+                <h3 className="text-xl font-semibold text-brand-navy mb-2">Enterprise IT & Critical Infrastructure</h3>
                 <p className="text-neutral-700 leading-relaxed">
-                  Specialised in workspace transformation and virtual desktop infrastructure (VDI) projects for enterprise clients across the UK.
+                  Infrastructure projects for critical national infrastructure, transport hubs and large enterprises. Built expertise in high-availability systems, disaster recovery and complex enterprise environments during the transition from physical to virtualised infrastructure.
                 </p>
               </div>
             </div>
 
-            {/* 2015-2021 */}
+            {/* 1990s */}
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-navy">2015 – 2021</p>
-              </div>
-              <div className="flex-shrink-0 w-px bg-brand-sky"></div>
-              <div className="flex-grow pb-8">
-                <h3 className="text-xl font-semibold text-brand-navy mb-2">ReVoBlue IT Services</h3>
-                <p className="text-neutral-600 mb-2 font-medium">Senior IT Consultant</p>
-                <p className="text-neutral-700 leading-relaxed">
-                  Concurrent consulting role delivering Microsoft cloud and endpoint management projects for SME and mid-market clients.
-                </p>
-              </div>
-            </div>
-
-            {/* Earlier roles */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-32 text-right">
-                <p className="text-lg font-semibold text-brand-navy">1990s – 2015</p>
+                <p className="text-lg font-semibold text-brand-navy">1990s</p>
               </div>
               <div className="flex-shrink-0 w-px bg-brand-sky"></div>
               <div className="flex-grow">
-                <h3 className="text-xl font-semibold text-brand-navy mb-2">Earlier Roles</h3>
+                <h3 className="text-xl font-semibold text-brand-navy mb-2">Foundations</h3>
                 <p className="text-neutral-700 leading-relaxed">
-                  Various technical and consulting positions including NHS trusts, Stansted Airport, and IT consultancies. Built foundational expertise in infrastructure, networking, and systems management during the evolution from on-premises to cloud computing.
+                  Started in hands-on technical roles building networks, servers and desktop estates. Built foundational expertise during the evolution from mainframes through client-server to modern distributed computing.
                 </p>
               </div>
             </div>
@@ -252,10 +230,10 @@ export default function AboutPage() {
 
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-brand-navy mb-4">
-                Documentation & handover
+                Documentation & knowledge transfer
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
-                You own your systems. We make sure you understand them.
+                You own your systems. We make sure you understand them and can operate them confidently.
               </p>
             </div>
 
@@ -264,16 +242,16 @@ export default function AboutPage() {
                 Respect for in-house teams
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
-                No &quot;we&apos;re the heroes, your IT is stupid&quot; attitude. We work alongside existing teams, not against them.
+                No &quot;we&apos;re the heroes, your IT is wrong&quot; attitude. We work alongside existing teams, not against them.
               </p>
             </div>
 
             <div className="bg-neutral-50 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-brand-navy mb-4">
-                Independence
+                Continuous improvement, not lock-in
               </h3>
               <p className="text-lg text-neutral-700 leading-relaxed">
-                We help clients become less dependent on us, not more.
+                Managed services focused on making your environment better every month, not creating dependency.
               </p>
             </div>
           </div>

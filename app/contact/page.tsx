@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Get in Touch | Lawsons CloudWorks',
-  description: 'Contact Lawsons CloudWorks for cloud consulting, modern workplace, and automation services. Book a discovery call to discuss your project.',
+  title: 'Contact Us | Get in Touch | Lawsons CloudWorks MSP',
+  description: 'Contact Lawsons CloudWorks for managed cloud workspace and endpoint services. Book a discovery call to discuss your managed service needs or on-ramp project.',
 };
 
 export default function ContactPage() {
@@ -28,8 +28,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-2xl font-semibold text-brand-navy mb-4">Contact Information</h3>
                 <p className="text-neutral-600 leading-relaxed mb-6">
-                  We're here to help. Whether you have a specific project in mind or just want to
-                  explore options, we're happy to chat.
+                  We&apos;re here to help. Whether you&apos;re looking for ongoing managed services, considering switching MSPs, or need an on-ramp project, we&apos;re happy to chat.
                 </p>
               </div>
 

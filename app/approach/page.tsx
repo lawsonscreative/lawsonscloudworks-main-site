@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Our Approach | How We Work | Lawsons CloudWorks',
-  description: 'Learn how Lawsons CloudWorks engages with clients. Clear scopes, plain English documentation, and hands-on delivery without enterprise drama.',
+  title: 'Our Approach | How We Work | Lawsons CloudWorks MSP',
+  description: 'Learn how Lawsons CloudWorks manages client environments. Clear scopes, plain English documentation, senior-led support and continuous improvement without enterprise drama.',
 };
 
 export default function ApproachPage() {
@@ -15,23 +15,28 @@ export default function ApproachPage() {
     },
     {
       number: 2,
-      title: 'Short Diagnostic',
-      description: 'Remote or on-site (where appropriate) assessment to understand current state. Typical duration: 1-2 weeks depending on complexity.',
+      title: 'On-Ramp Project',
+      description: 'Health check, migration or implementation to baseline your environment. Typical duration: 2-6 weeks depending on scope.',
     },
     {
       number: 3,
-      title: 'Proposal & Options',
-      description: 'Clear recommendations with rationale, trade-offs and realistic timelines. We present options, not single "solutions".',
+      title: 'Transition to Managed Services',
+      description: 'Move to monthly managed service for ongoing operations. Clear SLAs, regular reporting, and direct access to senior team.',
     },
     {
       number: 4,
-      title: 'Delivery & Check-Ins',
-      description: 'Hands-on work with regular communication. You\'re never left wondering what\'s happening. Frequency depends on engagement type.',
+      title: 'Monthly Operations',
+      description: 'Day-to-day management of cloud workspaces, endpoints and automation. Monthly change windows, proactive monitoring, and regular communication.',
     },
     {
       number: 5,
-      title: 'Handover & Next Steps',
-      description: 'Documentation, training, clear handover. Optional ongoing relationship if it makes sense. You own your systems, not us.',
+      title: 'Quarterly Reviews',
+      description: 'Quarterly roadmap reviews and continuous improvement planning. We look ahead, not just react to issues.',
+    },
+    {
+      number: 6,
+      title: 'Continuous Improvement',
+      description: 'Ongoing improvements to security, resilience and cost-effectiveness. Your environment gets better every month, not just maintained.',
     },
   ];
 
@@ -42,7 +47,7 @@ export default function ApproachPage() {
         <div className="container-custom max-w-4xl text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">Our Approach</h1>
           <p className="text-xl text-white">
-            Not a typical MSP. Not a big consultancy. Here's how we work.
+            Specialist MSP with senior-led support. Here&apos;s how we work.
           </p>
         </div>
       </section>
@@ -73,27 +78,22 @@ export default function ApproachPage() {
         </div>
       </section>
 
-      {/* Small Consultancy, Big Experience */}
+      {/* Specialist MSP, Senior-Led Support */}
       <section className="section-spacing bg-brand-light">
         <div className="container-custom max-w-4xl">
-          <h2 className="text-center mb-8">Small Consultancy, Big Experience</h2>
+          <h2 className="text-center mb-8">Specialist MSP, Senior-Led Support</h2>
 
           <div className="space-y-6 text-lg text-neutral-700 leading-relaxed">
             <p>
-              Lawsons CloudWorks is led by principal consultant Andy Lawson, bringing over 30 years of infrastructure, cloud and workspace experience.
+              Lawsons CloudWorks is led by principal consultant Andy Lawson, bringing over 30 years of infrastructure, cloud and workspace experience from large UK organisations in regulated sectors.
             </p>
 
             <p>
-              Andy has designed and operated AWS-hosted virtual desktop platforms for 3,000+ developers at Direct Line Group (a major UK insurer), led modern workplace initiatives including remote access for 14,000+ users during COVID-19 lockdowns, and helped teams move from fragile on-prem setups to stable cloud-first environments.
+              Experience includes designing and operating cloud workspace platforms for multi-thousand user environments in large UK insurers, NHS organisations and critical infrastructure. CloudWorks brings that enterprise-level expertise to small and mid-sized organisations without the enterprise overhead.
             </p>
 
             <p>
-              That experience comes from contracting, consulting and senior in-house Technical Lead roles. CloudWorks is the consultancy wrapper for applying those lessons to your organisation.
-            </p>
-
-            <p>
-              For specialist areas (e.g. deep networking, heavy security, certain app stacks), we bring in
-              trusted partners.
+              For specialist areas outside our core expertise (e.g. deep networking, SOC/MDR, application development), we work with trusted partners rather than stretching beyond our strengths.
             </p>
 
             <div className="bg-white p-8 rounded-lg shadow-sm mt-8">
@@ -103,32 +103,31 @@ export default function ApproachPage() {
                   <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>You get one accountable owner who knows your situation</span>
+                  <span>You get senior-led support, not a helpdesk</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>You benefit from a wider network when needed</span>
+                  <span>One accountable owner who knows your environment</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>You don&apos;t pay for overhead of a large firm</span>
+                  <span>No enterprise MSP overhead or multi-tier support</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <svg className="w-6 h-6 text-brand-sky flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span>You get direct access to senior expertise, not juniors</span>
+                  <span>Access to wider network when needed for specialist areas</span>
                 </li>
               </ul>
             </div>
 
             <p className="pt-4">
-              This approach sits between one-person freelancers (who do everything ad hoc) and large firms
-              like Intelliworx (where you might feel like a ticket number).
+              This approach sits between commodity MSPs (where you get a ticketing system and tier 1 support) and enterprise-grade providers (where you pay for overhead you don&apos;t need).
             </p>
           </div>
         </div>
@@ -175,8 +174,7 @@ export default function ApproachPage() {
               <div className="bg-brand-light p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-brand-navy mb-3">What This Means</h3>
                 <p className="text-base">
-                  You're not dependent on us (or anyone else) to understand your own systems.
-                  This is the opposite of "mystery meat" IT support where you're locked in forever.
+                  You understand your own systems and can operate them confidently. For managed service clients, we maintain and improve your environment while ensuring you&apos;re never locked in by lack of knowledge.
                 </p>
               </div>
             </div>

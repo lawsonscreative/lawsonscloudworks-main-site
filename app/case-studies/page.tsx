@@ -14,10 +14,10 @@ export default function CaseStudiesPage() {
         <div className="container-custom max-w-4xl text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">Case Studies</h1>
           <p className="text-xl text-white">
-            Real projects from Andy's senior consulting and technical lead roles.
+            Real projects and managed service engagements from our senior infrastructure team.
           </p>
           <p className="text-lg text-white/90">
-            Some pre-date CloudWorks and are anonymised. Representative scenarios, not identical guarantees.
+            Some pre-date the CloudWorks brand and are anonymised. Representative scenarios, not identical guarantees.
           </p>
         </div>
       </section>

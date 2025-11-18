@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-white font-semibold text-lg">About CloudWorks</h4>
             <p className="text-sm leading-relaxed">
-              Cloud, workspace and automation consulting for UK businesses. Enterprise thinking without enterprise drama.
+              Specialist MSP for cloud workspaces and modern endpoints. Managed services for UK organisations without enterprise overhead.
             </p>
             <div className="text-xs text-neutral-400 space-y-1 pt-4">
               <p>Lawsons CloudWorks is a trading name of</p>
@@ -26,23 +26,23 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-lg">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services#cloud-workspace" className="hover:text-brand-sky transition-colors">
-                  Cloud & Workspace Health Check
+                <Link href="/services#managed-cloud-workspace" className="hover:text-brand-sky transition-colors">
+                  Managed Cloud Workspace Service
                 </Link>
               </li>
               <li>
-                <Link href="/services#endpoint-identity" className="hover:text-brand-sky transition-colors">
-                  Modern Endpoint Quickstart
+                <Link href="/services#managed-endpoint-identity" className="hover:text-brand-sky transition-colors">
+                  Managed Endpoint & Identity Service
                 </Link>
               </li>
               <li>
-                <Link href="/services#automation" className="hover:text-brand-sky transition-colors">
-                  Automation & Dev Tooling Accelerator
+                <Link href="/services#automation-dev-tooling" className="hover:text-brand-sky transition-colors">
+                  Automation & Dev Tooling
                 </Link>
               </li>
               <li>
-                <Link href="/services#advisory" className="hover:text-brand-sky transition-colors">
-                  Fractional Cloud & Workspace Lead
+                <Link href="/services#on-ramp-projects" className="hover:text-brand-sky transition-colors">
+                  On-Ramp Projects
                 </Link>
               </li>
             </ul>

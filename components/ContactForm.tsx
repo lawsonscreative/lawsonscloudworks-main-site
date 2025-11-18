@@ -9,6 +9,7 @@ export default function ContactForm() {
     company: '',
     role: '',
     companySize: '',
+    currentMSP: '',
     services: [] as string[],
     urgency: '',
     message: '',
@@ -58,6 +59,7 @@ export default function ContactForm() {
         company: '',
         role: '',
         companySize: '',
+        currentMSP: '',
         services: [],
         urgency: '',
         message: '',
@@ -157,26 +159,47 @@ export default function ContactForm() {
         </div>
       </div>
 
-      {/* Company Size */}
-      <div>
-        <label htmlFor="companySize" className="block font-semibold text-neutral-700 mb-2">
-          Company size
-        </label>
-        <select
-          id="companySize"
-          name="companySize"
-          value={formData.companySize}
-          onChange={handleChange}
-          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
-        >
-          <option value="">Select size</option>
-          <option value="1-19">1-19 people</option>
-          <option value="20-49">20-49 people</option>
-          <option value="50-99">50-99 people</option>
-          <option value="100-249">100-249 people</option>
-          <option value="250+">250+ people</option>
-          <option value="prefer-not-to-say">Prefer not to say</option>
-        </select>
+      {/* Company Size & Current MSP */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label htmlFor="companySize" className="block font-semibold text-neutral-700 mb-2">
+            Company size
+          </label>
+          <select
+            id="companySize"
+            name="companySize"
+            value={formData.companySize}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
+          >
+            <option value="">Select size</option>
+            <option value="1-19">1-19 people</option>
+            <option value="20-49">20-49 people</option>
+            <option value="50-99">50-99 people</option>
+            <option value="100-249">100-249 people</option>
+            <option value="250+">250+ people</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+          </select>
+        </div>
+
+        <div>
+          <label htmlFor="currentMSP" className="block font-semibold text-neutral-700 mb-2">
+            Are you currently using an MSP?
+          </label>
+          <select
+            id="currentMSP"
+            name="currentMSP"
+            value={formData.currentMSP}
+            onChange={handleChange}
+            className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-sky focus:border-brand-sky transition-colors"
+          >
+            <option value="">Select option</option>
+            <option value="yes-happy">Yes, and happy with them</option>
+            <option value="yes-looking">Yes, but looking to switch</option>
+            <option value="no-internal">No, we have internal IT</option>
+            <option value="no-nothing">No, we need help</option>
+          </select>
+        </div>
       </div>
 
       {/* Services */}
@@ -189,10 +212,10 @@ export default function ContactForm() {
         </p>
         <div className="space-y-2">
           {[
-            'Cloud & Workspace Health Check',
-            'Modern Endpoint Quickstart',
-            'Automation & Dev Tooling Accelerator',
-            'Advisory / Project Rescue',
+            'Managed Cloud Workspace Service',
+            'Managed Endpoint & Identity Service',
+            'Automation & Dev Tooling (managed or project)',
+            'On-Ramp Project (Health Check, Migration)',
             'Not sure – please advise',
           ].map((service) => (
             <label key={service} className="flex items-center space-x-3 cursor-pointer">
