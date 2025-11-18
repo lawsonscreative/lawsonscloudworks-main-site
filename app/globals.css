@@ -4,41 +4,50 @@
 
 @layer base {
   body {
-    @apply text-neutral-900 bg-page-bg antialiased;
+    @apply text-neutral-900 bg-white antialiased;
   }
 
+  /* Systematic typography scale with tracking */
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-brand-ink leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-brand-ink tracking-tight leading-tight;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl font-semibold text-brand-ink leading-snug;
+    @apply text-3xl md:text-4xl font-semibold text-brand-ink tracking-tight leading-snug mb-4;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl font-semibold text-brand-ink leading-snug;
+    @apply text-2xl md:text-3xl font-semibold text-brand-ink tracking-tight leading-snug mb-3;
   }
 
   h4 {
-    @apply text-xl md:text-2xl font-semibold text-brand-slate leading-normal;
+    @apply text-xl font-semibold text-brand-slate mb-3;
   }
 
   p {
-    @apply text-base md:text-lg leading-relaxed;
+    @apply text-base leading-relaxed;
+  }
+
+  ul, ol {
+    @apply space-y-3;
+  }
+
+  li {
+    @apply leading-relaxed;
   }
 
   a {
-    @apply transition-colors duration-200;
+    @apply transition-all duration-200;
   }
 
-  /* Visible focus states for accessibility */
+  /* Enhanced focus states for accessibility */
   a:focus-visible,
   button:focus-visible,
   input:focus-visible,
   textarea:focus-visible,
   select:focus-visible,
   [role="button"]:focus-visible {
-    @apply outline-2 outline-offset-2 outline-brand-teal;
+    @apply outline-2 outline-offset-2 outline-brand-teal ring-4 ring-brand-teal ring-opacity-20;
   }
 
   /* Dark background focus states */
@@ -46,32 +55,110 @@
   .bg-brand-teal a:focus-visible,
   .bg-neutral-900 a:focus-visible,
   [class*="bg-gradient"] a:focus-visible {
-    @apply outline-white;
+    @apply outline-white ring-white ring-opacity-20;
   }
 }
 
 @layer components {
+  /* Primary button - enhanced with shadows */
   .btn-primary {
-    @apply px-6 py-3 bg-brand-teal text-white font-semibold rounded-lg
-           hover:bg-brand-teal-dark transition-all duration-200
+    @apply px-6 py-3 bg-brand-teal text-white font-semibold rounded-lg shadow-button
+           hover:bg-brand-teal-dark hover:shadow-button-hover
+           active:scale-[0.98]
+           transition-all duration-200
            focus-visible:ring-4 focus-visible:ring-brand-teal focus-visible:ring-opacity-30;
   }
 
+  /* Secondary button - consistent style */
   .btn-secondary {
     @apply px-6 py-3 border-2 border-brand-teal text-brand-teal font-semibold rounded-lg
-           hover:bg-brand-teal hover:text-white transition-all duration-200
+           hover:bg-brand-teal hover:text-white hover:shadow-button
+           active:scale-[0.98]
+           transition-all duration-200
            focus-visible:ring-4 focus-visible:ring-brand-teal focus-visible:ring-opacity-30;
   }
 
+  /* Enhanced card system */
   .card {
-    @apply bg-white rounded-lg border border-brand-border hover:shadow-lg transition-shadow duration-200 p-6;
+    @apply bg-white rounded-lg border border-brand-border shadow-card
+           hover:shadow-card-hover hover:border-brand-teal
+           transition-all duration-250 p-6;
   }
 
+  /* Feature card variant */
+  .card-feature {
+    @apply card flex flex-col items-start;
+  }
+
+  /* Service card variant */
+  .card-service {
+    @apply card h-full flex flex-col;
+  }
+
+  /* Container with systematic max-width */
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
+  /* Consistent section spacing */
   .section-spacing {
-    @apply py-16 md:py-24;
+    @apply py-20 md:py-28;
+  }
+
+  /* Section with alternating backgrounds */
+  .section-alt {
+    @apply bg-neutral-50;
+  }
+
+  /* Section intro pattern */
+  .section-intro {
+    @apply text-center mb-12 max-w-3xl mx-auto;
+  }
+
+  /* Metric/stat callout */
+  .metric {
+    @apply text-brand-teal font-bold text-3xl md:text-4xl;
+  }
+
+  /* Badge/tag component */
+  .badge {
+    @apply inline-block px-3 py-1 bg-brand-teal-soft text-brand-teal text-sm font-semibold rounded-md;
+  }
+
+  /* Link with arrow */
+  .link-arrow {
+    @apply text-brand-teal hover:text-brand-teal-dark font-semibold inline-flex items-center gap-2
+           transition-all duration-200 hover:gap-3;
+  }
+}
+
+/* Utility layer for custom animations */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
