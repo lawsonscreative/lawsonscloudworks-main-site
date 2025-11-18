@@ -46,6 +46,73 @@ export default function CaseStudyPage() {
             </div>
           </div>
 
+          {/* Before/After Snapshot */}
+          <div className="mb-12 bg-neutral-50 border-2 border-neutral-200 rounded-lg p-8">
+            <h2 className="text-2xl font-semibold text-brand-ink mb-6 text-center">Before → After</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-semibold text-red-700 mb-4 flex items-center">
+                  <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  Before
+                </h3>
+                <ul className="space-y-2 text-neutral-700">
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>£4,200/month in unpredictable IT costs</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>Manual patching and maintenance burden</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>2-3 unplanned downtime incidents per year</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>No disaster recovery plan</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>Mixed license confusion across the team</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-green-700 mb-4 flex items-center">
+                  <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  After
+                </h3>
+                <ul className="space-y-2 text-neutral-700">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>£2,900/month with predictable costs (30% reduction)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>15 hours/week freed up for strategic work</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>Zero unplanned downtime in 12 months</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>Cyber Essentials-ready security baseline</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>Clear visibility of all IT resources and costs</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <h2>Client & Context</h2>
@@ -135,6 +202,42 @@ export default function CaseStudyPage() {
               quarterly check-ins from CloudWorks to review security reports and discuss any upcoming
               changes. The success of this project has built confidence for future modernisation work.
             </p>
+          </div>
+
+          {/* Key Takeaways */}
+          <div className="mt-12 bg-brand-teal-soft border-l-4 border-brand-teal rounded-r-lg p-8">
+            <h3 className="text-2xl font-semibold text-brand-ink mb-6 flex items-center">
+              <svg className="w-6 h-6 mr-3 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Key Takeaways
+            </h3>
+            <ul className="space-y-4 text-neutral-700">
+              <li className="flex items-start">
+                <span className="text-brand-teal font-bold mr-3 mt-1">1.</span>
+                <div>
+                  <strong>Baseline first:</strong> Understanding current costs and infrastructure before making recommendations prevented surprises and set realistic expectations.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-brand-teal font-bold mr-3 mt-1">2.</span>
+                <div>
+                  <strong>Phased approach reduces risk:</strong> Breaking the migration into stages (assessment, pilot, migration, optimisation) meant the business could continue serving clients throughout.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-brand-teal font-bold mr-3 mt-1">3.</span>
+                <div>
+                  <strong>Cost savings came from cleanup, not just migration:</strong> A third of the savings came from simply removing unused Azure resources and rationalising licenses.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-brand-teal font-bold mr-3 mt-1">4.</span>
+                <div>
+                  <strong>Independence through documentation:</strong> Thorough runbooks and training meant the client wasn't locked into ongoing CloudWorks support – exactly what they wanted.
+                </div>
+              </li>
+            </ul>
           </div>
 
           {/* CTA */}

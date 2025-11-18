@@ -28,7 +28,7 @@ export default function ServicesPage() {
       <ProductisedOffer
         id="managed-cloud-workspace"
         pillarTitle="Managed Cloud Workspace Service"
-        overview="Ongoing management of Microsoft 365, AWS Workspaces, AVD and hybrid environments. SLA-backed support for day-to-day operations, change management and continuous improvement."
+        overview="Ongoing management of Microsoft 365, AWS Workspaces, AVD (Azure Virtual Desktop) and hybrid environments. SLA-backed support for day-to-day operations, change management and continuous improvement."
         offerTitle="Monthly Managed Service"
         whoItsFor={[
           'Organisations with 20–250 users needing consistent, proactive management of cloud workspaces',
@@ -36,12 +36,12 @@ export default function ServicesPage() {
         ]}
         whatWeDo={[
           'Day-to-day management of cloud workspace environments (M365, AWS, Azure, hybrid)',
-          'Monthly change windows for updates, patches and improvements',
-          'Proactive monitoring of configuration drift and security posture',
+          'Monthly change windows for updates, patches and improvements – so changes happen predictably, not randomly',
+          'Proactive monitoring of configuration drift (spotting when settings have changed without authorisation) and security posture',
           'Quarterly roadmap reviews and continuous improvement planning',
         ]}
         whatYouGet={[
-          'SLA-backed support during UK business hours (9am–6pm)',
+          'SLA-backed support during UK business hours (9am–6pm) – meaning guaranteed response times when you need help',
           'Monthly reporting on environment health, changes and upcoming recommendations',
           'Direct access to senior infrastructure team (not a helpdesk)',
           'Continuous improvement to keep environments secure, resilient and cost-effective',
@@ -49,28 +49,29 @@ export default function ServicesPage() {
         duration="Monthly retainer"
         investment="Priced by environment size and complexity. Typically from £2,500/month for 20–50 users"
         imagePosition="right"
+        ctaLabel="Book a workspace health check"
       />
 
       {/* Managed Endpoint & Identity Service */}
       <ProductisedOffer
         id="managed-endpoint-identity"
         pillarTitle="Managed Endpoint & Identity Service"
-        overview="Continuous management of Intune, Autopilot, Conditional Access and device compliance. Keep endpoints secure, users productive, and onboarding/offboarding smooth."
+        overview="Continuous management of Intune (device management), Autopilot (zero-touch device setup), Conditional Access (controlling who can access what) and device compliance. Keep endpoints secure, users productive, and onboarding/offboarding smooth."
         offerTitle="Monthly Managed Service"
         whoItsFor={[
           'Organisations managing Windows or macOS devices via Intune, Autopilot or similar',
-          'Teams who need consistent endpoint security baselines without manual overhead',
+          'Teams who need consistent endpoint security baselines (common security settings across all devices) without manual overhead',
         ]}
         whatWeDo={[
           'Ongoing management of Intune policies, Autopilot profiles and device compliance',
-          'Monthly patching cycles and security baseline updates',
-          'Conditional Access policy management and identity governance',
-          'Device provisioning support for new starters and leavers',
+          'Monthly patching cycles and security baseline updates – keeping devices protected against new threats',
+          'Conditional Access policy management (controlling access based on device health, location, etc.) and identity governance',
+          'Device provisioning support for new starters and leavers – making setup and offboarding faster and more secure',
         ]}
         whatYouGet={[
           'SLA-backed support for endpoint and identity issues during UK business hours',
           'Monthly compliance reporting and security posture reviews',
-          'Proactive policy updates to address emerging threats',
+          'Proactive policy updates to address emerging threats – so you stay ahead of security risks',
           'Faster, smoother onboarding/offboarding processes',
         ]}
         duration="Monthly retainer"
@@ -78,35 +79,37 @@ export default function ServicesPage() {
         securityNote={{
           title: 'Security note:',
           content:
-            "Security is baked into this work, but we don't run a 24/7 SOC. For MDR, SOC or deep penetration testing, we collaborate with specialist partners rather than pretending to do it all ourselves.",
+            "Security is baked into this work, but we don't run a 24/7 SOC (Security Operations Centre). For MDR (Managed Detection and Response), SOC or deep penetration testing, we collaborate with specialist partners rather than pretending to do it all ourselves.",
         }}
         imagePosition="left"
+        ctaLabel="Book an endpoint quickstart call"
       />
 
       {/* Automation & Dev Tooling */}
       <ProductisedOffer
         id="automation-dev-tooling"
         pillarTitle="Automation & Dev Tooling"
-        overview="GitHub Actions, CI/CD pipelines and workflow automation. Available as ongoing managed service or fixed-scope project depending on your needs."
+        overview="GitHub Actions, CI/CD pipelines (automated testing and deployment) and workflow automation. Available as ongoing managed service or fixed-scope project depending on your needs."
         offerTitle="Managed Service or Project-Based"
         whoItsFor={[
           'Teams using GitHub, cloud and SaaS who want reliable, maintained automation',
           'Organisations where developer experience is slowed by fragile or manual infrastructure',
         ]}
         whatWeDo={[
-          'Build and maintain CI/CD pipelines (GitHub Actions, IaC)',
-          'Ongoing management of deployment workflows and release processes',
+          'Build and maintain CI/CD pipelines (automated build, test and deployment workflows) using GitHub Actions and IaC (Infrastructure as Code)',
+          'Ongoing management of deployment workflows and release processes – so new features reach users predictably',
           'Proactive improvements to automation and developer tooling',
           'Documentation and runbooks for handoff (if project-based)',
         ]}
         whatYouGet={[
           'Reliable, documented pipelines with clear ownership',
           'Monthly improvements to automation (managed service) or completed implementation (project)',
-          'More predictable release process and faster developer workflows',
+          'More predictable release process and faster developer workflows – less time firefighting deployments, more time building features',
         ]}
         duration="Monthly retainer or 2–6 week project"
         investment="Managed: from £1,000/month. Projects: £2,500–£5,000 depending on complexity"
         imagePosition="right"
+        ctaLabel="Discuss automation options"
       />
 
       {/* On-Ramp Projects */}
@@ -149,6 +152,7 @@ export default function ServicesPage() {
           },
         ]}
         imagePosition="left"
+        ctaLabel="Book a discovery call"
       />
 
       {/* FAQ Section */}

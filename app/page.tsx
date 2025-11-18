@@ -15,34 +15,32 @@ export default function Home() {
       {/* Add top padding to account for fixed nav */}
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="relative bg-page-bg overflow-hidden">
-          <div className="container-custom relative z-10 py-16 md:py-20">
-            <div className="max-w-4xl mx-auto text-center space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-brand-ink">
-                Managed cloud workspaces for 20-250 person UK teams
-              </h1>
+        <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
+          <div className="container-custom max-w-4xl relative z-10 text-center space-y-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+              Managed cloud workspaces for 20-250 person UK teams
+            </h1>
 
-              <p className="text-xl md:text-2xl text-brand-slate font-medium">
-                Specialist MSP for Microsoft 365, AWS WorkSpaces, Intune and AVD – giving your remote and hybrid staff a secure, reliable place to work without the enterprise drama.
-              </p>
+            <p className="text-xl md:text-2xl text-white font-medium">
+              Specialist MSP for Microsoft 365, AWS WorkSpaces, Intune and AVD – giving your remote and hybrid staff a secure, reliable place to work without the enterprise drama.
+            </p>
 
-              <div className="text-base md:text-lg text-neutral-600 space-y-2">
-                <p className="font-medium">Best fit for:</p>
-                <ul className="space-y-1">
-                  <li>• 20-250 person teams</li>
-                  <li>• Remote and hybrid-heavy organisations</li>
-                  <li>• Regulated and security-sensitive sectors</li>
-                </ul>
-              </div>
+            <div className="text-base md:text-lg text-white/90 space-y-2">
+              <p className="font-medium">Best fit for:</p>
+              <ul className="space-y-1">
+                <li>• 20-250 person teams</li>
+                <li>• Remote and hybrid-heavy organisations</li>
+                <li>• Regulated and security-sensitive sectors</li>
+              </ul>
+            </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Link href="/contact" className="inline-block px-8 py-4 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-dark transition-all duration-200 text-lg shadow-lg">
-                  Book a Discovery Call
-                </Link>
-                <Link href="/services" className="inline-block px-8 py-4 border-2 border-brand-teal text-brand-teal font-semibold rounded-lg hover:bg-brand-teal hover:text-white transition-all duration-200 text-lg">
-                  Explore Our Services
-                </Link>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Link href="/contact" className="inline-block px-8 py-4 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-dark transition-all duration-200 text-lg shadow-lg">
+                Book a Discovery Call
+              </Link>
+              <Link href="/services" className="inline-block px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-brand-ink transition-all duration-200 text-lg">
+                Explore Our Services
+              </Link>
             </div>
           </div>
         </section>

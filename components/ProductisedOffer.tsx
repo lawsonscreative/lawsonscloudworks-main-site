@@ -15,6 +15,7 @@ interface ProductisedOfferProps {
     content: string;
   };
   imagePosition?: 'left' | 'right';
+  ctaLabel?: string;
 }
 
 export default function ProductisedOffer({
@@ -29,6 +30,7 @@ export default function ProductisedOffer({
   investment,
   securityNote,
   imagePosition = 'right',
+  ctaLabel = 'Discuss this with us',
 }: ProductisedOfferProps) {
   const contentSection = (
     <div className="space-y-8">
@@ -95,7 +97,7 @@ export default function ProductisedOffer({
 
         <div className="pt-2">
           <Link href="/contact" className="btn-primary inline-block">
-            Discuss this with us
+            {ctaLabel}
           </Link>
         </div>
       </div>

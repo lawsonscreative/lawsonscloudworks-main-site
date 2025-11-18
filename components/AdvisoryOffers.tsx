@@ -13,6 +13,7 @@ interface AdvisoryOffersProps {
   overview: string;
   offers: SubOffer[];
   imagePosition?: 'left' | 'right';
+  ctaLabel?: string;
 }
 
 export default function AdvisoryOffers({
@@ -21,6 +22,7 @@ export default function AdvisoryOffers({
   overview,
   offers,
   imagePosition = 'left',
+  ctaLabel = 'Discuss this with us',
 }: AdvisoryOffersProps) {
   const contentSection = (
     <div className="space-y-8">
@@ -73,7 +75,7 @@ export default function AdvisoryOffers({
 
         <div className="pt-6">
           <Link href="/contact" className="btn-primary inline-block">
-            Discuss this with us
+            {ctaLabel}
           </Link>
         </div>
       </div>

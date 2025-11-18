@@ -46,6 +46,73 @@ export default function CaseStudyPage() {
             </div>
           </div>
 
+          {/* Before/After Snapshot */}
+          <div className="mb-12 bg-neutral-50 border-2 border-neutral-200 rounded-lg p-8">
+            <h2 className="text-2xl font-semibold text-brand-ink mb-6 text-center">Before → After</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-semibold text-red-700 mb-4 flex items-center">
+                  <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  Before
+                </h3>
+                <ul className="space-y-2 text-neutral-700">
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>Legacy VPN with frequent disconnections</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>3-5 hours/week lost per developer to infrastructure issues</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>2-day onboarding for new developers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>Developer satisfaction: 6.2/10</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-600 mr-2">•</span>
+                    <span>Security risk from code on personal devices</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-green-700 mb-4 flex items-center">
+                  <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  After
+                </h3>
+                <ul className="space-y-2 text-neutral-700">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>AWS WorkSpaces platform with consistent performance</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>80% reduction in connection-related support tickets</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>4-hour onboarding with standardised environments</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>Developer satisfaction: 8.7/10</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    <span>Predictable monthly costs with clear documentation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <h2>Client & Context</h2>
@@ -132,6 +199,42 @@ export default function CaseStudyPage() {
               The success of this project has led to discussions about modernising other parts of their
               infrastructure.
             </p>
+          </div>
+
+          {/* Key Takeaways */}
+          <div className="mt-12 bg-brand-teal-soft border-l-4 border-brand-teal rounded-r-lg p-8">
+            <h3 className="text-2xl font-semibold text-brand-ink mb-6 flex items-center">
+              <svg className="w-6 h-6 mr-3 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Key Takeaways
+            </h3>
+            <ul className="space-y-4 text-neutral-700">
+              <li className="flex items-start">
+                <span className="text-brand-teal font-bold mr-3 mt-1">1.</span>
+                <div>
+                  <strong>Pilot before full rollout:</strong> Testing with 20 developers first validated the approach and caught issues before they became blockers for the wider team.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-brand-teal font-bold mr-3 mt-1">2.</span>
+                <div>
+                  <strong>Document for handover:</strong> Comprehensive runbooks meant the internal IT team could confidently manage day-to-day operations without ongoing CloudWorks involvement.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-brand-teal font-bold mr-3 mt-1">3.</span>
+                <div>
+                  <strong>Measure what matters:</strong> Tracking developer satisfaction and support tickets gave clear evidence of improvement beyond just technical metrics.
+                </div>
+              </li>
+              <li className="flex items-start">
+                <span className="text-brand-teal font-bold mr-3 mt-1">4.</span>
+                <div>
+                  <strong>Right-size the solution:</strong> AWS WorkSpaces wasn't the only option, but it fit the specific needs of a development-heavy remote team better than alternatives.
+                </div>
+              </li>
+            </ul>
           </div>
 
           {/* CTA */}

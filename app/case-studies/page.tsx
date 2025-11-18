@@ -17,7 +17,7 @@ export default function CaseStudiesPage() {
             Real projects and managed service engagements from our senior infrastructure team.
           </p>
           <p className="text-lg text-white/90">
-            Some pre-date the CloudWorks brand and are anonymised. Representative scenarios, not identical guarantees.
+            These engagements pre-date the CloudWorks brand and have been anonymised. Every environment is different – we'll be clear about what's realistic for yours.
           </p>
         </div>
       </section>
@@ -65,9 +65,9 @@ export default function CaseStudiesPage() {
                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
               />
             </svg>
-            <h2 className="mb-4">Selected Case Studies</h2>
+            <h2 className="mb-4">More Case Studies Coming</h2>
             <p className="text-lg text-neutral-600 leading-relaxed">
-              We're selective about what we publish here. Additional examples are being prepared and will be added over time as engagements complete and anonymisation is finalised.
+              Additional examples will be added as recent engagements complete and anonymisation is finalised.
             </p>
           </div>
         </div>
