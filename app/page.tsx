@@ -35,7 +35,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link href="/contact" className="inline-block px-8 py-4 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-dark transition-all duration-200 text-lg shadow-lg">
+              <Link href="/contact?cta=home-hero" aria-label="Book a 30-minute discovery call from homepage" className="inline-block px-8 py-4 bg-brand-teal text-white font-semibold rounded-lg hover:bg-brand-teal-dark transition-all duration-200 text-lg shadow-lg">
                 Book a 30-Minute Discovery Call
               </Link>
               <Link href="/services" className="inline-block px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-brand-ink transition-all duration-200 text-lg">
@@ -199,7 +199,8 @@ Model: Monthly retainer • Best for: Growing teams needing strategic guidance"
               Most clients start with an on-ramp health check or migration, then transition into monthly managed services. <Link href="/approach" className="text-white underline hover:text-brand-teal-soft">See how we work →</Link>
             </p>
             <Link
-              href="/contact"
+              href="/contact?cta=home-bottom"
+              aria-label="Book a 30-minute discovery call to get started"
               className="inline-block px-8 py-4 bg-white text-brand-ink font-semibold rounded-lg hover:bg-brand-teal-soft transition-all duration-200 text-lg shadow-lg"
             >
               Book a 30-Minute Discovery Call

@@ -248,7 +248,7 @@ export default function CaseStudyPage() {
             <p className="text-neutral-700 mb-6">
               We can help you migrate to the cloud and optimise your IT costs.
             </p>
-            <Link href="/contact" className="btn-primary inline-block">
+            <Link href="/contact?cta=case-study-cloud-migration" aria-label="Book a 30-minute discovery call about cloud migration" className="btn-primary inline-block">
               Book a 30-Minute Discovery Call
             </Link>
           </div>

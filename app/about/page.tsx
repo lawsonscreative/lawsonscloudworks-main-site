@@ -231,7 +231,7 @@ export default function AboutPage() {
             Get in touch for a discovery call. We'll listen to your challenges and explore whether
             we're the right fit.
           </p>
-          <Link href="/contact" className="btn-primary inline-block text-lg">
+          <Link href="/contact?cta=about-page" aria-label="Book a 30-minute discovery call to discuss your needs" className="btn-primary inline-block text-lg">
             Book a 30-Minute Discovery Call
           </Link>
         </div>

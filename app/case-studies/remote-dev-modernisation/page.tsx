@@ -245,7 +245,7 @@ export default function CaseStudyPage() {
             <p className="text-neutral-700 mb-6">
               We can help you modernise your development environment or cloud infrastructure.
             </p>
-            <Link href="/contact" className="btn-primary inline-block">
+            <Link href="/contact?cta=case-study-remote-dev" aria-label="Book a 30-minute discovery call about similar remote dev challenges" className="btn-primary inline-block">
               Book a 30-Minute Discovery Call
             </Link>
           </div>
