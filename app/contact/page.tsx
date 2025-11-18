@@ -1,15 +1,23 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import ContactForm from '@/components/ContactForm';
+import StructuredData from '@/components/StructuredData';
+import { organizationSchema, getBreadcrumbSchema } from '@/lib/structuredData';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Get in Touch | Lawsons CloudWorks MSP',
-  description: 'Contact Lawsons CloudWorks for managed cloud workspace and endpoint services. Book a discovery call to discuss your managed service needs or on-ramp project.',
+  description: 'Book a 30-minute discovery call with Lawsons CloudWorks. Discuss managed Microsoft 365, AWS, Intune services or Health Check projects. Kent-based, serving UK teams.',
 };
 
 export default function ContactPage() {
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.lawsonscloudworks.co.uk' },
+    { name: 'Contact', url: 'https://www.lawsonscloudworks.co.uk/contact' },
+  ]);
+
   return (
     <div className="pt-20">
+      <StructuredData data={[organizationSchema, breadcrumbs]} />
       {/* Page Intro */}
       <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
         <div className="container-custom max-w-4xl text-center space-y-4">

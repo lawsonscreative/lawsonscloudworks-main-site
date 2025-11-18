@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import StructuredData from '@/components/StructuredData';
+import { organizationSchema, getBreadcrumbSchema } from '@/lib/structuredData';
 
 export const metadata: Metadata = {
   title: 'Our Approach | How We Work | Lawsons CloudWorks MSP',
-  description: 'Learn how Lawsons CloudWorks manages client environments. Clear scopes, plain English documentation, senior-led support and continuous improvement without enterprise drama.',
+  description: 'Clear scopes, plain-English documentation, senior-led support. Start with a Health Check, continue with monthly managed services. No enterprise drama. Book a discovery call.',
 };
 
 export default function ApproachPage() {
@@ -46,8 +48,14 @@ export default function ApproachPage() {
     },
   ];
 
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.lawsonscloudworks.co.uk' },
+    { name: 'Approach', url: 'https://www.lawsonscloudworks.co.uk/approach' },
+  ]);
+
   return (
     <div className="pt-20">
+      <StructuredData data={[organizationSchema, breadcrumbs]} />
       {/* Page Intro */}
       <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
         <div className="container-custom max-w-4xl text-center space-y-4">

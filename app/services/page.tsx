@@ -2,15 +2,23 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import ProductisedOffer from '@/components/ProductisedOffer';
 import AdvisoryOffers from '@/components/AdvisoryOffers';
+import StructuredData from '@/components/StructuredData';
+import { organizationSchema, servicesSchema, faqSchema, getBreadcrumbSchema } from '@/lib/structuredData';
 
 export const metadata: Metadata = {
   title: 'Managed Services & On-Ramp Projects | Lawsons CloudWorks',
-  description: 'Managed cloud workspace, endpoint and automation services for UK organisations. Monthly retainers backed by senior expertise. AWS, Microsoft 365, Intune, and GitHub workflows.',
+  description: 'Managed Microsoft 365, AWS WorkSpaces, Intune & automation for 20-250 person UK teams. Monthly retainers from £1,000. Health checks from £2,000. Book a discovery call.',
 };
 
 export default function ServicesPage() {
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.lawsonscloudworks.co.uk' },
+    { name: 'Services', url: 'https://www.lawsonscloudworks.co.uk/services' },
+  ]);
+
   return (
     <div className="pt-20">
+      <StructuredData data={[organizationSchema, ...servicesSchema, faqSchema, breadcrumbs]} />
       {/* Page Intro */}
       <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
         <div className="container-custom max-w-3xl relative z-10 text-center space-y-4">

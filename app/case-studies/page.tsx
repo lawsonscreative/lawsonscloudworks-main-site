@@ -1,14 +1,22 @@
 import type { Metadata } from 'next';
 import CaseStudyTeaser from '@/components/CaseStudyTeaser';
+import StructuredData from '@/components/StructuredData';
+import { organizationSchema, getBreadcrumbSchema } from '@/lib/structuredData';
 
 export const metadata: Metadata = {
   title: 'Case Studies | Client Work | Lawsons CloudWorks',
-  description: 'See how Lawsons CloudWorks has helped UK businesses modernise their cloud infrastructure, workspace environments, and automation workflows.',
+  description: 'Real cloud workspace, endpoint and automation projects. AWS WorkSpaces migration, M365 optimization, Intune rollout. See results from 20-250 person UK organisations.',
 };
 
 export default function CaseStudiesPage() {
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.lawsonscloudworks.co.uk' },
+    { name: 'Case Studies', url: 'https://www.lawsonscloudworks.co.uk/case-studies' },
+  ]);
+
   return (
     <div className="pt-20">
+      <StructuredData data={[organizationSchema, breadcrumbs]} />
       {/* Page Intro */}
       <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
         <div className="container-custom max-w-4xl text-center space-y-4">

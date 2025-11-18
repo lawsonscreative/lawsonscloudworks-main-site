@@ -3,15 +3,22 @@ import Link from 'next/link';
 import ServiceCard from '@/components/ServiceCard';
 import OutcomesSection from '@/components/OutcomesSection';
 import CaseStudyTeaser from '@/components/CaseStudyTeaser';
+import StructuredData from '@/components/StructuredData';
+import { organizationSchema, websiteSchema, getBreadcrumbSchema } from '@/lib/structuredData';
 
 export const metadata: Metadata = {
   title: 'Lawsons CloudWorks | Managed Cloud Workspaces & Endpoints for UK Teams',
-  description: 'Specialist MSP for small and mid-sized UK organisations with remote and hybrid teams. Managed cloud workspaces, modern endpoints, automation. AWS, Microsoft 365, Intune expertise.',
+  description: 'Specialist MSP for 20-250 person UK organisations. Managed Microsoft 365, AWS WorkSpaces, Intune & AVD. Monthly retainers from £1,000. Book a 30-minute discovery call.',
 };
 
 export default function Home() {
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.lawsonscloudworks.co.uk' },
+  ]);
+
   return (
     <>
+      <StructuredData data={[organizationSchema, websiteSchema, breadcrumbs]} />
       {/* Add top padding to account for fixed nav */}
       <div className="pt-20">
         {/* Hero Section */}

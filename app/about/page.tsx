@@ -1,14 +1,22 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import StructuredData from '@/components/StructuredData';
+import { organizationSchema, getBreadcrumbSchema } from '@/lib/structuredData';
 
 export const metadata: Metadata = {
   title: 'About Us | Lawsons CloudWorks | Specialist MSP Kent UK',
-  description: 'Specialist MSP for cloud workspaces and modern endpoints. Senior infrastructure experience, part of Lawsons Enterprises Ltd.',
+  description: 'Specialist MSP based in Kent serving 20-250 person UK teams. Senior infrastructure expertise in Microsoft 365, AWS, Intune & automation. Part of Lawsons Enterprises Ltd.',
 };
 
 export default function AboutPage() {
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.lawsonscloudworks.co.uk' },
+    { name: 'About', url: 'https://www.lawsonscloudworks.co.uk/about' },
+  ]);
+
   return (
     <div className="pt-20">
+      <StructuredData data={[organizationSchema, breadcrumbs]} />
       {/* Page Intro */}
       <section className="relative bg-gradient-to-br from-neutral-900 to-brand-ink text-white py-16">
         <div className="container-custom max-w-4xl text-center space-y-4">
