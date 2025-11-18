@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'About Us | Lawsons CloudWorks | Specialist MSP Kent UK',
-  description: 'Specialist MSP for cloud workspaces and modern endpoints. 30+ years infrastructure experience, part of Lawsons Enterprises Ltd.',
+  description: 'Specialist MSP for cloud workspaces and modern endpoints. Senior infrastructure experience, part of Lawsons Enterprises Ltd.',
 };
 
 export default function AboutPage() {
