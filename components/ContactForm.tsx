@@ -1,8 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
+
+interface FormErrors {
+  name?: string;
+  email?: string;
+  message?: string;
+}
 
 export default function ContactForm() {
+  const searchParams = useSearchParams();
+  const errorSummaryRef = useRef<HTMLDivElement>(null);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,6 +27,28 @@ export default function ContactForm() {
 
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
+  const [errors, setErrors] = useState<FormErrors>({});
+
+  // Handle service query parameter
+  useEffect(() => {
+    const service = searchParams.get('service');
+    if (service) {
+      const serviceMap: { [key: string]: string } = {
+        'cloud-workspace': 'Managed Cloud Workspace Service',
+        'endpoint-identity': 'Managed Endpoint & Identity Service',
+        'automation': 'Automation & Dev Tooling (managed or project)',
+        'on-ramp': 'On-Ramp Project (Health Check, Migration)',
+      };
+
+      const mappedService = serviceMap[service];
+      if (mappedService) {
+        setFormData(prev => ({
+          ...prev,
+          services: [mappedService]
+        }));
+      }
+    }
+  }, [searchParams]);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -34,10 +66,43 @@ export default function ContactForm() {
     }));
   };
 
+  const validateForm = (): boolean => {
+    const newErrors: FormErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'Please enter your name';
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Please enter your email address';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email address';
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'Please enter a message';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('submitting');
     setErrorMessage('');
+
+    // Validate form
+    if (!validateForm()) {
+      setStatus('error');
+      // Focus on error summary
+      setTimeout(() => {
+        errorSummaryRef.current?.focus();
+      }, 100);
+      return;
+    }
+
+    setStatus('submitting');
+    setErrors({});
 
     try {
       const response = await fetch('/api/contact', {
@@ -67,6 +132,9 @@ export default function ContactForm() {
     } catch (error) {
       setStatus('error');
       setErrorMessage('Failed to send message. Please try emailing us directly at hello@lawsonscloudworks.co.uk');
+      setTimeout(() => {
+        errorSummaryRef.current?.focus();
+      }, 100);
     }
   };
 
@@ -94,8 +162,70 @@ export default function ContactForm() {
     );
   }
 
+  const errorCount = Object.keys(errors).length;
+  const hasValidationErrors = errorCount > 0;
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+      {/* Error Summary */}
+      {hasValidationErrors && (
+        <div
+          ref={errorSummaryRef}
+          role="alert"
+          aria-labelledby="error-summary-title"
+          tabIndex={-1}
+          className="bg-red-50 border-2 border-red-400 rounded-lg p-6"
+        >
+          <h2 id="error-summary-title" className="text-lg font-semibold text-red-900 mb-3">
+            There {errorCount === 1 ? 'is' : 'are'} {errorCount} {errorCount === 1 ? 'error' : 'errors'} in this form
+          </h2>
+          <ul className="space-y-2">
+            {errors.name && (
+              <li>
+                <a
+                  href="#name"
+                  className="text-red-700 hover:text-red-900 underline font-medium"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('name')?.focus();
+                  }}
+                >
+                  {errors.name}
+                </a>
+              </li>
+            )}
+            {errors.email && (
+              <li>
+                <a
+                  href="#email"
+                  className="text-red-700 hover:text-red-900 underline font-medium"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('email')?.focus();
+                  }}
+                >
+                  {errors.email}
+                </a>
+              </li>
+            )}
+            {errors.message && (
+              <li>
+                <a
+                  href="#message"
+                  className="text-red-700 hover:text-red-900 underline font-medium"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('message')?.focus();
+                  }}
+                >
+                  {errors.message}
+                </a>
+              </li>
+            )}
+          </ul>
+        </div>
+      )}
+
       {/* Name */}
       <div>
         <label htmlFor="name" className="block font-semibold text-neutral-700 mb-2">
@@ -108,8 +238,18 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
+          aria-required="true"
+          aria-invalid={errors.name ? 'true' : 'false'}
+          aria-describedby={errors.name ? 'name-error' : undefined}
+          className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-brand-teal transition-colors ${
+            errors.name ? 'border-red-500 focus:border-red-500' : 'border-neutral-300 focus:border-brand-teal'
+          }`}
         />
+        {errors.name && (
+          <p id="name-error" className="mt-2 text-sm text-red-600 font-medium">
+            {errors.name}
+          </p>
+        )}
       </div>
 
       {/* Email */}
@@ -124,8 +264,18 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
+          aria-required="true"
+          aria-invalid={errors.email ? 'true' : 'false'}
+          aria-describedby={errors.email ? 'email-error' : undefined}
+          className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-brand-teal transition-colors ${
+            errors.email ? 'border-red-500 focus:border-red-500' : 'border-neutral-300 focus:border-brand-teal'
+          }`}
         />
+        {errors.email && (
+          <p id="email-error" className="mt-2 text-sm text-red-600 font-medium">
+            {errors.email}
+          </p>
+        )}
       </div>
 
       {/* Company & Role */}
@@ -172,7 +322,7 @@ export default function ContactForm() {
             onChange={handleChange}
             className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
           >
-            <option value="">Select size</option>
+            <option value="" disabled>Select size</option>
             <option value="1-19">1-19 people</option>
             <option value="20-49">20-49 people</option>
             <option value="50-99">50-99 people</option>
@@ -193,7 +343,7 @@ export default function ContactForm() {
             onChange={handleChange}
             className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
           >
-            <option value="">Select option</option>
+            <option value="" disabled>Select option</option>
             <option value="yes-happy">Yes, and happy with them</option>
             <option value="yes-looking">Yes, but looking to switch</option>
             <option value="no-internal">No, we have internal IT</option>
@@ -243,7 +393,7 @@ export default function ContactForm() {
           onChange={handleChange}
           className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors"
         >
-          <option value="">Select urgency</option>
+          <option value="" disabled>Select urgency</option>
           <option value="urgent">Urgent (days)</option>
           <option value="soon">Soon (weeks)</option>
           <option value="planning">Planning ahead (months)</option>
@@ -262,15 +412,28 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           required
+          aria-required="true"
+          aria-invalid={errors.message ? 'true' : 'false'}
+          aria-describedby={errors.message ? 'message-error' : undefined}
           rows={6}
-          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-teal focus:border-brand-teal transition-colors resize-vertical"
+          className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-brand-teal transition-colors resize-vertical ${
+            errors.message ? 'border-red-500 focus:border-red-500' : 'border-neutral-300 focus:border-brand-teal'
+          }`}
           placeholder="Tell us about your project or challenges..."
         />
+        {errors.message && (
+          <p id="message-error" className="mt-2 text-sm text-red-600 font-medium">
+            {errors.message}
+          </p>
+        )}
       </div>
 
-      {/* Error Message */}
-      {status === 'error' && (
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
+      {/* Server Error Message */}
+      {status === 'error' && errorMessage && (
+        <div
+          role="alert"
+          className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700"
+        >
           {errorMessage}
         </div>
       )}

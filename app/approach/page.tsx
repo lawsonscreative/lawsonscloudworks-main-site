@@ -10,37 +10,37 @@ export default function ApproachPage() {
   const engagementSteps = [
     {
       number: 1,
-      title: 'Discovery & Fit Check',
+      title: 'Step 1: Discovery & Fit Check',
       description: 'Brief conversation to understand your situation and see if there\'s a fit. Usually a 30-minute call. No pressure, no sales pitch.',
       youGet: 'A straight answer on whether we\'re the right fit – and if we\'re not, we\'ll say so.',
     },
     {
       number: 2,
-      title: 'On-Ramp Project',
+      title: 'Step 2: On-Ramp Project',
       description: 'Health check, migration or implementation to baseline your environment. Typical duration: 2-6 weeks depending on scope.',
       youGet: 'A clear view of risks, bottlenecks and a realistic plan, not a hand-wavy "we\'ll sort it".',
     },
     {
       number: 3,
-      title: 'Transition to Managed Services',
+      title: 'Step 3: Transition to Managed Services',
       description: 'Move to monthly managed service for ongoing operations. Clear SLAs, regular reporting, and direct access to senior team.',
       youGet: 'Documented handover and clear ownership boundaries so nothing falls through cracks.',
     },
     {
       number: 4,
-      title: 'Monthly Operations',
+      title: 'Step 4: Monthly Operations',
       description: 'Day-to-day management of cloud workspaces, endpoints and automation. Monthly change windows, proactive monitoring, and regular communication.',
       youGet: 'Predictable change windows and one place to send workspace issues.',
     },
     {
       number: 5,
-      title: 'Quarterly Reviews',
+      title: 'Step 5: Quarterly Reviews',
       description: 'Quarterly roadmap reviews and continuous improvement planning. We look ahead, not just react to issues.',
       youGet: 'Regular check-ins to review what\'s working, what isn\'t, and where to invest next.',
     },
     {
       number: 6,
-      title: 'Continuous Improvement',
+      title: 'Step 6: Continuous Improvement',
       description: 'Ongoing improvements to security, resilience and cost-effectiveness. Your environment gets better every month, not just maintained.',
       youGet: 'Proactive recommendations based on what we\'re seeing across your environment.',
     },

@@ -29,6 +29,12 @@ export default function ServicesPage() {
         id="managed-cloud-workspace"
         pillarTitle="Managed Cloud Workspace Service"
         overview="Ongoing management of Microsoft 365, AWS Workspaces, AVD (Azure Virtual Desktop) and hybrid environments. SLA-backed support for day-to-day operations, change management and continuous improvement."
+        atAGlance={[
+          'Monthly managed service for Microsoft 365, AWS Workspaces, AVD and hybrid infrastructure',
+          'SLA-backed UK business hours support (9am–6pm)',
+          'Monthly change windows and quarterly roadmap reviews',
+          'From £2,500/month for 20–50 users',
+        ]}
         offerTitle="Monthly Managed Service"
         whoItsFor={[
           'Organisations with 20–250 users needing consistent, proactive management of cloud workspaces',
@@ -57,6 +63,12 @@ export default function ServicesPage() {
         id="managed-endpoint-identity"
         pillarTitle="Managed Endpoint & Identity Service"
         overview="Continuous management of Intune (device management), Autopilot (zero-touch device setup), Conditional Access (controlling who can access what) and device compliance. Keep endpoints secure, users productive, and onboarding/offboarding smooth."
+        atAGlance={[
+          'Monthly managed service for Intune, Autopilot and device compliance',
+          'Monthly patching cycles and security baseline updates',
+          'SLA-backed support during UK business hours',
+          'From £1,500/month for 20–50 devices',
+        ]}
         offerTitle="Monthly Managed Service"
         whoItsFor={[
           'Organisations managing Windows or macOS devices via Intune, Autopilot or similar',
@@ -90,6 +102,12 @@ export default function ServicesPage() {
         id="automation-dev-tooling"
         pillarTitle="Automation & Dev Tooling"
         overview="GitHub Actions, CI/CD pipelines (automated testing and deployment) and workflow automation. Available as ongoing managed service or fixed-scope project depending on your needs."
+        atAGlance={[
+          'Build and maintain CI/CD pipelines using GitHub Actions',
+          'Managed service or project-based engagement',
+          'Ongoing improvements (managed) or documented handoff (project)',
+          'Managed: from £1,000/month | Projects: £2,500–£5,000',
+        ]}
         offerTitle="Managed Service or Project-Based"
         whoItsFor={[
           'Teams using GitHub, cloud and SaaS who want reliable, maintained automation',
@@ -110,6 +128,43 @@ export default function ServicesPage() {
         investment="Managed: from £1,000/month. Projects: £2,500–£5,000 depending on complexity"
         imagePosition="right"
         ctaLabel="Discuss automation options"
+      />
+
+      {/* Advisory & Project Rescue */}
+      <ProductisedOffer
+        id="advisory-project-rescue"
+        pillarTitle="Advisory & Project Rescue"
+        overview="Fractional technical leadership, roadmap steering and governance for growing teams. Get senior infrastructure thinking without hiring a full-time technical lead. Also available for rescuing stuck or failing infrastructure projects."
+        atAGlance={[
+          'Fractional technical leadership and strategic guidance',
+          'Monthly planning sessions and architecture governance',
+          'Project rescue for stuck or failing infrastructure work',
+          'From £2,000/month (typically 2-4 days per month)',
+        ]}
+        offerTitle="Monthly Retainer"
+        whoItsFor={[
+          'Growing organisations (20–250 people) who need strategic technical guidance but aren&apos;t ready for a full-time infrastructure lead',
+          'Teams with stalled or problematic infrastructure projects that need experienced intervention',
+          'Organisations needing independent review of technical decisions, vendor proposals or architecture plans',
+        ]}
+        whatWeDo={[
+          'Monthly strategic planning sessions and roadmap reviews – keeping infrastructure aligned with business goals',
+          'Review and challenge technical proposals from suppliers or internal teams',
+          'Architecture governance: ensuring new projects follow sensible patterns and don&apos;t create future technical debt',
+          'Project rescue: stepping into stuck or failing infrastructure work to stabilise, redirect or complete',
+          'Act as a sounding board for senior stakeholders making infrastructure decisions',
+        ]}
+        whatYouGet={[
+          'Regular access to senior technical thinking without full-time overhead',
+          'Independent, pragmatic advice focused on business outcomes, not vendor preferences',
+          'Confidence that infrastructure decisions are sound before committing budget',
+          'Quarterly roadmap and governance documentation',
+          'Emergency project rescue support when things go wrong',
+        ]}
+        duration="Monthly retainer (typically 2-4 days per month)"
+        investment="From £2,000/month depending on time commitment"
+        imagePosition="left"
+        ctaLabel="Discuss advisory needs"
       />
 
       {/* On-Ramp Projects */}

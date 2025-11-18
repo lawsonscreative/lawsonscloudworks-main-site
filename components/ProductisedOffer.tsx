@@ -4,6 +4,7 @@ interface ProductisedOfferProps {
   id: string;
   pillarTitle: string;
   overview: string;
+  atAGlance?: string[];
   offerTitle: string;
   whoItsFor: string[];
   whatWeDo: string[];
@@ -22,6 +23,7 @@ export default function ProductisedOffer({
   id,
   pillarTitle,
   overview,
+  atAGlance,
   offerTitle,
   whoItsFor,
   whatWeDo,
@@ -42,6 +44,25 @@ export default function ProductisedOffer({
           {overview}
         </p>
       </div>
+
+      {atAGlance && (
+        <div className="bg-brand-teal-soft/50 border border-brand-teal/20 rounded-lg p-6">
+          <h3 className="text-xl font-semibold text-brand-ink mb-4">At a Glance</h3>
+          <ul className="space-y-2">
+            {atAGlance.map((item, index) => (
+              <li key={index} className="flex items-start space-x-2">
+                <span className="text-brand-teal mt-1 font-bold">•</span>
+                <span className="text-neutral-700 font-medium">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-4 pt-4 border-t border-brand-teal/20">
+            <Link href="/contact" className="btn-secondary text-sm">
+              {ctaLabel}
+            </Link>
+          </div>
+        </div>
+      )}
 
       <div className="bg-white border-2 border-brand-ink/10 rounded-lg p-6 space-y-6">
         <h3 className="text-2xl font-semibold text-brand-ink">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SkipLink from "@/components/SkipLink";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -28,8 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body className={inter.className}>
-        <Navigation />
-        <main>{children}</main>
+        <SkipLink />
+        <header>
+          <Navigation />
+        </header>
+        <main id="main-content">{children}</main>
         <Footer />
       </body>
     </html>

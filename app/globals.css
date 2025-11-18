@@ -30,6 +30,24 @@
   a {
     @apply transition-colors duration-200;
   }
+
+  /* Visible focus states for accessibility */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  [role="button"]:focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-teal;
+  }
+
+  /* Dark background focus states */
+  .bg-brand-ink a:focus-visible,
+  .bg-brand-teal a:focus-visible,
+  .bg-neutral-900 a:focus-visible,
+  [class*="bg-gradient"] a:focus-visible {
+    @apply outline-white;
+  }
 }
 
 @layer components {
