@@ -81,8 +81,8 @@ export default function ApproachPage() {
 
           <div className="space-y-8">
             {engagementSteps.map((step) => (
-              <div key={step.number} className="flex items-start space-x-6 bg-neutral-50 p-6 rounded-lg">
-                <div className="flex-shrink-0 w-12 h-12 bg-brand-teal text-white rounded-full flex items-center justify-center text-xl font-bold" aria-hidden="true">
+              <div key={step.number} className="stepper-item">
+                <div className="stepper-number" aria-hidden="true">
                   {step.number}
                 </div>
                 <div className="space-y-2">
@@ -179,24 +179,24 @@ export default function ApproachPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <div className="bg-neutral-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-brand-ink mb-3">What We Deliver</h3>
-                <ul className="space-y-2 text-base">
-                  <li className="flex items-start space-x-2">
+                <ul className="space-y-3 text-base">
+                  <li className="flex items-start space-x-3">
                     <span className="text-brand-teal">•</span>
                     <span>Architecture diagrams</span>
                   </li>
-                  <li className="flex items-start space-x-2">
+                  <li className="flex items-start space-x-3">
                     <span className="text-brand-teal">•</span>
                     <span>Written summaries in plain English</span>
                   </li>
-                  <li className="flex items-start space-x-2">
+                  <li className="flex items-start space-x-3">
                     <span className="text-brand-teal">•</span>
                     <span>Clear next steps and recommendations</span>
                   </li>
-                  <li className="flex items-start space-x-2">
+                  <li className="flex items-start space-x-3">
                     <span className="text-brand-teal">•</span>
                     <span>Runbooks where appropriate</span>
                   </li>
-                  <li className="flex items-start space-x-2">
+                  <li className="flex items-start space-x-3">
                     <span className="text-brand-teal">•</span>
                     <span>Knowledge transfer sessions</span>
                   </li>

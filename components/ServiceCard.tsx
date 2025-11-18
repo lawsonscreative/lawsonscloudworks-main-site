@@ -38,7 +38,7 @@ export default function ServiceCard({ icon, title, description, link, offerRefer
   return (
     <Link
       href={link}
-      className="group h-full flex flex-col bg-white border-2 border-neutral-200 rounded-xl p-8 hover:border-brand-teal hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+      className="card-service group hover:shadow-xl transform hover:-translate-y-1"
     >
       <div className="text-brand-teal mb-6 group-hover:scale-110 transition-transform duration-300">
         {icons[icon]}

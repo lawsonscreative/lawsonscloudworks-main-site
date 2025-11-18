@@ -69,20 +69,20 @@ export default function AboutPage() {
               <strong>Best fit sectors:</strong>
             </p>
 
-            <ul className="space-y-2 ml-6">
-              <li className="flex items-start space-x-2">
+            <ul className="space-y-3 ml-6">
+              <li className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
                 <span>Professional services (consultancies, agencies, legal, financial advisory)</span>
               </li>
-              <li className="flex items-start space-x-2">
+              <li className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
                 <span>Software and technology companies with dev teams</span>
               </li>
-              <li className="flex items-start space-x-2">
+              <li className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
                 <span>Regulated and security-sensitive organisations (healthcare, finance)</span>
               </li>
-              <li className="flex items-start space-x-2">
+              <li className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
                 <span>Growing businesses transitioning from basic IT to managed infrastructure</span>
               </li>
@@ -92,20 +92,20 @@ export default function AboutPage() {
               <strong>Common challenges we solve:</strong>
             </p>
 
-            <ul className="space-y-2 ml-6">
-              <li className="flex items-start space-x-2">
+            <ul className="space-y-3 ml-6">
+              <li className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
                 <span>Outgrowing basic IT but not ready for enterprise MSPs</span>
               </li>
-              <li className="flex items-start space-x-2">
+              <li className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
                 <span>Remote/hybrid teams struggling with fragile VPN and on-prem infrastructure</span>
               </li>
-              <li className="flex items-start space-x-2">
+              <li className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
                 <span>Manual device management and patching creating security risk</span>
               </li>
-              <li className="flex items-start space-x-2">
+              <li className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
                 <span>Developer workflows slowed by unreliable or manual deployment processes</span>
               </li>

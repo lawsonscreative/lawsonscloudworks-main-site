@@ -131,7 +131,7 @@ export default function ContactPage() {
           <h2 className="text-center mb-12">What Happens Next?</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
+            <div className="text-center bg-white p-6 rounded-lg hover:shadow-card transition-all duration-250">
               <div className="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 1
               </div>
@@ -141,7 +141,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="text-center">
+            <div className="text-center bg-white p-6 rounded-lg hover:shadow-card transition-all duration-250">
               <div className="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 2
               </div>
@@ -151,7 +151,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="text-center">
+            <div className="text-center bg-white p-6 rounded-lg hover:shadow-card transition-all duration-250">
               <div className="w-16 h-16 bg-brand-teal text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" aria-hidden="true">
                 3
               </div>

@@ -48,18 +48,18 @@ export default function ProductisedOffer({
       </div>
 
       {atAGlance && (
-        <div className="bg-brand-teal-soft/50 border border-brand-teal/20 rounded-lg p-6">
-          <h3 className="text-xl font-semibold text-brand-ink mb-4">At a Glance</h3>
-          <ul className="space-y-2">
+        <div className="bg-gradient-to-br from-brand-teal to-brand-teal-dark text-white rounded-xl shadow-card-hover p-8">
+          <h3 className="text-2xl font-bold text-white mb-6 border-b border-white/20 pb-3">At a Glance</h3>
+          <ul className="space-y-3">
             {atAGlance.map((item, index) => (
-              <li key={index} className="flex items-start space-x-2">
-                <span className="text-brand-teal mt-1 font-bold">•</span>
-                <span className="text-neutral-700 font-medium">{item}</span>
+              <li key={index} className="flex items-start space-x-3">
+                <span className="text-white mt-1 text-xl">✓</span>
+                <span className="text-white/95 font-medium leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
-          <div className="mt-4 pt-4 border-t border-brand-teal/20">
-            <Link href={ctaHref} className="btn-secondary text-sm">
+          <div className="mt-6 pt-6 border-t border-white/20">
+            <Link href={ctaHref} className="inline-block px-6 py-3 bg-white text-brand-teal font-semibold rounded-lg hover:bg-neutral-50 transition-all duration-200 shadow-button">
               {ctaLabel}
             </Link>
           </div>
@@ -73,11 +73,11 @@ export default function ProductisedOffer({
 
         <div>
           <h4 className="text-lg font-semibold text-brand-ink mb-3">Who it&apos;s for:</h4>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {whoItsFor.map((item, index) => (
-              <li key={index} className="flex items-start space-x-2">
+              <li key={index} className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
-                <span className="text-neutral-700">{item}</span>
+                <span className="text-neutral-700 leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
@@ -85,11 +85,11 @@ export default function ProductisedOffer({
 
         <div>
           <h4 className="text-lg font-semibold text-brand-ink mb-3">What we do:</h4>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {whatWeDo.map((item, index) => (
-              <li key={index} className="flex items-start space-x-2">
+              <li key={index} className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
-                <span className="text-neutral-700">{item}</span>
+                <span className="text-neutral-700 leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
@@ -97,11 +97,11 @@ export default function ProductisedOffer({
 
         <div>
           <h4 className="text-lg font-semibold text-brand-ink mb-3">What you get:</h4>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {whatYouGet.map((item, index) => (
-              <li key={index} className="flex items-start space-x-2">
+              <li key={index} className="flex items-start space-x-3">
                 <span className="text-brand-teal mt-1">•</span>
-                <span className="text-neutral-700">{item}</span>
+                <span className="text-neutral-700 leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>

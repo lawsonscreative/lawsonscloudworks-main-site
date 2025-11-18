@@ -52,11 +52,11 @@ export default function AdvisoryOffers({
                 {offer.title}
               </h4>
 
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {offer.description.map((item, idx) => (
-                  <li key={idx} className="flex items-start space-x-2">
+                  <li key={idx} className="flex items-start space-x-3">
                     <span className="text-brand-teal mt-1">•</span>
-                    <span className="text-neutral-700">{item}</span>
+                    <span className="text-neutral-700 leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>

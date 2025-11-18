@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
     @apply text-neutral-900 bg-white antialiased;
   }
@@ -85,14 +95,26 @@
            transition-all duration-250 p-6;
   }
 
-  /* Feature card variant */
+  /* Feature card variant - homepage proof points */
   .card-feature {
-    @apply card flex flex-col items-start;
+    @apply card flex flex-col items-start text-center;
   }
 
-  /* Service card variant */
+  /* Service card variant - service grid */
   .card-service {
-    @apply card h-full flex flex-col;
+    @apply card h-full flex flex-col hover:border-brand-teal;
+  }
+
+  /* Case study card - teaser links */
+  .card-case-study {
+    @apply bg-white rounded-lg border border-brand-border shadow-card p-6
+           hover:shadow-card-hover hover:border-brand-teal
+           transition-all duration-250 h-full flex flex-col;
+  }
+
+  /* Highlight card - key info callouts */
+  .card-highlight {
+    @apply bg-gradient-to-br from-brand-teal to-brand-teal-dark text-white rounded-xl shadow-card-hover p-8;
   }
 
   /* Container with systematic max-width */
@@ -129,6 +151,17 @@
   .link-arrow {
     @apply text-brand-teal hover:text-brand-teal-dark font-semibold inline-flex items-center gap-2
            transition-all duration-200 hover:gap-3;
+  }
+
+  /* Stepper component */
+  .stepper-item {
+    @apply flex items-start space-x-6 bg-neutral-50 p-6 rounded-lg
+           hover:bg-white hover:shadow-card transition-all duration-250;
+  }
+
+  .stepper-number {
+    @apply flex-shrink-0 w-12 h-12 bg-brand-teal text-white rounded-full
+           flex items-center justify-center text-xl font-bold;
   }
 }
 

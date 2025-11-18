@@ -32,9 +32,9 @@ export default function Home() {
               Specialist MSP for Microsoft 365, AWS WorkSpaces, Intune and AVD – giving your remote and hybrid staff a secure, reliable place to work without the enterprise drama.
             </p>
 
-            <div className="text-base md:text-lg text-white/90 space-y-2">
+            <div className="text-base md:text-lg text-white/90 space-y-3">
               <p className="font-medium">Best fit for:</p>
-              <ul className="space-y-1">
+              <ul className="space-y-2">
                 <li>• 20-250 person teams</li>
                 <li>• Remote and hybrid-heavy organisations</li>
                 <li>• Regulated and security-sensitive sectors</li>

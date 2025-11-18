@@ -22,10 +22,10 @@ export default function CaseStudyTeaser({
   const ariaLabel = `Read ${industry.toLowerCase()} case study: ${title}`;
 
   return (
-    <Link href={link} aria-label={ariaLabel} className="card group h-full flex flex-col">
+    <Link href={link} aria-label={ariaLabel} className="card-case-study group">
       <div className="mb-4">
         <div className="flex flex-wrap items-center gap-2 text-sm text-neutral-500 mb-3">
-          <span className="bg-brand-teal-soft text-brand-ink px-3 py-1 rounded-full font-medium">
+          <span className="badge">
             {industry}
           </span>
           <span>{size}</span>
