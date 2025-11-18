@@ -110,8 +110,21 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-neutral-800">
         <div className="container-custom py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-neutral-400 space-y-2 md:space-y-0">
-            <p>&copy; {currentYear} Lawsons Enterprises Ltd. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-neutral-400 space-y-4 md:space-y-0">
+            <div className="text-center md:text-left space-y-1">
+              <p>&copy; {currentYear} Lawsons Enterprises Ltd. All rights reserved.</p>
+              <p className="text-xs">
+                Website design and development by{' '}
+                <a
+                  href="https://www.lawsonscreative.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-teal transition-colors hover:underline"
+                >
+                  Lawsons Creative
+                </a>
+              </p>
+            </div>
             <div className="flex space-x-6">
               <Link href="/privacy" className="hover:text-brand-teal transition-colors hover:underline">
                 Privacy Policy

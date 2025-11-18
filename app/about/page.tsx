@@ -37,7 +37,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              The CloudWorks brand launched in 2025, but it's built on 30+ years of hands-on infrastructure experience across regulated UK sectors including financial services, NHS and critical national infrastructure.
+              The CloudWorks brand launched in 2025, drawing on extensive infrastructure experience across regulated UK sectors including financial services, NHS and critical national infrastructure.
             </p>
 
             <p>

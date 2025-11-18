@@ -71,12 +71,12 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Card 3 - Years */}
+              {/* Card 3 - Senior Experience */}
               <div className="bg-white p-8 rounded-lg border border-brand-border hover:shadow-lg transition-all duration-300 text-center">
                 <div className="text-5xl mb-4 text-brand-teal">📅</div>
-                <div className="text-xl font-bold text-brand-ink mb-2">30+ Years</div>
+                <div className="text-xl font-bold text-brand-ink mb-2">Senior Experience</div>
                 <p className="text-sm text-brand-slate leading-relaxed">
-                  30+ years in IT infrastructure – senior hands on your environment, not juniors learning on it. You get experienced thinking applied to day-to-day operations.
+                  Senior hands on your environment, not juniors learning on it. You get experienced infrastructure expertise applied to day-to-day operations.
                 </p>
               </div>
 
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
 
             <p className="text-sm text-neutral-500 text-center mt-12 max-w-3xl mx-auto">
-              CloudWorks is a specialist MSP brand founded in 2025, built on three decades of hands-on infrastructure, workspace and cloud experience.
+              CloudWorks is a specialist MSP brand founded in 2025, bringing extensive hands-on infrastructure, workspace and cloud experience to mid-sized UK organisations.
             </p>
           </div>
         </section>
